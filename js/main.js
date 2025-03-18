@@ -42,60 +42,20 @@ function initializeTooltip() {
 }
 
 function initializeNavMenu() {
-    // Add menu overlay div to body if not exists
-    if (!document.querySelector('.menu-overlay')) {
-        const overlay = document.createElement('div');
-        overlay.className = 'menu-overlay';
-        document.body.appendChild(overlay);
-    }
-    
-    // Add close button to mobile menu if not exists
-    const navMenu = document.querySelector('.nav-menu');
-    if (navMenu && !document.querySelector('.menu-close')) {
-        const closeButton = document.createElement('button');
-        closeButton.className = 'menu-close';
-        closeButton.innerHTML = '<i class="fas fa-times"></i>';
-        navMenu.prepend(closeButton);
-        
-        // Add event listener to close button
-        closeButton.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            document.querySelector('.menu-overlay').classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    }
-    
     // Mobile menu toggle functionality
     const menuToggle = document.querySelector('.menu-toggle');
-    const overlay = document.querySelector('.menu-overlay');
+    const navMenu = document.querySelector('.nav-menu');
     
-    if (menuToggle && navMenu) {
+    if (menuToggle) {
         menuToggle.addEventListener('click', function() {
             console.log("Menu toggle clicked");
             navMenu.classList.toggle('active');
-            overlay.classList.toggle('active');
-            
-            // Prevent body scrolling when menu is open
-            if (navMenu.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
-            }
         });
     } else {
-        console.error("Menu toggle element or nav menu not found");
+        console.error("Menu toggle element not found");
     }
     
-    // Add click handler to overlay to close menu
-    if (overlay) {
-        overlay.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            overlay.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    }
-    
-    // Fix dropdown toggle functionality
+    // Fix dropdown toggle functionality on mobile
     const dropdowns = document.querySelectorAll('.dropdown');
     
     dropdowns.forEach(dropdown => {
@@ -104,41 +64,24 @@ function initializeNavMenu() {
         if (toggle) {
             toggle.addEventListener('click', function(e) {
                 e.preventDefault();
-                e.stopPropagation();
+                e.stopPropagation(); // Prevent event from bubbling to document
                 
-                // For mobile, we want to toggle the visibility of the submenu
-                const isMobile = window.innerWidth <= 768;
+                // Close any open dropdowns first
+                dropdowns.forEach(d => {
+                    if (d !== dropdown && d.classList.contains('show')) {
+                        d.classList.remove('show');
+                    }
+                });
                 
-                // Handle mobile dropdown differently
-                if (isMobile) {
-                    // Close any open dropdowns first (optional on mobile)
-                    // dropdowns.forEach(d => {
-                    //     if (d !== dropdown && d.classList.contains('show')) {
-                    //         d.classList.remove('show');
-                    //     }
-                    // });
-                    
-                    // Toggle this dropdown
-                    dropdown.classList.toggle('show');
-                } else {
-                    // Desktop behavior
-                    // Close any open dropdowns first
-                    dropdowns.forEach(d => {
-                        if (d !== dropdown && d.classList.contains('show')) {
-                            d.classList.remove('show');
-                        }
-                    });
-                    
-                    // Toggle this dropdown
-                    dropdown.classList.toggle('show');
-                }
+                // Toggle this dropdown
+                dropdown.classList.toggle('show');
             });
         }
     });
     
-    // Close dropdowns when clicking outside (only on desktop)
+    // Close dropdowns when clicking outside
     document.addEventListener('click', function(e) {
-        if (window.innerWidth > 768 && !e.target.closest('.dropdown')) {
+        if (!e.target.closest('.dropdown')) {
             dropdowns.forEach(dropdown => {
                 dropdown.classList.remove('show');
             });
