@@ -42,20 +42,58 @@ function initializeTooltip() {
 }
 
 function initializeNavMenu() {
+    // Create overlay if it doesn't exist
+    if (!document.querySelector('.menu-overlay')) {
+        const overlay = document.createElement('div');
+        overlay.className = 'menu-overlay';
+        document.body.appendChild(overlay);
+    }
+    
+    // Add close button to the mobile menu if it doesn't exist
+    const navMenu = document.querySelector('.nav-menu');
+    if (navMenu && !document.querySelector('.menu-close')) {
+        const closeButton = document.createElement('button');
+        closeButton.className = 'menu-close';
+        closeButton.innerHTML = '<i class="fas fa-times"></i>';
+        navMenu.prepend(closeButton);
+        
+        // Add event listener to close button
+        closeButton.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+            document.querySelector('.menu-overlay').classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+    
     // Mobile menu toggle functionality
     const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+    const overlay = document.querySelector('.menu-overlay');
     
-    if (menuToggle) {
+    if (menuToggle && navMenu) {
         menuToggle.addEventListener('click', function() {
             console.log("Menu toggle clicked");
             navMenu.classList.toggle('active');
+            if (overlay) overlay.classList.toggle('active');
+            
+            // Prevent body scrolling when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
         });
-    } else {
-        console.error("Menu toggle element not found");
     }
     
-    // Fix dropdown toggle functionality on mobile
+    // Add event listener to overlay
+    if (overlay) {
+        overlay.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+    
+    // Fix dropdown toggle functionality
     const dropdowns = document.querySelectorAll('.dropdown');
     
     dropdowns.forEach(dropdown => {
@@ -64,24 +102,28 @@ function initializeNavMenu() {
         if (toggle) {
             toggle.addEventListener('click', function(e) {
                 e.preventDefault();
-                e.stopPropagation(); // Prevent event from bubbling to document
+                e.stopPropagation();
                 
-                // Close any open dropdowns first
-                dropdowns.forEach(d => {
-                    if (d !== dropdown && d.classList.contains('show')) {
-                        d.classList.remove('show');
-                    }
-                });
-                
-                // Toggle this dropdown
-                dropdown.classList.toggle('show');
+                // Different behavior for mobile vs desktop
+                if (window.innerWidth <= 768) {
+                    // For mobile, just toggle this dropdown without closing others
+                    dropdown.classList.toggle('show');
+                } else {
+                    // For desktop, close other dropdowns first
+                    dropdowns.forEach(d => {
+                        if (d !== dropdown && d.classList.contains('show')) {
+                            d.classList.remove('show');
+                        }
+                    });
+                    dropdown.classList.toggle('show');
+                }
             });
         }
     });
     
-    // Close dropdowns when clicking outside
+    // Close dropdowns when clicking outside (desktop only)
     document.addEventListener('click', function(e) {
-        if (!e.target.closest('.dropdown')) {
+        if (window.innerWidth > 768 && !e.target.closest('.dropdown')) {
             dropdowns.forEach(dropdown => {
                 dropdown.classList.remove('show');
             });
