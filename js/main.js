@@ -48,11 +48,14 @@ function initializeNavMenu() {
     
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
+            console.log("Menu toggle clicked");
             navMenu.classList.toggle('active');
         });
+    } else {
+        console.error("Menu toggle element not found");
     }
     
-    // Fix dropdown toggle functionality
+    // Fix dropdown toggle functionality on mobile
     const dropdowns = document.querySelectorAll('.dropdown');
     
     dropdowns.forEach(dropdown => {

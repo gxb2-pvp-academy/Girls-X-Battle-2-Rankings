@@ -294,3 +294,44 @@
     height: 400px;
     position: relative;
 }
+
+/* Responsive adjustments for player detail page */
+@media screen and (max-width: 768px) {
+    .player-card-content {
+        flex-direction: column;
+    }
+    
+    .player-left-column, .player-right-column {
+        width: 100%;
+        padding: 0;
+        border-right: none;
+    }
+    
+    .player-left-column {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .player-id {
+        font-size: 1.4rem; /* Reduce font size for player ID on mobile */
+    }
+    
+    .stat-label, .stat-value {
+        width: 100%;
+        display: block;
+    }
+    
+    .stat-label {
+        margin-bottom: 5px;
+    }
+    
+    .player-stat {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .chart-container {
+        height: 300px; /* Adjust chart height for mobile */
+    }
+}
