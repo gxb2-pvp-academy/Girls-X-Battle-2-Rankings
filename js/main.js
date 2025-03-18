@@ -42,23 +42,23 @@ function initializeTooltip() {
 }
 
 function initializeNavMenu() {
-    // Create overlay if it doesn't exist
+    // Create overlay element if it doesn't exist
     if (!document.querySelector('.menu-overlay')) {
         const overlay = document.createElement('div');
         overlay.className = 'menu-overlay';
         document.body.appendChild(overlay);
     }
     
-    // Add close button to the mobile menu if it doesn't exist
+    // Create close button if it doesn't exist
     const navMenu = document.querySelector('.nav-menu');
     if (navMenu && !document.querySelector('.menu-close')) {
-        const closeButton = document.createElement('button');
-        closeButton.className = 'menu-close';
-        closeButton.innerHTML = '<i class="fas fa-times"></i>';
-        navMenu.prepend(closeButton);
+        const closeBtn = document.createElement('button');
+        closeBtn.className = 'menu-close';
+        closeBtn.innerHTML = '<i class="fas fa-times"></i>';
+        navMenu.appendChild(closeBtn);
         
         // Add event listener to close button
-        closeButton.addEventListener('click', function() {
+        closeBtn.addEventListener('click', function() {
             navMenu.classList.remove('active');
             document.querySelector('.menu-overlay').classList.remove('active');
             document.body.style.overflow = '';
@@ -69,22 +69,24 @@ function initializeNavMenu() {
     const menuToggle = document.querySelector('.menu-toggle');
     const overlay = document.querySelector('.menu-overlay');
     
-    if (menuToggle && navMenu) {
+    if (menuToggle) {
         menuToggle.addEventListener('click', function() {
             console.log("Menu toggle clicked");
             navMenu.classList.toggle('active');
-            if (overlay) overlay.classList.toggle('active');
+            overlay.classList.toggle('active');
             
-            // Prevent body scrolling when menu is open
+            // Prevent scrolling of the body when menu is open
             if (navMenu.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';
             } else {
                 document.body.style.overflow = '';
             }
         });
+    } else {
+        console.error("Menu toggle element not found");
     }
     
-    // Add event listener to overlay
+    // Add click handler to the overlay
     if (overlay) {
         overlay.addEventListener('click', function() {
             navMenu.classList.remove('active');
@@ -104,12 +106,12 @@ function initializeNavMenu() {
                 e.preventDefault();
                 e.stopPropagation();
                 
-                // Different behavior for mobile vs desktop
+                // For mobile, we want to keep dropdowns open after clicking
+                // For desktop, close other dropdowns first
                 if (window.innerWidth <= 768) {
-                    // For mobile, just toggle this dropdown without closing others
                     dropdown.classList.toggle('show');
                 } else {
-                    // For desktop, close other dropdowns first
+                    // Close any open dropdowns first
                     dropdowns.forEach(d => {
                         if (d !== dropdown && d.classList.contains('show')) {
                             d.classList.remove('show');
@@ -121,8 +123,9 @@ function initializeNavMenu() {
         }
     });
     
-    // Close dropdowns when clicking outside (desktop only)
+    // Close dropdowns when clicking outside
     document.addEventListener('click', function(e) {
+        // Only close dropdowns when in desktop mode
         if (window.innerWidth > 768 && !e.target.closest('.dropdown')) {
             dropdowns.forEach(dropdown => {
                 dropdown.classList.remove('show');
