@@ -1,0 +1,825 @@
+:root {
+    --primary: #f39c12;
+    --secondary: #e67e22;
+    --light: #f4f6f9;
+    --dark: #34495e;
+    --success: #2ecc71;
+    --danger: #e74c3c;
+    --text: #333;
+    --text-light: #777;
+    --border: #ddd;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 30px 0;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header h1 span {
+    font-weight: 300;
+}
+
+.season-info {
+    display: flex;
+    gap: 20px;
+    opacity: 0.9;
+}
+
+/* Updated Navigation Menu - Horizontal Top Bar */
+.nav-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--dark);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    max-width: 300px; /* Increased from 250px for wider menu items */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-icon {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+/* Different colors for menu items */
+.nav-item:nth-child(1) .nav-link { border-bottom: 4px solid #9b59b6; } /* Purple*/
+.nav-item:nth-child(2) .nav-link { border-bottom: 4px solid #3498db; } /* Blue */
+.nav-item:nth-child(3) .nav-link { border-bottom: 4px solid #2ecc71; } /* Green */
+.nav-item:nth-child(4) .nav-link { border-bottom: 4px solid #f1c40f; } /* Yellow */
+.nav-item:nth-child(5) .nav-link { border-bottom: 4px solid #e74c3c; } /* Red */
+
+/* Hover effect for menu items */
+.nav-item:nth-child(1) .nav-link:hover { background-color: rgba(155, 89, 182, 0.2); } /* Purple*/
+.nav-item:nth-child(2) .nav-link:hover { background-color: rgba(52, 152, 219, 0.2); } /* Blue */
+.nav-item:nth-child(3) .nav-link:hover { background-color: rgba(46, 204, 113, 0.2); } /* Green */
+.nav-item:nth-child(4) .nav-link:hover { background-color: rgba(241, 196, 15, 0.2); } /* Yellow */
+.nav-item:nth-child(5) .nav-link:hover { background-color: rgba(231, 76, 60, 0.2); } /* Red */
+
+/* Active state for menu items */
+.nav-item:nth-child(1) .nav-link.active { background-color: rgba(155, 89, 182, 0.2); } /* Purple*/
+.nav-item:nth-child(2) .nav-link.active { background-color: rgba(52, 152, 219, 0.2); } /* Blue */
+.nav-item:nth-child(3) .nav-link.active { background-color: rgba(46, 204, 113, 0.2); } /* Green */
+.nav-item:nth-child(4) .nav-link.active { background-color: rgba(241, 196, 15, 0.2); } /* Yellow */
+.nav-item:nth-child(5) .nav-link.active { background-color: rgba(231, 76, 60, 0.2); } /* Red */
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%; /* Match parent button width */
+    background-color: var(--dark);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1005;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Make dropdown appear on click instead of hover */
+.dropdown.show .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(243, 156, 18, 0.3);
+}
+
+.dropdown-toggle::after {
+    content: '▼';
+    margin-left: 5px;
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown.show .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+
+/* Page container adjustments for top nav */
+.page-container {
+    padding-left: 0;
+}
+
+/* Responsive adjustments for top menu */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark);
+        display: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+    
+    .nav-item {
+        max-width: none;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+    
+    .dropdown-item {
+        padding-left: 30px;
+    }
+    
+    .nav-item:nth-child(1) .nav-link,
+    .nav-item:nth-child(2) .nav-link,
+    .nav-item:nth-child(3) .nav-link,
+    .nav-item:nth-child(4) .nav-link,
+    .nav-item:nth-child(5) .nav-link {
+        border-bottom: none;
+        border-left: 4px solid transparent;
+    }
+    
+    .nav-item:nth-child(1) .nav-link { border-left-color: #9b59b6; } /* Purple */
+    .nav-item:nth-child(2) .nav-link { border-left-color: #3498db; } /* Blue */
+    .nav-item:nth-child(3) .nav-link { border-left-color: #2ecc71; } /* Green */
+    .nav-item:nth-child(4) .nav-link { border-left-color: #f1c40f; } /* Yellow */
+    .nav-item:nth-child(5) .nav-link { border-left-color: #e74c3c; } /* Red */
+}
+
+/* Content area for placeholder pages */
+.page-content {
+    padding: 30px 0;
+    min-height: 400px;
+}
+
+.page-title {
+    margin-bottom: 20px;
+    color: var(--dark);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+.rankings-wrapper {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+#rankings-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#rankings-table th, 
+#rankings-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+#rankings-table th {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+}
+
+#rankings-table tbody tr {
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+#rankings-table tbody tr:hover {
+    background-color: rgba(243, 156, 18, 0.1);
+}
+
+/* Column specific styles */
+#rankings-table td:first-child {
+    font-weight: 700;
+    width: 10%;
+}
+
+#rankings-table td:nth-child(2) {
+    width: 16%;
+}
+
+.change-positive {
+    color: var(--success);
+    font-weight: 500;
+}
+
+.change-negative {
+    color: var(--danger);
+    font-weight: 500;
+}
+
+.change-new {
+    color: var(--primary);
+    font-style: italic;
+}
+
+#rankings-table td:nth-child(3) {
+    font-family: monospace;
+    font-size: 1.1rem;
+    width: 20%;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+}
+
+.player-img {
+    width: 200px;
+    height: auto;
+    border-radius: 1px;
+    box-shadow: var(--shadow);
+}
+
+#rankings-table td:last-child {
+    font-weight: 700;
+    width: 20%;
+}
+
+/* Loading and Error states */
+#loading, #error {
+    padding: 50px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+#error {
+    color: var(--danger);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .season-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    #rankings-table th, 
+    #rankings-table td {
+        padding: 10px;
+    }
+    
+    .player-img {
+        width: 120px; /* Reduced from 120px to 40px (1/3) */
+    }
+
+    .nav-container {
+        width: 0;
+    }
+    
+    .nav-container.expanded {
+        width: 240px;
+    }
+    
+    .page-container {
+        padding-left: 0;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--dark);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-logo {
+        display: block;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .hamburger-line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .hamburger-line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+    
+    .dropdown-toggle::after {
+        content: '+';
+        margin-left: 5px;
+    }
+    
+    .dropdown.active .dropdown-toggle::after {
+        content: '-';
+    }
+}
+
+@media (max-width: 576px) {
+    #rankings-table th:nth-child(3), 
+    #rankings-table td:nth-child(3) {
+        display: none; /* Hide player ID on small screens */
+    }
+    
+    .player-img {
+        width: 100px;
+    }
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    background-color: rgba(52, 73, 94, 0.95);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    max-width: 350px; /* Increased from 250px to accommodate longer lists of seasons */
+    white-space: normal; /* Allow wrapping of text instead of nowrap */
+}
+
+.tooltip.visible {
+    opacity: 1;
+    display: block !important;
+}
+
+.tooltip.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.tooltip .breakdown-title {
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 3px;
+}
+
+.tooltip .breakdown-item {
+    margin-bottom: 3px;
+}
+
+.tooltip .champion {
+    color: gold;
+}
+
+.tooltip .runnerup {
+    color: silver;
+}
+
+.tooltip .top4 {
+    color: #cd7f32; /* Bronze */
+}
+
+.tooltip .top8 {
+    color: #a0d6b4; /* Light green */
+}
+
+.tooltip .seasons {
+    color: #bbb;
+    font-size: 13px;
+}
+
+/* Make score cells show a pointer cursor to indicate interactivity */
+.score {
+    position: relative;
+}
+
+/* Add whitespace between score and diff */
+.score span {
+    margin-left: 3px;
+}
+
+/* Player Chart Styling */
+.chart-container {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+.chart-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.chart-container.visible {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/* Highest score specific styling */
+.highest-score-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.highest-score-table th, 
+.highest-score-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.highest-score-table th {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+}
+
+.highest-score-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.highest-score-table tbody tr:hover {
+    background-color: rgba(243, 156, 18, 0.1);
+}
+
+.highest-score {
+    font-weight: 700;
+}
+
+/* Apply specific column styles to highest score table */
+#rankings-table.highest-score-table td:first-child {
+    font-weight: 700;
+    width: 10%;
+}
+
+#rankings-table.highest-score-table td:nth-child(2) {
+    font-family: monospace;
+    font-size: 1.1rem;
+    width: 20%;
+}
+
+#rankings-table.highest-score-table td:nth-child(3) {
+    width: 100% !important;
+}
+
+#rankings-table.highest-score-table td:last-child {
+    font-weight: 700;
+    width: 60% !important;
+}
+
+/* Adjust player info image width for highest score table */
+#rankings-table.highest-score-table .player-info {
+    display: flex;
+    align-items: center;
+}
+
+#rankings-table.highest-score-table .player-img {
+    width: 200px;
+    height: auto;
+    border-radius: 1px;
+    box-shadow: var(--shadow);
+}
+
+/* Apply world ranking styles to all rankings tables */
+#rankings-table.highest-score-table td:first-child {
+    font-weight: 700;
+    width: 10%;
+}
+
+#rankings-table.highest-score-table td:nth-child(2) {
+    font-family: monospace;
+    font-size: 1.1rem;
+    width: 20%;
+}
+
+#rankings-table.highest-score-table td:last-child {
+    font-weight: 700;
+    width: 25%;
+}
+
+/* Total title specific styling */
+.total-title-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.total-title-table th, 
+.total-title-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.total-title-table th {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+}
+
+.total-title-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.total-title-table tbody tr:hover {
+    background-color: rgba(243, 156, 18, 0.1);
+}
+
+/* Count cell styling */
+.champion-count {
+    color: gold;
+    font-weight: 700;
+    text-align: center;
+}
+
+.runnerup-count {
+    color: silver;
+    font-weight: 500;
+    text-align: center;
+}
+
+.top4-count {
+    color: #cd7f32; /* Bronze */
+    font-weight: 500;
+    text-align: center;
+}
+
+.top8-count {
+    color: #a0d6b4; /* Light green */
+    font-weight: 400;
+    text-align: center;
+}
+
+.total-count {
+    font-weight: 700;
+    color: var(--dark);
+    text-align: center;
+}
+
+/* Apply specific column styles to total title table */
+#rankings-table.total-title-table td:first-child {
+    font-weight: 700;
+    width: 8%;
+}
+
+#rankings-table.total-title-table td:nth-child(2) {
+    font-family: monospace;
+    font-size: 1.1rem;
+    width: 12%;
+}
+
+#rankings-table.total-title-table td:nth-child(3) {
+    width: 100%;
+}
+
+#rankings-table.total-title-table td:nth-child(4),
+#rankings-table.total-title-table td:nth-child(5),
+#rankings-table.total-title-table td:nth-child(6),
+#rankings-table.total-title-table td:nth-child(7) {
+    width: 10%;
+}
+
+#rankings-table.total-title-table td:last-child {
+    width: 13%;
+}
+
+/* Responsive adjustments for total title table */
+@media (max-width: 992px) {
+    .total-title-table th,  
+    .total-title-table td {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+    
+    #rankings-table.total-title-table .player-img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    #rankings-table.total-title-table .player-img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .total-title-table th:nth-child(4),
+    .total-title-table td:nth-child(4),
+    .total-title-table th:nth-child(5),
+    .total-title-table td:nth-child(5),
+    .total-title-table th:nth-child(6),
+    .total-title-table td:nth-child(6),
+    .total-title-table th:nth-child(7),
+    .total-title-table td:nth-child(7) {
+        display: none; /* Hide individual title counts on very small screens */
+    }
+    
+    #rankings-table.total-title-table td:nth-child(2) {
+        font-size: 0.9rem;
+    }
+}
+
+/* Make highest score cell show a pointer cursor to indicate interactivity */
+.highest-score-cell {
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;  /* Added to maintain consistency even if inline style is not applied */
+}
+
+/* No.1 Rankings specific styling */
+.no1-table td:first-child {
+    font-weight: 700;
+    width: 8%;
+}
+
+.no1-table td:nth-child(2) {
+    font-family: monospace;
+    font-size: 1.1rem;
+    width: 12%;
+}
+
+.no1-table td:nth-child(3) {
+    width: 100% !important;
+}
+
+.no1-table td:last-child {
+    width: 50% !important; /* Increase width for seasons column */
+}
+
+.no1-seasons {
+    position: relative;
+}
+
+/* Make table rows visibly clickable */
+.clickable-row {
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.clickable-row:hover {
+    background-color: rgba(243, 156, 18, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}

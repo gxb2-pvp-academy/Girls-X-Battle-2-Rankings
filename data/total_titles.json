@@ -1,0 +1,5642 @@
+{
+  "last_updated": "2025-03-17",
+  "total_titles": [
+    {
+      "rank": 1,
+      "player_id": 1014482766,
+      "champion": 13,
+      "runnerup": 3,
+      "top4": 2,
+      "top8": 2,
+      "total": 20,
+      "title_breakdown": {
+        "champion": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          17,
+          18,
+          20,
+          22,
+          23,
+          24
+        ],
+        "runnerup": [
+          12,
+          21,
+          25
+        ],
+        "top4": [
+          16,
+          19
+        ],
+        "top8": [
+          6,
+          15
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "player_id": 1008365307,
+      "champion": 11,
+      "runnerup": 6,
+      "top4": 2,
+      "top8": 2,
+      "total": 21,
+      "title_breakdown": {
+        "champion": [
+          1,
+          7,
+          9,
+          10,
+          12,
+          13,
+          19,
+          22,
+          23,
+          27,
+          28
+        ],
+        "runnerup": [
+          2,
+          5,
+          11,
+          14,
+          18,
+          35
+        ],
+        "top4": [
+          15,
+          34
+        ],
+        "top8": [
+          17,
+          20
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "player_id": 1008410793,
+      "champion": 8,
+      "runnerup": 5,
+      "top4": 8,
+      "top8": 4,
+      "total": 25,
+      "title_breakdown": {
+        "champion": [
+          24,
+          25,
+          30,
+          32,
+          33,
+          37,
+          38,
+          43
+        ],
+        "runnerup": [
+          22,
+          27,
+          29,
+          34,
+          39
+        ],
+        "top4": [
+          17,
+          23,
+          26,
+          28,
+          31,
+          35,
+          41,
+          42
+        ],
+        "top8": [
+          12,
+          15,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "player_id": 1014860580,
+      "champion": 8,
+      "runnerup": 4,
+      "top4": 2,
+      "top8": 2,
+      "total": 16,
+      "title_breakdown": {
+        "champion": [
+          11,
+          14,
+          15,
+          16,
+          18,
+          19,
+          20,
+          21
+        ],
+        "runnerup": [
+          8,
+          12,
+          17,
+          23
+        ],
+        "top4": [
+          10,
+          13
+        ],
+        "top8": [
+          7,
+          9
+        ]
+      }
+    },
+    {
+      "rank": 5,
+      "player_id": 1000651108,
+      "champion": 8,
+      "runnerup": 2,
+      "top4": 5,
+      "top8": 3,
+      "total": 18,
+      "title_breakdown": {
+        "champion": [
+          1,
+          2,
+          4,
+          6,
+          7,
+          12,
+          16,
+          17
+        ],
+        "runnerup": [
+          13,
+          14
+        ],
+        "top4": [
+          3,
+          9,
+          10,
+          11,
+          18
+        ],
+        "top8": [
+          5,
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "rank": 6,
+      "player_id": 1000597840,
+      "champion": 7,
+      "runnerup": 4,
+      "top4": 7,
+      "top8": 2,
+      "total": 20,
+      "title_breakdown": {
+        "champion": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          11
+        ],
+        "runnerup": [
+          9,
+          13,
+          15,
+          19
+        ],
+        "top4": [
+          1,
+          10,
+          14,
+          17,
+          18,
+          20,
+          22
+        ],
+        "top8": [
+          12,
+          21
+        ]
+      }
+    },
+    {
+      "rank": 7,
+      "player_id": 1011120131,
+      "champion": 6,
+      "runnerup": 2,
+      "top4": 5,
+      "top8": 9,
+      "total": 22,
+      "title_breakdown": {
+        "champion": [
+          31,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "runnerup": [
+          29,
+          43
+        ],
+        "top4": [
+          24,
+          25,
+          28,
+          34,
+          35
+        ],
+        "top8": [
+          8,
+          19,
+          22,
+          23,
+          26,
+          32,
+          33,
+          42,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 8,
+      "player_id": 1000065274,
+      "champion": 5,
+      "runnerup": 5,
+      "top4": 2,
+      "top8": 1,
+      "total": 13,
+      "title_breakdown": {
+        "champion": [
+          11,
+          18,
+          19,
+          20,
+          21
+        ],
+        "runnerup": [
+          12,
+          15,
+          16,
+          17,
+          22
+        ],
+        "top4": [
+          13,
+          14
+        ],
+        "top8": [
+          23
+        ]
+      }
+    },
+    {
+      "rank": 9,
+      "player_id": 1010091627,
+      "champion": 5,
+      "runnerup": 4,
+      "top4": 5,
+      "top8": 8,
+      "total": 22,
+      "title_breakdown": {
+        "champion": [
+          4,
+          17,
+          26,
+          30,
+          33
+        ],
+        "runnerup": [
+          10,
+          19,
+          24,
+          28
+        ],
+        "top4": [
+          6,
+          7,
+          25,
+          29,
+          31
+        ],
+        "top8": [
+          9,
+          14,
+          15,
+          16,
+          18,
+          21,
+          22,
+          23
+        ]
+      }
+    },
+    {
+      "rank": 10,
+      "player_id": 1013504064,
+      "champion": 5,
+      "runnerup": 1,
+      "top4": 3,
+      "top8": 1,
+      "total": 10,
+      "title_breakdown": {
+        "champion": [
+          25,
+          27,
+          28,
+          29,
+          31
+        ],
+        "runnerup": [
+          30
+        ],
+        "top4": [
+          22,
+          32,
+          33
+        ],
+        "top8": [
+          26
+        ]
+      }
+    },
+    {
+      "rank": 11,
+      "player_id": 1014840135,
+      "champion": 5,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 2,
+      "total": 10,
+      "title_breakdown": {
+        "champion": [
+          10,
+          13,
+          14,
+          15,
+          18
+        ],
+        "runnerup": [
+          16
+        ],
+        "top4": [
+          17,
+          20
+        ],
+        "top8": [
+          12,
+          19
+        ]
+      }
+    },
+    {
+      "rank": 12,
+      "player_id": 1005034553,
+      "champion": 4,
+      "runnerup": 7,
+      "top4": 6,
+      "top8": 0,
+      "total": 17,
+      "title_breakdown": {
+        "champion": [
+          7,
+          12,
+          15,
+          22
+        ],
+        "runnerup": [
+          6,
+          9,
+          10,
+          13,
+          16,
+          17,
+          23
+        ],
+        "top4": [
+          11,
+          14,
+          18,
+          19,
+          21,
+          24
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 13,
+      "player_id": 1008201599,
+      "champion": 4,
+      "runnerup": 5,
+      "top4": 1,
+      "top8": 6,
+      "total": 16,
+      "title_breakdown": {
+        "champion": [
+          29,
+          35,
+          42,
+          44
+        ],
+        "runnerup": [
+          28,
+          30,
+          32,
+          34,
+          37
+        ],
+        "top4": [
+          25
+        ],
+        "top8": [
+          26,
+          27,
+          31,
+          36,
+          41,
+          43
+        ]
+      }
+    },
+    {
+      "rank": 14,
+      "player_id": 1001432747,
+      "champion": 4,
+      "runnerup": 3,
+      "top4": 3,
+      "top8": 4,
+      "total": 14,
+      "title_breakdown": {
+        "champion": [
+          1,
+          9,
+          10,
+          15
+        ],
+        "runnerup": [
+          4,
+          8,
+          16
+        ],
+        "top4": [
+          2,
+          6,
+          7
+        ],
+        "top8": [
+          3,
+          11,
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "rank": 15,
+      "player_id": 1000058237,
+      "champion": 4,
+      "runnerup": 3,
+      "top4": 3,
+      "top8": 2,
+      "total": 12,
+      "title_breakdown": {
+        "champion": [
+          11,
+          13,
+          16,
+          17
+        ],
+        "runnerup": [
+          10,
+          12,
+          14
+        ],
+        "top4": [
+          8,
+          9,
+          18
+        ],
+        "top8": [
+          7,
+          15
+        ]
+      }
+    },
+    {
+      "rank": 16,
+      "player_id": 1000018964,
+      "champion": 4,
+      "runnerup": 0,
+      "top4": 5,
+      "top8": 0,
+      "total": 9,
+      "title_breakdown": {
+        "champion": [
+          8,
+          10,
+          13,
+          14
+        ],
+        "runnerup": [],
+        "top4": [
+          3,
+          5,
+          6,
+          7,
+          11
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 17,
+      "player_id": 1012774534,
+      "champion": 3,
+      "runnerup": 3,
+      "top4": 6,
+      "top8": 1,
+      "total": 13,
+      "title_breakdown": {
+        "champion": [
+          12,
+          14,
+          16
+        ],
+        "runnerup": [
+          13,
+          15,
+          17
+        ],
+        "top4": [
+          7,
+          8,
+          10,
+          11,
+          18,
+          19
+        ],
+        "top8": [
+          9
+        ]
+      }
+    },
+    {
+      "rank": 18,
+      "player_id": 1007919259,
+      "champion": 2,
+      "runnerup": 7,
+      "top4": 7,
+      "top8": 3,
+      "total": 19,
+      "title_breakdown": {
+        "champion": [
+          26,
+          28
+        ],
+        "runnerup": [
+          25,
+          31,
+          38,
+          39,
+          41,
+          42,
+          43
+        ],
+        "top4": [
+          21,
+          22,
+          23,
+          30,
+          33,
+          36,
+          37
+        ],
+        "top8": [
+          10,
+          12,
+          34
+        ]
+      }
+    },
+    {
+      "rank": 19,
+      "player_id": 1000813837,
+      "champion": 2,
+      "runnerup": 3,
+      "top4": 3,
+      "top8": 5,
+      "total": 13,
+      "title_breakdown": {
+        "champion": [
+          6,
+          8
+        ],
+        "runnerup": [
+          7,
+          10,
+          11
+        ],
+        "top4": [
+          2,
+          3,
+          15
+        ],
+        "top8": [
+          4,
+          9,
+          12,
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "rank": 20,
+      "player_id": 1000700965,
+      "champion": 2,
+      "runnerup": 3,
+      "top4": 3,
+      "top8": 4,
+      "total": 12,
+      "title_breakdown": {
+        "champion": [
+          6,
+          9
+        ],
+        "runnerup": [
+          4,
+          7,
+          10
+        ],
+        "top4": [
+          8,
+          12,
+          13
+        ],
+        "top8": [
+          2,
+          5,
+          11,
+          19
+        ]
+      }
+    },
+    {
+      "rank": 21,
+      "player_id": 1010736094,
+      "champion": 2,
+      "runnerup": 2,
+      "top4": 2,
+      "top8": 3,
+      "total": 9,
+      "title_breakdown": {
+        "champion": [
+          2,
+          3
+        ],
+        "runnerup": [
+          4,
+          6
+        ],
+        "top4": [
+          5,
+          13
+        ],
+        "top8": [
+          7,
+          8,
+          11
+        ]
+      }
+    },
+    {
+      "rank": 22,
+      "player_id": 1011900902,
+      "champion": 2,
+      "runnerup": 1,
+      "top4": 5,
+      "top8": 2,
+      "total": 10,
+      "title_breakdown": {
+        "champion": [
+          3,
+          6
+        ],
+        "runnerup": [
+          5
+        ],
+        "top4": [
+          1,
+          4,
+          8,
+          9,
+          12
+        ],
+        "top8": [
+          7,
+          10
+        ]
+      }
+    },
+    {
+      "rank": 23,
+      "player_id": 1006343033,
+      "champion": 2,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 5,
+      "total": 10,
+      "title_breakdown": {
+        "champion": [
+          35,
+          40
+        ],
+        "runnerup": [
+          38
+        ],
+        "top4": [
+          36,
+          39
+        ],
+        "top8": [
+          30,
+          31,
+          32,
+          37,
+          42
+        ]
+      }
+    },
+    {
+      "rank": 24,
+      "player_id": 1001342010,
+      "champion": 2,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 4,
+      "total": 9,
+      "title_breakdown": {
+        "champion": [
+          36,
+          37
+        ],
+        "runnerup": [
+          31
+        ],
+        "top4": [
+          30,
+          32
+        ],
+        "top8": [
+          6,
+          28,
+          35,
+          38
+        ]
+      }
+    },
+    {
+      "rank": 24,
+      "player_id": 1009915734,
+      "champion": 2,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 4,
+      "total": 9,
+      "title_breakdown": {
+        "champion": [
+          34,
+          42
+        ],
+        "runnerup": [
+          37
+        ],
+        "top4": [
+          35,
+          39
+        ],
+        "top8": [
+          9,
+          10,
+          21,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 26,
+      "player_id": 1002020918,
+      "champion": 2,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 1,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [
+          16,
+          17
+        ],
+        "runnerup": [
+          18
+        ],
+        "top4": [
+          14,
+          15
+        ],
+        "top8": [
+          12
+        ]
+      }
+    },
+    {
+      "rank": 27,
+      "player_id": 1008253117,
+      "champion": 2,
+      "runnerup": 1,
+      "top4": 1,
+      "top8": 1,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [
+          32,
+          34
+        ],
+        "runnerup": [
+          38
+        ],
+        "top4": [
+          39
+        ],
+        "top8": [
+          30
+        ]
+      }
+    },
+    {
+      "rank": 28,
+      "player_id": 1007154468,
+      "champion": 2,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [
+          39,
+          44
+        ],
+        "runnerup": [],
+        "top4": [
+          42
+        ],
+        "top8": [
+          34,
+          40
+        ]
+      }
+    },
+    {
+      "rank": 28,
+      "player_id": 1012076535,
+      "champion": 2,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [
+          2,
+          5
+        ],
+        "runnerup": [],
+        "top4": [
+          1
+        ],
+        "top8": [
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "rank": 30,
+      "player_id": 1010771671,
+      "champion": 1,
+      "runnerup": 5,
+      "top4": 2,
+      "top8": 2,
+      "total": 10,
+      "title_breakdown": {
+        "champion": [
+          5
+        ],
+        "runnerup": [
+          7,
+          8,
+          9,
+          11,
+          16
+        ],
+        "top4": [
+          12,
+          13
+        ],
+        "top8": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "rank": 31,
+      "player_id": 1001465025,
+      "champion": 1,
+      "runnerup": 2,
+      "top4": 2,
+      "top8": 3,
+      "total": 8,
+      "title_breakdown": {
+        "champion": [
+          36
+        ],
+        "runnerup": [
+          33,
+          40
+        ],
+        "top4": [
+          34,
+          38
+        ],
+        "top8": [
+          28,
+          30,
+          37
+        ]
+      }
+    },
+    {
+      "rank": 32,
+      "player_id": 1016561087,
+      "champion": 1,
+      "runnerup": 2,
+      "top4": 1,
+      "top8": 1,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [
+          21
+        ],
+        "runnerup": [
+          15,
+          20
+        ],
+        "top4": [
+          19
+        ],
+        "top8": [
+          17
+        ]
+      }
+    },
+    {
+      "rank": 33,
+      "player_id": 1009384962,
+      "champion": 1,
+      "runnerup": 1,
+      "top4": 5,
+      "top8": 6,
+      "total": 13,
+      "title_breakdown": {
+        "champion": [
+          41
+        ],
+        "runnerup": [
+          32
+        ],
+        "top4": [
+          26,
+          30,
+          38,
+          40,
+          42
+        ],
+        "top8": [
+          24,
+          29,
+          31,
+          35,
+          37,
+          39
+        ]
+      }
+    },
+    {
+      "rank": 34,
+      "player_id": 1008937858,
+      "champion": 1,
+      "runnerup": 1,
+      "top4": 4,
+      "top8": 2,
+      "total": 8,
+      "title_breakdown": {
+        "champion": [
+          12
+        ],
+        "runnerup": [
+          3
+        ],
+        "top4": [
+          2,
+          4,
+          9,
+          11
+        ],
+        "top8": [
+          5,
+          13
+        ]
+      }
+    },
+    {
+      "rank": 35,
+      "player_id": 1013543706,
+      "champion": 1,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 6,
+      "total": 10,
+      "title_breakdown": {
+        "champion": [
+          38
+        ],
+        "runnerup": [
+          41
+        ],
+        "top4": [
+          32,
+          43
+        ],
+        "top8": [
+          22,
+          36,
+          37,
+          39,
+          40,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 36,
+      "player_id": 1008433621,
+      "champion": 1,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 3,
+      "total": 7,
+      "title_breakdown": {
+        "champion": [
+          1
+        ],
+        "runnerup": [
+          2
+        ],
+        "top4": [
+          15,
+          19
+        ],
+        "top8": [
+          12,
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "rank": 37,
+      "player_id": 1009890934,
+      "champion": 1,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 1,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [
+          2
+        ],
+        "runnerup": [
+          11
+        ],
+        "top4": [
+          6,
+          8
+        ],
+        "top8": [
+          1
+        ]
+      }
+    },
+    {
+      "rank": 38,
+      "player_id": 1000803286,
+      "champion": 1,
+      "runnerup": 1,
+      "top4": 1,
+      "top8": 4,
+      "total": 7,
+      "title_breakdown": {
+        "champion": [
+          9
+        ],
+        "runnerup": [
+          1
+        ],
+        "top4": [
+          11
+        ],
+        "top8": [
+          3,
+          4,
+          5,
+          10
+        ]
+      }
+    },
+    {
+      "rank": 39,
+      "player_id": 1015093171,
+      "champion": 1,
+      "runnerup": 1,
+      "top4": 1,
+      "top8": 1,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [
+          23
+        ],
+        "runnerup": [
+          22
+        ],
+        "top4": [
+          21
+        ],
+        "top8": [
+          24
+        ]
+      }
+    },
+    {
+      "rank": 40,
+      "player_id": 1000316581,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 4,
+      "top8": 3,
+      "total": 8,
+      "title_breakdown": {
+        "champion": [
+          5
+        ],
+        "runnerup": [],
+        "top4": [
+          8,
+          9,
+          13,
+          15
+        ],
+        "top8": [
+          6,
+          10,
+          16
+        ]
+      }
+    },
+    {
+      "rank": 41,
+      "player_id": 1004195626,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 3,
+      "top8": 4,
+      "total": 8,
+      "title_breakdown": {
+        "champion": [
+          43
+        ],
+        "runnerup": [],
+        "top4": [
+          35,
+          38,
+          44
+        ],
+        "top8": [
+          25,
+          36,
+          37,
+          42
+        ]
+      }
+    },
+    {
+      "rank": 42,
+      "player_id": 1001822680,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 3,
+      "top8": 3,
+      "total": 7,
+      "title_breakdown": {
+        "champion": [
+          4
+        ],
+        "runnerup": [],
+        "top4": [
+          7,
+          11,
+          15
+        ],
+        "top8": [
+          2,
+          27,
+          29
+        ]
+      }
+    },
+    {
+      "rank": 43,
+      "player_id": 1015295712,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 3,
+      "top8": 2,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [
+          15
+        ],
+        "runnerup": [],
+        "top4": [
+          12,
+          14,
+          17
+        ],
+        "top8": [
+          10,
+          16
+        ]
+      }
+    },
+    {
+      "rank": 44,
+      "player_id": 1002124038,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 3,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [
+          4
+        ],
+        "runnerup": [],
+        "top4": [
+          5,
+          17
+        ],
+        "top8": [
+          1,
+          7,
+          10
+        ]
+      }
+    },
+    {
+      "rank": 45,
+      "player_id": 1001029980,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 10,
+      "total": 12,
+      "title_breakdown": {
+        "champion": [
+          25
+        ],
+        "runnerup": [],
+        "top4": [
+          9
+        ],
+        "top8": [
+          2,
+          7,
+          8,
+          11,
+          16,
+          17,
+          20,
+          22,
+          28,
+          30
+        ]
+      }
+    },
+    {
+      "rank": 46,
+      "player_id": 1011590199,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [
+          8
+        ],
+        "runnerup": [],
+        "top4": [
+          12
+        ],
+        "top8": [
+          9,
+          11
+        ]
+      }
+    },
+    {
+      "rank": 47,
+      "player_id": 1001598193,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [
+          1
+        ],
+        "runnerup": [],
+        "top4": [
+          13
+        ],
+        "top8": [
+          7
+        ]
+      }
+    },
+    {
+      "rank": 48,
+      "player_id": 1004691636,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [
+          35
+        ],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          32
+        ]
+      }
+    },
+    {
+      "rank": 49,
+      "player_id": 1006055152,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [
+          5
+        ],
+        "runnerup": [],
+        "top4": [],
+        "top8": []
+      }
+    },
+    {
+      "rank": 50,
+      "player_id": 1010881123,
+      "champion": 0,
+      "runnerup": 3,
+      "top4": 10,
+      "top8": 11,
+      "total": 24,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          28,
+          33,
+          36
+        ],
+        "top4": [
+          12,
+          25,
+          29,
+          30,
+          31,
+          37,
+          38,
+          40,
+          41,
+          44
+        ],
+        "top8": [
+          13,
+          16,
+          17,
+          19,
+          21,
+          22,
+          32,
+          34,
+          39,
+          42,
+          43
+        ]
+      }
+    },
+    {
+      "rank": 51,
+      "player_id": 1009094519,
+      "champion": 0,
+      "runnerup": 3,
+      "top4": 6,
+      "top8": 7,
+      "total": 16,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          20,
+          23,
+          24
+        ],
+        "top4": [
+          3,
+          7,
+          15,
+          16,
+          18,
+          26
+        ],
+        "top8": [
+          2,
+          4,
+          5,
+          6,
+          9,
+          14,
+          25
+        ]
+      }
+    },
+    {
+      "rank": 52,
+      "player_id": 1012151138,
+      "champion": 0,
+      "runnerup": 3,
+      "top4": 2,
+      "top8": 4,
+      "total": 9,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          5,
+          7,
+          14
+        ],
+        "top4": [
+          2,
+          20
+        ],
+        "top8": [
+          1,
+          4,
+          6,
+          22
+        ]
+      }
+    },
+    {
+      "rank": 53,
+      "player_id": 1002894128,
+      "champion": 0,
+      "runnerup": 3,
+      "top4": 2,
+      "top8": 2,
+      "total": 7,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          2,
+          4,
+          11
+        ],
+        "top4": [
+          5,
+          7
+        ],
+        "top8": [
+          3,
+          10
+        ]
+      }
+    },
+    {
+      "rank": 54,
+      "player_id": 1001784853,
+      "champion": 0,
+      "runnerup": 3,
+      "top4": 0,
+      "top8": 1,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          1,
+          2,
+          4
+        ],
+        "top4": [],
+        "top8": [
+          5
+        ]
+      }
+    },
+    {
+      "rank": 55,
+      "player_id": 1011460886,
+      "champion": 0,
+      "runnerup": 2,
+      "top4": 4,
+      "top8": 2,
+      "total": 8,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          35,
+          42
+        ],
+        "top4": [
+          40,
+          41,
+          43,
+          44
+        ],
+        "top8": [
+          27,
+          38
+        ]
+      }
+    },
+    {
+      "rank": 56,
+      "player_id": 1002498437,
+      "champion": 0,
+      "runnerup": 2,
+      "top4": 2,
+      "top8": 14,
+      "total": 18,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          26,
+          40
+        ],
+        "top4": [
+          37,
+          41
+        ],
+        "top8": [
+          5,
+          6,
+          7,
+          9,
+          10,
+          17,
+          20,
+          24,
+          25,
+          27,
+          29,
+          35,
+          36,
+          43
+        ]
+      }
+    },
+    {
+      "rank": 57,
+      "player_id": 1000389433,
+      "champion": 0,
+      "runnerup": 2,
+      "top4": 2,
+      "top8": 7,
+      "total": 11,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          18,
+          21
+        ],
+        "top4": [
+          24,
+          29
+        ],
+        "top8": [
+          19,
+          20,
+          22,
+          23,
+          25,
+          28,
+          35
+        ]
+      }
+    },
+    {
+      "rank": 58,
+      "player_id": 1000778393,
+      "champion": 0,
+      "runnerup": 2,
+      "top4": 2,
+      "top8": 2,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          6,
+          12
+        ],
+        "top4": [
+          8,
+          14
+        ],
+        "top8": [
+          7,
+          9
+        ]
+      }
+    },
+    {
+      "rank": 59,
+      "player_id": 1013634786,
+      "champion": 0,
+      "runnerup": 2,
+      "top4": 1,
+      "top8": 4,
+      "total": 7,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          15,
+          19
+        ],
+        "top4": [
+          29
+        ],
+        "top8": [
+          12,
+          13,
+          24,
+          30
+        ]
+      }
+    },
+    {
+      "rank": 60,
+      "player_id": 1011683399,
+      "champion": 0,
+      "runnerup": 2,
+      "top4": 0,
+      "top8": 3,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          3,
+          9
+        ],
+        "top4": [],
+        "top8": [
+          2,
+          5,
+          13
+        ]
+      }
+    },
+    {
+      "rank": 61,
+      "player_id": 1012919870,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 5,
+      "top8": 4,
+      "total": 10,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          20
+        ],
+        "top4": [
+          6,
+          10,
+          15,
+          16,
+          19
+        ],
+        "top8": [
+          4,
+          8,
+          11,
+          14
+        ]
+      }
+    },
+    {
+      "rank": 62,
+      "player_id": 1000308591,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 4,
+      "top8": 7,
+      "total": 12,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          5
+        ],
+        "top4": [
+          4,
+          6,
+          11,
+          16
+        ],
+        "top8": [
+          1,
+          7,
+          8,
+          10,
+          14,
+          17,
+          23
+        ]
+      }
+    },
+    {
+      "rank": 63,
+      "player_id": 1011099144,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 3,
+      "top8": 9,
+      "total": 13,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          27
+        ],
+        "top4": [
+          25,
+          28,
+          36
+        ],
+        "top8": [
+          23,
+          24,
+          26,
+          29,
+          33,
+          34,
+          35,
+          38,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 64,
+      "player_id": 1007896045,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 3,
+      "top8": 8,
+      "total": 12,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          7
+        ],
+        "top4": [
+          1,
+          12,
+          13
+        ],
+        "top8": [
+          2,
+          8,
+          9,
+          10,
+          11,
+          14,
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "rank": 65,
+      "player_id": 1010401683,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 3,
+      "top8": 4,
+      "total": 8,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          9
+        ],
+        "top4": [
+          2,
+          6,
+          10
+        ],
+        "top8": [
+          5,
+          8,
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "rank": 66,
+      "player_id": 1000016804,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 3,
+      "top8": 1,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          6
+        ],
+        "top4": [
+          2,
+          5,
+          7
+        ],
+        "top8": [
+          4
+        ]
+      }
+    },
+    {
+      "rank": 66,
+      "player_id": 1006597043,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 3,
+      "top8": 1,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          8
+        ],
+        "top4": [
+          9,
+          12,
+          14
+        ],
+        "top8": [
+          7
+        ]
+      }
+    },
+    {
+      "rank": 66,
+      "player_id": 1015790249,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 3,
+      "top8": 1,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          35
+        ],
+        "top4": [
+          20,
+          28,
+          33
+        ],
+        "top8": [
+          25
+        ]
+      }
+    },
+    {
+      "rank": 69,
+      "player_id": 1010769760,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 10,
+      "total": 13,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          36
+        ],
+        "top4": [
+          24,
+          42
+        ],
+        "top8": [
+          5,
+          16,
+          21,
+          26,
+          27,
+          28,
+          34,
+          38,
+          41,
+          43
+        ]
+      }
+    },
+    {
+      "rank": 70,
+      "player_id": 1012634994,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 5,
+      "total": 8,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          26
+        ],
+        "top4": [
+          22,
+          32
+        ],
+        "top8": [
+          13,
+          20,
+          21,
+          25,
+          29
+        ]
+      }
+    },
+    {
+      "rank": 71,
+      "player_id": 1000087066,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 4,
+      "total": 7,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          6
+        ],
+        "top4": [
+          10,
+          13
+        ],
+        "top8": [
+          4,
+          7,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "rank": 72,
+      "player_id": 1015153546,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 2,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          44
+        ],
+        "top4": [
+          35,
+          38
+        ],
+        "top8": [
+          26,
+          33
+        ]
+      }
+    },
+    {
+      "rank": 73,
+      "player_id": 1003723459,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 2,
+      "top8": 0,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          8
+        ],
+        "top4": [
+          5,
+          6
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 74,
+      "player_id": 1004933793,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 1,
+      "top8": 4,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          14
+        ],
+        "top4": [
+          12
+        ],
+        "top8": [
+          3,
+          5,
+          9,
+          11
+        ]
+      }
+    },
+    {
+      "rank": 74,
+      "player_id": 1014848743,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 1,
+      "top8": 4,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          37
+        ],
+        "top4": [
+          25
+        ],
+        "top8": [
+          14,
+          18,
+          35,
+          39
+        ]
+      }
+    },
+    {
+      "rank": 76,
+      "player_id": 1000016726,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 1,
+      "top8": 2,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          17
+        ],
+        "top4": [
+          16
+        ],
+        "top8": [
+          9,
+          18
+        ]
+      }
+    },
+    {
+      "rank": 77,
+      "player_id": 1006001102,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 1,
+      "top8": 1,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          1
+        ],
+        "top4": [
+          2
+        ],
+        "top8": [
+          5
+        ]
+      }
+    },
+    {
+      "rank": 78,
+      "player_id": 1000141948,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 1,
+      "top8": 0,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          18
+        ],
+        "top4": [
+          20
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 78,
+      "player_id": 1007030173,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 1,
+      "top8": 0,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          21
+        ],
+        "top4": [
+          14
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 80,
+      "player_id": 1010282712,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 0,
+      "top8": 6,
+      "total": 7,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          13
+        ],
+        "top4": [],
+        "top8": [
+          4,
+          6,
+          14,
+          15,
+          16,
+          18
+        ]
+      }
+    },
+    {
+      "rank": 81,
+      "player_id": 1000931257,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 0,
+      "top8": 3,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          1
+        ],
+        "top4": [],
+        "top8": [
+          7,
+          22,
+          35
+        ]
+      }
+    },
+    {
+      "rank": 81,
+      "player_id": 1009729459,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 0,
+      "top8": 3,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          44
+        ],
+        "top4": [],
+        "top8": [
+          36,
+          38,
+          42
+        ]
+      }
+    },
+    {
+      "rank": 83,
+      "player_id": 1004033010,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 0,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          25
+        ],
+        "top4": [],
+        "top8": [
+          18
+        ]
+      }
+    },
+    {
+      "rank": 83,
+      "player_id": 1005578181,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 0,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          5
+        ],
+        "top4": [],
+        "top8": [
+          11
+        ]
+      }
+    },
+    {
+      "rank": 83,
+      "player_id": 1005701569,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 0,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          2
+        ],
+        "top4": [],
+        "top8": [
+          1
+        ]
+      }
+    },
+    {
+      "rank": 86,
+      "player_id": 1000159635,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 0,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          1
+        ],
+        "top4": [],
+        "top8": []
+      }
+    },
+    {
+      "rank": 87,
+      "player_id": 1002131686,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 6,
+      "top8": 7,
+      "total": 13,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          5,
+          18,
+          23,
+          36,
+          37,
+          44
+        ],
+        "top8": [
+          2,
+          7,
+          17,
+          21,
+          38,
+          40,
+          41
+        ]
+      }
+    },
+    {
+      "rank": 88,
+      "player_id": 1012691184,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 4,
+      "top8": 7,
+      "total": 11,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          5,
+          18,
+          23,
+          31
+        ],
+        "top8": [
+          6,
+          8,
+          12,
+          20,
+          22,
+          27,
+          33
+        ]
+      }
+    },
+    {
+      "rank": 89,
+      "player_id": 1000708405,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 4,
+      "top8": 2,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          11,
+          12,
+          15,
+          17
+        ],
+        "top8": [
+          4,
+          20
+        ]
+      }
+    },
+    {
+      "rank": 90,
+      "player_id": 1005558306,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 3,
+      "top8": 6,
+      "total": 9,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          4,
+          7,
+          21
+        ],
+        "top8": [
+          6,
+          15,
+          19,
+          22,
+          23,
+          25
+        ]
+      }
+    },
+    {
+      "rank": 91,
+      "player_id": 1004418671,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 3,
+      "top8": 4,
+      "total": 7,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          17,
+          20,
+          23
+        ],
+        "top8": [
+          10,
+          16,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "rank": 92,
+      "player_id": 1000176731,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 9,
+      "total": 11,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          21,
+          37
+        ],
+        "top8": [
+          8,
+          11,
+          13,
+          14,
+          15,
+          18,
+          27,
+          29,
+          36
+        ]
+      }
+    },
+    {
+      "rank": 93,
+      "player_id": 1010470705,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 5,
+      "total": 7,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          10,
+          17
+        ],
+        "top8": [
+          13,
+          16,
+          21,
+          23,
+          24
+        ]
+      }
+    },
+    {
+      "rank": 94,
+      "player_id": 1011133252,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 3,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          4,
+          16
+        ],
+        "top8": [
+          1,
+          12,
+          15
+        ]
+      }
+    },
+    {
+      "rank": 94,
+      "player_id": 1013914485,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 3,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          21,
+          22
+        ],
+        "top8": [
+          16,
+          18,
+          24
+        ]
+      }
+    },
+    {
+      "rank": 96,
+      "player_id": 1010610745,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 2,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          9,
+          10
+        ],
+        "top8": [
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "rank": 96,
+      "player_id": 1016780744,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 2,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          37,
+          39
+        ],
+        "top8": [
+          31,
+          38
+        ]
+      }
+    },
+    {
+      "rank": 98,
+      "player_id": 1000671672,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 1,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          4,
+          5
+        ],
+        "top8": [
+          2
+        ]
+      }
+    },
+    {
+      "rank": 98,
+      "player_id": 1001986106,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 1,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          2,
+          4
+        ],
+        "top8": [
+          5
+        ]
+      }
+    },
+    {
+      "rank": 98,
+      "player_id": 1011954531,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 1,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          4,
+          6
+        ],
+        "top8": [
+          9
+        ]
+      }
+    },
+    {
+      "rank": 101,
+      "player_id": 1000757345,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 2,
+      "top8": 0,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          8,
+          9
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 102,
+      "player_id": 1004297917,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 6,
+      "total": 7,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          17
+        ],
+        "top8": [
+          1,
+          4,
+          16,
+          19,
+          30,
+          32
+        ]
+      }
+    },
+    {
+      "rank": 103,
+      "player_id": 1009721814,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 5,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          17
+        ],
+        "top8": [
+          6,
+          10,
+          11,
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "rank": 103,
+      "player_id": 1012694234,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 5,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          16
+        ],
+        "top8": [
+          11,
+          12,
+          17,
+          27,
+          40
+        ]
+      }
+    },
+    {
+      "rank": 105,
+      "player_id": 1008799512,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 3,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          1
+        ],
+        "top8": [
+          14,
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "rank": 105,
+      "player_id": 1009001109,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 3,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          35
+        ],
+        "top8": [
+          37,
+          38,
+          41
+        ]
+      }
+    },
+    {
+      "rank": 105,
+      "player_id": 1009669842,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 3,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          26
+        ],
+        "top8": [
+          15,
+          20,
+          33
+        ]
+      }
+    },
+    {
+      "rank": 105,
+      "player_id": 1014113634,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 3,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          28
+        ],
+        "top8": [
+          18,
+          35,
+          40
+        ]
+      }
+    },
+    {
+      "rank": 105,
+      "player_id": 1016084994,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 3,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          22
+        ],
+        "top8": [
+          28,
+          34,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 105,
+      "player_id": 1016805088,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 3,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          43
+        ],
+        "top8": [
+          28,
+          41,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 105,
+      "player_id": 1017512160,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 3,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          34
+        ],
+        "top8": [
+          33,
+          37,
+          39
+        ]
+      }
+    },
+    {
+      "rank": 112,
+      "player_id": 1001694666,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          16
+        ],
+        "top8": [
+          14,
+          17
+        ]
+      }
+    },
+    {
+      "rank": 112,
+      "player_id": 1003196558,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          33
+        ],
+        "top8": [
+          25,
+          28
+        ]
+      }
+    },
+    {
+      "rank": 112,
+      "player_id": 1004034555,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          4
+        ],
+        "top8": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "rank": 112,
+      "player_id": 1005703083,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          16
+        ],
+        "top8": [
+          13,
+          17
+        ]
+      }
+    },
+    {
+      "rank": 112,
+      "player_id": 1007048151,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          2
+        ],
+        "top8": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "rank": 112,
+      "player_id": 1010386247,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          7
+        ],
+        "top8": [
+          13,
+          17
+        ]
+      }
+    },
+    {
+      "rank": 112,
+      "player_id": 1011642170,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          38
+        ],
+        "top8": [
+          15,
+          31
+        ]
+      }
+    },
+    {
+      "rank": 112,
+      "player_id": 1013233557,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          28
+        ],
+        "top8": [
+          21,
+          25
+        ]
+      }
+    },
+    {
+      "rank": 112,
+      "player_id": 1015543253,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 2,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          43
+        ],
+        "top8": [
+          41,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 121,
+      "player_id": 1000203410,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          10
+        ],
+        "top8": [
+          11
+        ]
+      }
+    },
+    {
+      "rank": 121,
+      "player_id": 1000442864,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          4
+        ],
+        "top8": [
+          8
+        ]
+      }
+    },
+    {
+      "rank": 121,
+      "player_id": 1000569969,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          1
+        ],
+        "top8": [
+          2
+        ]
+      }
+    },
+    {
+      "rank": 121,
+      "player_id": 1002809575,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          5
+        ],
+        "top8": [
+          4
+        ]
+      }
+    },
+    {
+      "rank": 121,
+      "player_id": 1003016100,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          8
+        ],
+        "top8": [
+          1
+        ]
+      }
+    },
+    {
+      "rank": 121,
+      "player_id": 1011350600,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          6
+        ],
+        "top8": [
+          16
+        ]
+      }
+    },
+    {
+      "rank": 121,
+      "player_id": 1011671264,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          13
+        ],
+        "top8": [
+          18
+        ]
+      }
+    },
+    {
+      "rank": 121,
+      "player_id": 1012954538,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          1
+        ],
+        "top8": [
+          8
+        ]
+      }
+    },
+    {
+      "rank": 121,
+      "player_id": 1014600660,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          40
+        ],
+        "top8": [
+          39
+        ]
+      }
+    },
+    {
+      "rank": 121,
+      "player_id": 1015232568,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 1,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          23
+        ],
+        "top8": [
+          24
+        ]
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1000187385,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          1
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1005774033,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          14
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1007832972,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          8
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1008087504,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          1
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1008581843,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          9
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1009115730,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          2
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1009247467,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          11
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1009260412,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          1
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1009805701,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          14
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1011246740,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          15
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 131,
+      "player_id": 1015320033,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 0,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [
+          16
+        ],
+        "top8": []
+      }
+    },
+    {
+      "rank": 142,
+      "player_id": 1007183744,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 6,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1,
+          2,
+          9,
+          10,
+          12,
+          16
+        ]
+      }
+    },
+    {
+      "rank": 143,
+      "player_id": 1000180094,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 4,
+      "total": 4,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          10,
+          28,
+          33,
+          36
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1002284777,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          2,
+          7,
+          10
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1004279547,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          10,
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1004977110,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1,
+          6,
+          11
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1005157876,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          26,
+          29,
+          38
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1006248137,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1007407494,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          5,
+          9,
+          13
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1007908791,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          14,
+          17,
+          26
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1008490630,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          34,
+          35,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1010226965,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1,
+          2,
+          12
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1010311971,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          17,
+          18,
+          32
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1011132639,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          11,
+          16,
+          19
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1011259299,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          28,
+          35,
+          38
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1011571906,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          9,
+          12,
+          14
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1015898599,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          29,
+          30,
+          31
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1016325370,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          37,
+          38,
+          39
+        ]
+      }
+    },
+    {
+      "rank": 144,
+      "player_id": 1016589939,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 3,
+      "total": 3,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          19,
+          23,
+          30
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1000113662,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          11,
+          15
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1000148302,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          36,
+          43
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1000155984,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          31,
+          34
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1000376747,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          32,
+          40
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1000382637,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          2,
+          9
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1000736711,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          15,
+          17
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1000923097,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          25,
+          38
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1000924552,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1,
+          8
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1001364606,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          15,
+          20
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1001804360,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1004578555,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1004635140,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          7,
+          11
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1004743871,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1005699761,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          4,
+          7
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1006060341,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          6,
+          13
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1007092047,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          2,
+          6
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1007908391,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          8,
+          17
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1008319357,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          14,
+          16
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1008987008,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          13,
+          15
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1009348378,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          41,
+          43
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1009545087,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1010777105,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          13,
+          15
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1010802395,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          15,
+          16
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1011609741,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          5,
+          11
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1012704103,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          2,
+          9
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1013552053,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          23,
+          37
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1015214712,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          8,
+          15
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1015359931,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          25,
+          40
+        ]
+      }
+    },
+    {
+      "rank": 160,
+      "player_id": 1015766681,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          35,
+          37
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000016044,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          5
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000080565,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          8
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000152580,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          8
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000154345,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000179615,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          20
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000198641,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          12
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000342386,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          31
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000371825,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          14
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000617413,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          20
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000641695,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          5
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000719163,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          16
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000733261,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          39
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000885690,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000905952,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          9
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1000936677,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          4
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1001502836,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          41
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1001620432,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          13
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1001627033,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          6
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1001668136,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          14
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1001700739,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          14
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1002120122,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          19
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1002394893,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          2
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1002839709,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          21
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1004257718,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          10
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1004411711,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1004668839,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          19
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1005048569,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          14
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1005183342,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          11
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1005219081,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          14
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1005265465,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          8
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1005497840,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          43
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1005784908,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          8
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1006023215,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          4
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1006462090,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          18
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1006562409,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          17
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1006622074,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          16
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1007196538,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1007439153,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          28
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1007820890,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          35
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1008112329,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          5
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1008480319,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1008904301,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          23
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1009040439,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          18
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1009091755,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          13
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1009108787,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          28
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1009401294,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          40
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1009427722,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          6
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1009492171,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          2
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1009668073,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          4
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1009782256,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          7
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1009819070,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          22
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1010042475,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          22
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1010267251,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          11
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1010822175,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          15
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1010857525,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          1
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1011139077,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          12
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1011178420,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          6
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1011327613,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          42
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1011531291,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          33
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1011617345,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          4
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1011774289,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          10
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1011832810,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          5
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1012137772,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          32
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1012180455,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          37
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1012899207,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          9
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1013165416,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          6
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1013191443,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          7
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1013559376,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          23
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1013616607,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          37
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1013888676,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          8
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1015219682,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          10
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1015296763,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          42
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1015635923,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          21
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1015768624,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          42
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1016629173,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          25
+        ]
+      }
+    },
+    {
+      "rank": 189,
+      "player_id": 1016760318,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          43
+        ]
+      }
+    }
+  ]
+}

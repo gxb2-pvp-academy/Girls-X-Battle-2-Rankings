@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Details - GXB2 Rankings</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/player-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Add Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <!-- Top Navigation Menu -->
+    <nav class="nav-container">
+        <div class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home nav-icon"></i>Welcome
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="world-ranking.html" class="nav-link">
+                        <i class="fas fa-medal nav-icon"></i>World Ranking
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="player-search.html" class="nav-link active">
+                        <i class="fas fa-user nav-icon"></i>Player
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-list-ol nav-icon"></i>Other Rankings
+                    </a>
+                    <ul class="dropdown-menu">
+                        <a href="highest-score.html" class="dropdown-item">Highest Score Ranking</a>
+                        <a href="historical-season.html" class="dropdown-item">Historical Season Ranking</a>
+                        <a href="total-title.html" class="dropdown-item">Total Title Ranking</a>
+                        <a href="no1-holder-consecutive.html" class="dropdown-item">World No.1 Ranking (Consecutive)</a>
+                        <a href="no1-holder-regular.html" class="dropdown-item">World No.1 Ranking (Regular)</a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle nav-icon"></i>About
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Player Details</h1>
+            <div class="breadcrumb">
+                <a href="#" id="back-link">Back to Previous Page</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="page-container">
+        <main class="container">
+            <div id="loading">Loading player data...</div>
+            <div id="error-message" class="error-message hidden">Player not found or data unavailable.</div>
+            
+            <div id="player-content" class="hidden">
+                <!-- Player Card -->
+                <div class="player-card">
+                    <div class="player-card-header">
+                        <div class="player-logo">Girls X Battle 2</div>
+                        <h2 class="player-card-title">PLAYER PROFILE</h2>
+                    </div>
+                    
+                    <div class="player-card-content">
+                        <div class="player-left-column">
+                            <div class="player-id-section">
+                                <h3>Player ID</h3>
+                                <div id="player-id" class="player-id"></div>
+                            </div>
+                            
+                            <div class="player-image-container">
+                                <img id="player-image" src="images/no-image.png" alt="Player Image">
+                            </div>
+                        </div>
+                        
+                        <div class="player-right-column">
+                            <div class="player-stat">
+                                <div class="stat-label">Current World Ranking:</div>
+                                <div id="current-ranking" class="stat-value"></div>
+                            </div>
+                            
+                            <div class="player-stat">
+                                <div class="stat-label">Highest World Ranking:</div>
+                                <div id="highest-ranking" class="stat-value"></div>
+                            </div>
+                            
+                            <div class="player-stat">
+                                <div class="stat-label">Highest Score:</div>
+                                <div id="highest-score" class="stat-value"></div>
+                            </div>
+                            
+                            <div class="player-stat">
+                                <div class="stat-label">Titles:</div>
+                                <div class="stat-value title-stats">
+                                    <span>Total: <span id="total-titles" class="total"></span></span>
+                                    (<span id="champion-count" class="champion"></span>/<span id="runnerup-count" class="runnerup"></span>/<span id="top4-count" class="top4"></span>/<span id="top8-count" class="top8"></span>)
+                                </div>
+                            </div>
+                            
+                            <div class="player-stat">
+                                <div class="stat-label">World No.1 Seasons:</div>
+                                <div id="no1-seasons" class="stat-value"></div>
+                            </div>
+                            
+                            <div class="player-stat">
+                                <div class="stat-label">Appearances:</div>
+                                <div id="appearances" class="stat-value"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="player-card-footer">
+                        <div id="last-updated">Last Updated: -</div>
+                    </div>
+                </div>
+                
+                <!-- Player History Chart -->
+                <div class="chart-section">
+                    <h3>Player Score & Ranking History</h3>
+                    <div class="chart-container">
+                        <canvas id="player-history-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <p>GXB2 Rankings | <span id="footer-year">2025</span></p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/player-detail.js"></script>
+</body>
+</html>

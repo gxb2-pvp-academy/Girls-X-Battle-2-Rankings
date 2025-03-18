@@ -1,0 +1,2853 @@
+{
+  "last_updated": "2025-03-17",
+  "season": 3,
+  "rankings": [
+    {
+      "rank": 1,
+      "player_id": 1000651108,
+      "score": 2200,
+      "previous_score": 2000,
+      "change": 0,
+      "score_breakdown": {
+        "champion": {
+          "count": 2,
+          "seasons": [
+            1,
+            2
+          ]
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 1000,
+          "rank": 1
+        },
+        {
+          "season": 2,
+          "score": 2000,
+          "rank": 1
+        },
+        {
+          "season": 3,
+          "score": 2200,
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "player_id": 1010736094,
+      "score": 2000,
+      "previous_score": 1000,
+      "change": 6,
+      "score_breakdown": {
+        "champion": {
+          "count": 2,
+          "seasons": [
+            2,
+            3
+          ]
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 1000,
+          "rank": 8
+        },
+        {
+          "season": 3,
+          "score": 2000,
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "player_id": 1008365307,
+      "score": 1400,
+      "previous_score": 1400,
+      "change": -1,
+      "score_breakdown": {
+        "champion": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 1000,
+          "rank": 1
+        },
+        {
+          "season": 2,
+          "score": 1400,
+          "rank": 2
+        },
+        {
+          "season": 3,
+          "score": 1400,
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "player_id": 1008433621,
+      "score": 1400,
+      "previous_score": 1400,
+      "change": -1,
+      "score_breakdown": {
+        "champion": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 1000,
+          "rank": 1
+        },
+        {
+          "season": 2,
+          "score": 1400,
+          "rank": 2
+        },
+        {
+          "season": 3,
+          "score": 1400,
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "player_id": 1001432747,
+      "score": 1300,
+      "previous_score": 1200,
+      "change": -1,
+      "score_breakdown": {
+        "champion": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 1000,
+          "rank": 1
+        },
+        {
+          "season": 2,
+          "score": 1200,
+          "rank": 4
+        },
+        {
+          "season": 3,
+          "score": 1300,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "player_id": 1012076535,
+      "score": 1300,
+      "previous_score": 1200,
+      "change": -1,
+      "score_breakdown": {
+        "champion": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 200,
+          "rank": 11
+        },
+        {
+          "season": 2,
+          "score": 1200,
+          "rank": 4
+        },
+        {
+          "season": 3,
+          "score": 1300,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "player_id": 1000597840,
+      "score": 1200,
+      "previous_score": 1200,
+      "change": -3,
+      "score_breakdown": {
+        "champion": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 200,
+          "rank": 11
+        },
+        {
+          "season": 2,
+          "score": 1200,
+          "rank": 4
+        },
+        {
+          "season": 3,
+          "score": 1200,
+          "rank": 7
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "player_id": 1011900902,
+      "score": 1200,
+      "previous_score": 200,
+      "change": 13,
+      "score_breakdown": {
+        "champion": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 200,
+          "rank": 11
+        },
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 1200,
+          "rank": 7
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "player_id": 1009890934,
+      "score": 1100,
+      "previous_score": 1100,
+      "change": -2,
+      "score_breakdown": {
+        "champion": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 1100,
+          "rank": 7
+        },
+        {
+          "season": 3,
+          "score": 1100,
+          "rank": 9
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "player_id": 1001598193,
+      "score": 1000,
+      "previous_score": 1000,
+      "change": -2,
+      "score_breakdown": {
+        "champion": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 1000,
+          "rank": 1
+        },
+        {
+          "season": 2,
+          "score": 1000,
+          "rank": 8
+        },
+        {
+          "season": 3,
+          "score": 1000,
+          "rank": 10
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "player_id": 1001784853,
+      "score": 800,
+      "previous_score": 800,
+      "change": -1,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 2,
+          "seasons": [
+            1,
+            2
+          ]
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 400,
+          "rank": 6
+        },
+        {
+          "season": 2,
+          "score": 800,
+          "rank": 10
+        },
+        {
+          "season": 3,
+          "score": 800,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "player_id": 1006001102,
+      "score": 600,
+      "previous_score": 600,
+      "change": -1,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 400,
+          "rank": 6
+        },
+        {
+          "season": 2,
+          "score": 600,
+          "rank": 11
+        },
+        {
+          "season": 3,
+          "score": 600,
+          "rank": 12
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "player_id": 1008937858,
+      "score": 600,
+      "previous_score": 200,
+      "change": 8,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 600,
+          "rank": 12
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "player_id": 1000803286,
+      "score": 500,
+      "previous_score": 400,
+      "change": -1,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 400,
+          "rank": 6
+        },
+        {
+          "season": 2,
+          "score": 400,
+          "rank": 13
+        },
+        {
+          "season": 3,
+          "score": 500,
+          "rank": 14
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "player_id": 1002894128,
+      "score": 500,
+      "previous_score": 400,
+      "change": -1,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 400,
+          "rank": 13
+        },
+        {
+          "season": 3,
+          "score": 500,
+          "rank": 14
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "player_id": 1005701569,
+      "score": 500,
+      "previous_score": 500,
+      "change": -2,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 500,
+          "rank": 12
+        },
+        {
+          "season": 3,
+          "score": 500,
+          "rank": 14
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "player_id": 1011683399,
+      "score": 500,
+      "previous_score": 100,
+      "change": 22,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 500,
+          "rank": 14
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "player_id": 1000159635,
+      "score": 400,
+      "previous_score": 400,
+      "change": -5,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 400,
+          "rank": 6
+        },
+        {
+          "season": 2,
+          "score": 400,
+          "rank": 13
+        },
+        {
+          "season": 3,
+          "score": 400,
+          "rank": 18
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "player_id": 1000813837,
+      "score": 400,
+      "previous_score": 200,
+      "change": 2,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 2,
+          "seasons": [
+            2,
+            3
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 400,
+          "rank": 18
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "player_id": 1000931257,
+      "score": 400,
+      "previous_score": 400,
+      "change": -5,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 400,
+          "rank": 6
+        },
+        {
+          "season": 2,
+          "score": 400,
+          "rank": 13
+        },
+        {
+          "season": 3,
+          "score": 400,
+          "rank": 18
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "player_id": 1000569969,
+      "score": 300,
+      "previous_score": 300,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 200,
+          "rank": 11
+        },
+        {
+          "season": 2,
+          "score": 300,
+          "rank": 17
+        },
+        {
+          "season": 3,
+          "score": 300,
+          "rank": 21
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "player_id": 1006248137,
+      "score": 300,
+      "previous_score": 200,
+      "change": -1,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 3,
+          "seasons": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 300,
+          "rank": 21
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "player_id": 1007896045,
+      "score": 300,
+      "previous_score": 300,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 200,
+          "rank": 11
+        },
+        {
+          "season": 2,
+          "score": 300,
+          "rank": 17
+        },
+        {
+          "season": 3,
+          "score": 300,
+          "rank": 21
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "player_id": 1009094519,
+      "score": 300,
+      "previous_score": 100,
+      "change": 15,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 300,
+          "rank": 21
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "player_id": 1012151138,
+      "score": 300,
+      "previous_score": 300,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 300,
+          "rank": 17
+        },
+        {
+          "season": 3,
+          "score": 300,
+          "rank": 21
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1000016804,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1000018964,
+      "score": 200,
+      "previous_score": 0,
+      "change": "new",
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1000187385,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 200,
+          "rank": 11
+        },
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1001986106,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1004034555,
+      "score": 200,
+      "previous_score": 100,
+      "change": 10,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 2,
+          "seasons": [
+            1,
+            3
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1007048151,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1007183744,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 2,
+          "seasons": [
+            1,
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1008087504,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 200,
+          "rank": 11
+        },
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1008799512,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 200,
+          "rank": 11
+        },
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1009115730,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1009260412,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 200,
+          "rank": 11
+        },
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1010226965,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 2,
+          "seasons": [
+            1,
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1010401683,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "player_id": 1012954538,
+      "score": 200,
+      "previous_score": 200,
+      "change": -6,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 200,
+          "rank": 11
+        },
+        {
+          "season": 2,
+          "score": 200,
+          "rank": 20
+        },
+        {
+          "season": 3,
+          "score": 200,
+          "rank": 26
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1000154345,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1000308591,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1000382637,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1000671672,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1000700965,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1000885690,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1000924552,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1001029980,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1001822680,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1002124038,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1002131686,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1002284777,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1002394893,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1003016100,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1004297917,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1004411711,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1004743871,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1004933793,
+      "score": 100,
+      "previous_score": 0,
+      "change": "new",
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1004977110,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1007092047,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1007196538,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1008480319,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1009492171,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1009545087,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1010610745,
+      "score": 100,
+      "previous_score": 0,
+      "change": "new",
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            3
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1010857525,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1011133252,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            1
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 1,
+          "score": 100,
+          "rank": 21
+        },
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "player_id": 1012704103,
+      "score": 100,
+      "previous_score": 100,
+      "change": -4,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            2
+          ]
+        }
+      },
+      "history": [
+        {
+          "season": 2,
+          "score": 100,
+          "rank": 36
+        },
+        {
+          "season": 3,
+          "score": 100,
+          "rank": 40
+        }
+      ]
+    }
+  ]
+}

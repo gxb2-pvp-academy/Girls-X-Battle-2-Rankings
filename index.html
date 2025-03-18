@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - GXB2 Rankings</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional welcome page styling */
+        .welcome-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .welcome-section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .welcome-title {
+            color: var(--dark);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .welcome-subtitle {
+            color: var(--primary);
+            margin: 25px 0 15px;
+            font-weight: 600;
+        }
+        
+        .feature-card {
+            background: #f9f9f9;
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+        
+        .navigation-list, .interaction-list {
+            padding-left: 20px;
+        }
+        
+        .navigation-list li, .interaction-list li {
+            margin-bottom: 12px;
+        }
+        
+        .menu-item {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .interaction-type {
+            font-weight: 600;
+            color: var(--secondary);
+            margin-top: 15px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .table-type {
+            font-weight: 500;
+            margin-top: 15px;
+            color: var(--dark);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Top Navigation Menu -->
+    <nav class="nav-container">
+        <div class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        <i class="fas fa-home nav-icon"></i>Welcome
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="world-ranking.html" class="nav-link">
+                        <i class="fas fa-medal nav-icon"></i>World Ranking
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="player-search.html" class="nav-link">
+                        <i class="fas fa-user nav-icon"></i>Player
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-list-ol nav-icon"></i>Other Rankings
+                    </a>
+                    <ul class="dropdown-menu">
+                        <a href="highest-score.html" class="dropdown-item">Highest Score Ranking</a>
+                        <a href="historical-season.html" class="dropdown-item">Historical Season Ranking</a>
+                        <a href="total-title.html" class="dropdown-item">Total Title Ranking</a>
+                        <a href="no1-holder-consecutive.html" class="dropdown-item">World No.1 Ranking (Consecutive)</a>
+                        <a href="no1-holder-regular.html" class="dropdown-item">World No.1 Ranking (Regular)</a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle nav-icon"></i>About
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Girls X Battle 2 Rankings</h1>
+        </div>
+    </header>
+    
+    <div class="page-container">
+        <main class="container welcome-content">
+            <!-- Introduction Section -->
+            <section class="welcome-section">
+                <h2 class="welcome-title">Welcome to Girls X Battle 2 Rankings</h2>
+                <p>This comprehensive portal ranks and analyzes professional players based on their performance in Girls X Battle 2 Ultimate League. Similar to many esport rankings, this ranking system rewards consistent high performance throughout multiple seasons.</p>
+                <p>Use the navigation menu at the top to explore different ranking categories and search for specific player statistics.</p>
+                <p><strong>Note: For fair evaluation, only placements after the Ultimate League feature is updated are taken into account, so some statistics may look different from the in-game ones.</strong></p>
+            </section>
+            
+            <!-- Scoring System Section -->
+            <section class="welcome-section">
+                <h2 class="welcome-title">Scoring System Explanation</h2>
+                <p>The GXB2 World Ranking is based on a point system that rewards players for their final placements in the Ultimate League. Here's how it works:</p>
+                
+                <h3 class="welcome-subtitle">Points Allocation</h3>
+                <div class="feature-card">
+                    <div class="feature-title">Base Points by Placement</div>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><strong class="champion" style="color: gold;">Champion:</strong> 1000 points</li>
+                        <li><strong class="runnerup" style="color: silver;">Runner-up:</strong> 400 points</li>
+                        <li><strong class="top4" style="color: #cd7f32;">Top-4:</strong> 200 points</li>
+                        <li><strong class="top8" style="color: #a0d6b4;">Top-8:</strong> 100 points</li>
+                        <li><strong style="color: #000000;">Not qualified for the Final stage:</strong> 0 point</li>
+                    </ul>
+                </div>
+                
+                <h3 class="welcome-subtitle">Calculation Method</h3>
+                <p>The World Ranking score for a player is calculated as follows:</p>
+                    <li><strong>Six-Season Window:</strong> Only performances from the most recent six seasons are considered</li>
+                    <li><strong>Cumulative Points:</strong> All points earned within the six-season window are added together</li>
+                    <li><strong>No Decay:</strong> Points do not decay over time within the six-season window</li>
+                    <li><strong>Multiple Achievements:</strong> If a player achieves multiple placements within the six-season window, they receive points for all these placements</li>
+                
+                <h3 class="welcome-subtitle">Ranking Determination</h3>
+                <p>Players are ranked based on the following criteria:</p>
+                    <li><strong>Total Score:</strong> Players with higher total scores are ranked higher</li>
+                    <li><strong>Tie-Breaker:</strong> If two or more players have the same score, they receive the same rank</li>
+                    <li><strong>ID Order:</strong> When displaying tied players, they are sorted by player ID (ascending)</li>
+                
+                <div class="feature-card" style="background-color: rgba(243, 156, 18, 0.1); margin-top: 15px;">
+                    <div class="feature-title"><i class="fas fa-calculator"></i> Example Calculation</div>
+                    <p>If a player achieves the following placements over the past six seasons (assume the current season is Season 36):</p>
+                        <li>Season 36: <strong style="color: #000000;">Not qualified for the Final stage</strong> (0 point)</li>
+                        <li>Season 35: <strong class="champion" style="color: gold;">Champion</strong> (1000 points)</li>
+                        <li>Season 34: <strong style="color: #000000;">Not qualified for the Final stage</strong> (0 point)</li>
+                        <li>Season 33: <strong class="top4" style="color: #cd7f32;">Top-4</strong> (200 points)</li>
+                        <li>Season 32: <strong class="top8" style="color: #a0d6b4;">Top-8</strong> (100 points)</li>
+                        <li>Season 31: <strong class="runnerup" style="color: silver;">Runner-up</strong> (400 point)</li>
+                    <p>This player's total score for the current season would be: 400 + 100 + 200 + 0 + 1000 + 0 = 1700 points</p>
+                </div>
+            </section>
+            
+            <!-- Navigation Features Section -->
+            <section class="welcome-section">
+                <h2 class="welcome-title">Navigation Guide</h2>
+                <p>This website offers several specialized views to analyze player performance:</p>
+                
+                <h3 class="welcome-subtitle">Main Menu Items</h3>
+                <ul class="navigation-list">
+                    <li>
+                        <div class="feature-card">
+                            <div class="feature-title"><a href="world-ranking.html"><i class="fas fa-medal"></i> World Ranking</a></div>
+                            <p>The primary ranking system showing overall player performance across the most recent six seasons. Players earn points based on their final placements (Champion, Runner-up, Top-4, Top-8).</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-card">
+                            <div class="feature-title"><a href="player-search.html"><i class="fas fa-user"></i> Player Search</a></div>
+                            <p>Look up detailed statistics for any player who has appeared in the Ultimate League Final stage. View their complete history, highest achievements, and performance trends over time.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-card">
+                            <div class="feature-title"><i class="fas fa-list-ol"></i> Other Rankings</div>
+                            <p>Additional specialized ranking categories that highlight different aspects of competitive achievement:</p>
+                            
+                            <ul style="padding-left: 20px; margin-top: 10px;">
+                                <li>
+                                    <span class="menu-item"><a href="highest-score.html">Highest Score Ranking</a>:</span> Shows the highest point total ever achieved by players in any six-season window, recognizing historically dominant performances.
+                                </li>
+                                <li>
+                                    <span class="menu-item"><a href="historical-season.html">Historical Season Ranking</a>:</span> Access complete rankings from previous seasons to track how the competitive landscape has evolved over time.
+                                </li>
+                                <li>
+                                    <span class="menu-item"><a href="total-title.html">Total Title Ranking</a>:</span> Players ranked by their total number of championship titles and finalist appearances, prioritizing higher placements.
+                                </li>
+                                <li>
+                                    <span class="menu-item"><a href="no1-holder-consecutive.html">World No.1 Ranking (Consecutive)</a>:</span> Highlights players who maintained the World No.1 position for the longest consecutive streak of seasons.
+                                </li>
+                                <li>
+                                    <span class="menu-item"><a href="no1-holder-regular.html">World No.1 Ranking (Regular)</a>:</span> Tracks players with the most total seasons (not necessarily consecutive) as the World No.1.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            
+            <!-- User Interactions Section -->
+            <section class="welcome-section">
+                <h2 class="welcome-title">Interactive Features Guide</h2>
+                <p>Our ranking tables offer rich interactive elements that reveal additional information and statistics:</p>
+                
+                <div class="interaction-list">
+                    <span class="interaction-type">Clickable Rows</span>
+                    <p>All ranking tables have clickable rows that navigate to detailed player profiles:</p>
+                        <li>Click on any row in any ranking table to view that player's complete profile</li>
+                        <li>The player profile page includes a comprehensive history chart showing score and rank over time</li>
+                        <li>Use the "Back to..." link in the player profile to return to your previous ranking view</li>
+                    
+                    <span class="interaction-type">Score and Title Breakdowns</span>
+                    <p>Access detailed breakdowns of player achievements by hovering over specific cells:</p>
+                    
+                    <span class="table-type">World Ranking Table:</span>
+                        <li>Hover over the <strong>Score</strong> column to see a breakdown of Championship, Runner-up, Top-4, and Top-8 placements that contributed to that score</li>
+                        <li>Hover over any player row to display a <strong>Score History Chart</strong> showing that player's performance trend in the six most recent seasons</li>
+                    
+                    <span class="table-type">Highest Score Ranking Table:</span>
+                        <li>Hover over the <strong>Highest Score</strong> column to see a breakdown of Championship, Runner-up, Top-4, and Top-8 placements that contributed to that score</li>
+                    
+                    <span class="table-type">Total Title Ranking Table:</span>
+                        <li>Hover over any title count column (<strong>Champion</strong>, <strong>Runner-up</strong>, <strong>Top-4</strong>, <strong>Top-8</strong>, <strong>Total</strong>) to see which specific seasons the player achieved that placement</li>
+                    
+                    <span class="table-type">World No.1 Rankings (both types):</span>
+                        <li>Hover over the <strong>Seasons</strong> column to see which seasons the player held the No.1 position</li>
+                    
+                    <span class="table-type">Historical Season Ranking:</span>
+                        <li>Select a specific season from the dropdown to view rankings from that season</li>
+                        <li>Hover over the <strong>Score</strong> column to see title breakdowns for that historical season</li>
+                        <li>Hover over any player row to display a <strong>Score History Chart</strong> showing that player's six most recent seasons' performance up to that season</li>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <p>GXB2 Rankings | <span id="footer-year">2025</span></p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

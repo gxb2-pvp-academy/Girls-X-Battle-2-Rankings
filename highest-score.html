@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest Score Ranking - GXB2 Rankings</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Top Navigation Menu -->
+    <nav class="nav-container">
+        <div class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home nav-icon"></i>Welcome
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="world-ranking.html" class="nav-link">
+                        <i class="fas fa-medal nav-icon"></i>World Ranking
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="player-search.html" class="nav-link">
+                        <i class="fas fa-user nav-icon"></i>Player
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active">
+                        <i class="fas fa-list-ol nav-icon"></i>Other Rankings
+                    </a>
+                    <ul class="dropdown-menu">
+                        <a href="highest-score.html" class="dropdown-item">Highest Score Ranking</a>
+                        <a href="historical-season.html" class="dropdown-item">Historical Season Ranking</a>
+                        <a href="total-title.html" class="dropdown-item">Total Title Ranking</a>
+                        <a href="no1-holder-consecutive.html" class="dropdown-item">World No.1 Ranking (Consecutive)</a>
+                        <a href="no1-holder-regular.html" class="dropdown-item">World No.1 Ranking (Regular)</a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle nav-icon"></i>About
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="container">
+            <h1>Highest Score Ranking</h1>
+            <div class="season-info">
+                <p>Last Updated: <span id="last-updated">-</span></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main class="container">
+            <div class="rankings-wrapper">
+                <table id="rankings-table" class="highest-score-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player ID</th>
+                            <th>Player Info</th>
+                            <th>Highest Score (Achieved Season)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rankings-body">
+                        <!-- Rankings will be inserted here via JavaScript -->
+                    </tbody>
+                </table>
+                <div id="loading">Loading rankings data...</div>
+                <div id="error" class="hidden">Failed to load rankings data. Please try again later.</div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <p>GXB2 Rankings | <span id="footer-year">2025</span></p>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Add tooltip element -->
+    <div id="score-tooltip" class="tooltip hidden"></div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/highest-score.js"></script>
+</body>
+</html>
