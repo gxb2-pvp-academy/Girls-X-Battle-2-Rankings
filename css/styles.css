@@ -996,7 +996,7 @@ footer {
         background-color: transparent;
     }
     
-    /* Hamburger menu button */
+    /* Hamburger menu button - updated to remove background & make dark grey */
     .menu-toggle {
         display: block;
         position: fixed;
@@ -1004,9 +1004,8 @@ footer {
         left: 10px;
         padding: 8px 12px;
         background-color: transparent;
-        color: #188cb6;
+        color: #444444; /* Dark grey color for the icon */
         border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         z-index: 1002;
         cursor: pointer;
     }
@@ -1027,7 +1026,7 @@ footer {
         background-color: #2c3e50;
         display: flex;
         flex-direction: column;
-        padding:0 0 0 0;
+        padding: 60px 0 20px 0;
         overflow-y: auto;
         transition: left 0.3s ease;
         z-index: 1001;
@@ -1039,17 +1038,18 @@ footer {
         left: 0;
     }
     
-    /* Style menu items for mobile */
+    /* Style menu items for mobile - updated to remove padding */
     .nav-item {
         width: 100%;
         margin: 0;
+        padding: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     /* Remove bottom borders from nav links for mobile */
     .nav-item .nav-link {
         border-bottom: none !important;
-        padding: 15px 20px;
+        padding: 15px 20px 0 20px; /* Keep padding at top and sides, remove at bottom */
         width: 100%;
         display: flex;
         align-items: center;
@@ -1069,11 +1069,14 @@ footer {
     
     .dropdown.show .dropdown-menu {
         max-height: 300px;
-        padding: 5px 0;
+        padding: 0; /* Remove padding */
     }
     
     .dropdown-item {
         padding-left: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
     }
     
     /* Close button inside mobile menu */
