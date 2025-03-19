@@ -1145,20 +1145,29 @@ footer {
         display: none; /* Hide the Player ID and individual title count columns */
     }
     
-    /* Rename the Total column to "Total Titles" on mobile */
-    .total-title-table thead th:nth-child(8):before {
+    /* Properly rename the Total column to "Total Titles" on mobile */
+    .total-title-table th:nth-child(8) {
+        font-size: 0; /* Hide original text */
+    }
+    
+    .total-title-table th:nth-child(8):before {
         content: 'Total Titles';
+        font-size: initial; /* Restore font size */
         display: block;
     }
     
-    .total-title-table thead th:nth-child(8) {
-        font-size: 0; /* Hide original text */
-        line-height: 0;
+    /* Make player info column occupy 40% of the table width */
+    .highest-score-table td.player-info,
+    .total-title-table td.player-info,
+    .no1-table td.player-info {
+        width: 40%;
+        text-align: center;
     }
     
-    /* Set player image width to 100px on mobile */
+    /* Remove fixed width from player images */
     .player-info img.player-img {
-        width: 100px;
+        width: auto;
+        max-width: 100%;
         height: auto;
     }
     
@@ -1169,19 +1178,14 @@ footer {
     
     /* Adjust column widths for mobile */
     .rankings-wrapper td:first-child {
-        width: 15%; /* Rank column */
+        width: 20%; /* Rank column */
     }
     
-    /* Style player info column */
-    .rankings-wrapper td:nth-child(3):not(.highest-score-table td:nth-child(3)) {
-        width: 35%; /* Player info column */
-        text-align: center;
-    }
-    
-    /* Special handling for total titles column */
-    .total-title-table td:last-child {
-        width: 50%;
-        padding-left: 10px;
+    /* Special handling for last column (score/seasons/count) */
+    .highest-score-table td:last-child,
+    .total-title-table td:last-child,
+    .no1-table td:last-child {
+        width: 40%;
         word-wrap: break-word;
     }
     
@@ -1190,21 +1194,27 @@ footer {
         width: auto;
     }
     
-    /* Hide mobile-formatted content by default (will be shown only on mobile) */
+    /* Show mobile-formatted content only on mobile */
+    .mobile-title-breakdown {
+        display: inline;
+    }
+    
+    /* Hide desktop total count on mobile */
+    .desktop-total {
+        display: none;
+    }
+}
+
+/* Desktop styling for title breakdown - add this outside the mobile media query */
+@media screen and (min-width: 769px) {
+    /* Hide mobile-formatted content on desktop */
     .mobile-title-breakdown {
         display: none;
     }
     
-    /* Show mobile-formatted content on mobile */
-    @media screen and (max-width: 768px) {
-        .mobile-title-breakdown {
-            display: inline;
-        }
-        
-        /* Hide desktop total count on mobile */
-        .desktop-total {
-            display: none;
-        }
+    /* Show desktop total count on desktop */
+    .desktop-total {
+        display: inline;
     }
 }
 
