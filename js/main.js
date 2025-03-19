@@ -42,6 +42,15 @@ function initializeTooltip() {
 }
 
 function initializeNavMenu() {
+    // Remove any duplicate menu-toggle elements
+    const menuToggles = document.querySelectorAll('.menu-toggle');
+    if (menuToggles.length > 1) {
+        console.log(`Found ${menuToggles.length} menu toggles, removing duplicates`);
+        for (let i = 1; i < menuToggles.length; i++) {
+            menuToggles[i].parentNode.removeChild(menuToggles[i]);
+        }
+    }
+    
     // Create overlay element if it doesn't exist
     if (!document.querySelector('.menu-overlay')) {
         const overlay = document.createElement('div');
@@ -70,7 +79,12 @@ function initializeNavMenu() {
     const overlay = document.querySelector('.menu-overlay');
     
     if (menuToggle) {
-        menuToggle.addEventListener('click', function() {
+        // Remove any existing event listeners by cloning and replacing
+        const newMenuToggle = menuToggle.cloneNode(true);
+        menuToggle.parentNode.replaceChild(newMenuToggle, menuToggle);
+        
+        // Add new event listener
+        newMenuToggle.addEventListener('click', function() {
             console.log("Menu toggle clicked");
             navMenu.classList.toggle('active');
             overlay.classList.toggle('active');
@@ -88,9 +102,14 @@ function initializeNavMenu() {
     
     // Add click handler to the overlay
     if (overlay) {
-        overlay.addEventListener('click', function() {
+        // Remove any existing event listeners by cloning and replacing
+        const newOverlay = overlay.cloneNode(true);
+        overlay.parentNode.replaceChild(newOverlay, overlay);
+        
+        // Add new event listener
+        newOverlay.addEventListener('click', function() {
             navMenu.classList.remove('active');
-            overlay.classList.remove('active');
+            newOverlay.classList.remove('active');
             document.body.style.overflow = '';
         });
     }
@@ -102,7 +121,12 @@ function initializeNavMenu() {
         const toggle = dropdown.querySelector('.dropdown-toggle');
         
         if (toggle) {
-            toggle.addEventListener('click', function(e) {
+            // Remove any existing event listeners by cloning and replacing
+            const newToggle = toggle.cloneNode(true);
+            toggle.parentNode.replaceChild(newToggle, toggle);
+            
+            // Add new event listener
+            newToggle.addEventListener('click', function(e) {
                 e.preventDefault();
                 e.stopPropagation();
                 
