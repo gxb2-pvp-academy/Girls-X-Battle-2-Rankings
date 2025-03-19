@@ -691,7 +691,7 @@ footer {
         top: 10px;
         left: -80%;
         width: 80%;
-        height: 50vh;
+        height: 40vh;
         background-color: #2c3e50;
         display: flex;
         flex-direction: column;
@@ -759,29 +759,31 @@ footer {
     }
     
     .dropdown-item {
-        padding: 12px 15px 12px 40px;
+        padding: 12px 15px;
         text-align: left;
     }
     
     /* Toggle indicators */
     .dropdown-toggle::after {
-        content: '+';
+        content: '▼';
         margin-left: 5px;
+        font-size: 10px;
+        transition: transform 0.3s ease;
     }
     
     .dropdown.show .dropdown-toggle::after {
-        content: '-';
+        transform: rotate(180deg);
     }
     
     /* Close button inside mobile menu */
     .menu-close {
-        position: absolute;
+        position: fixed;
         top: 10px;
         right: 10px;
         background-color: transparent;
         border: none;
         color: white;
-        font-size: 20px;
+        font-size: 30px;
         cursor: pointer;
     }
     
