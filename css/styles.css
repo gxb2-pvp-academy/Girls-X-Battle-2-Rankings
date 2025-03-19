@@ -1049,7 +1049,7 @@ footer {
     /* Remove bottom borders from nav links for mobile */
     .nav-item .nav-link {
         border-bottom: none !important;
-        padding: 10px 10px;
+        padding: 0;
         width: 100%;
         display: flex;
         align-items: center;
