@@ -1126,27 +1126,109 @@ footer {
     /* For all ranking tables except historical season */
     .highest-score-table th:nth-child(2),
     .highest-score-table td:nth-child(2),
-    .total-title-table th:nth-child(2),
-    .total-title-table td:nth-child(2),
     .no1-table th:nth-child(2),
     .no1-table td:nth-child(2) {
         display: none; /* Hide the 2nd column (Player ID) */
     }
-
-    .total-title-table th:nth-child(4),
-    .total-title-table td:nth-child(4) {
-        color: black; /* Champion count */
-    }
     
-    /* For total title table, only show the champion count */
+    /* Special handling for total title table on mobile */
+    .total-title-table th:nth-child(2),
+    .total-title-table td:nth-child(2),
+    .total-title-table th:nth-child(4),
+    .total-title-table td:nth-child(4),
     .total-title-table th:nth-child(5),
     .total-title-table td:nth-child(5),
     .total-title-table th:nth-child(6),
     .total-title-table td:nth-child(6),
     .total-title-table th:nth-child(7),
-    .total-title-table td:nth-child(7),
-    .total-title-table th:nth-child(8),
-    .total-title-table td:nth-child(8) {
+    .total-title-table td:nth-child(7) {
+        display: none; /* Hide the Player ID and individual title count columns */
+    }
+    
+    /* Rename the Total column to "Total Titles" on mobile */
+    .total-title-table thead th:nth-child(8):before {
+        content: 'Total Titles';
+        display: block;
+    }
+    
+    .total-title-table thead th:nth-child(8) {
+        font-size: 0; /* Hide original text */
+        line-height: 0;
+    }
+    
+    /* Set player image width to 100px on mobile */
+    .player-info img.player-img {
+        width: 100px;
+        height: auto;
+    }
+    
+    /* Adjust table for better mobile viewing */
+    .rankings-wrapper table {
+        table-layout: fixed;
+    }
+    
+    /* Adjust column widths for mobile */
+    .rankings-wrapper td:first-child {
+        width: 15%; /* Rank column */
+    }
+    
+    /* Style player info column */
+    .rankings-wrapper td:nth-child(3):not(.highest-score-table td:nth-child(3)) {
+        width: 35%; /* Player info column */
+        text-align: center;
+    }
+    
+    /* Special handling for total titles column */
+    .total-title-table td:last-child {
+        width: 50%;
+        padding-left: 10px;
+        word-wrap: break-word;
+    }
+    
+    /* Make sure headers align with data cells */
+    .rankings-wrapper th {
+        width: auto;
+    }
+    
+    /* Hide mobile-formatted content by default (will be shown only on mobile) */
+    .mobile-title-breakdown {
+        display: none;
+    }
+    
+    /* Show mobile-formatted content on mobile */
+    @media screen and (max-width: 768px) {
+        .mobile-title-breakdown {
+            display: inline;
+        }
+        
+        /* Hide desktop total count on mobile */
+        .desktop-total {
+            display: none;
+        }
+    }
+}
+
+/* Mobile Responsive Tables */
+@media screen and (max-width: 768px) {
+    /* For all ranking tables except historical season */
+    .highest-score-table th:nth-child(2),
+    .highest-score-table td:nth-child(2),
+    .highest-score-table th:nth-child(2),
+    .highest-score-table td:nth-child(2),
+    .no1-table th:nth-child(2),
+    .no1-table td:nth-child(2) {
+        display: none; /* Hide the 2nd column (Player ID) */
+    }
+    
+    /* For total title table, also hide intermediate columns to only show rank, player info, and total */
+    .total-title-table th:nth-child(4),
+    .total-title-table td:nth-child(4),
+    .total-title-table th:nth-child(5),
+    .total-title-table td:nth-child(5),
+    .total-title-table th:nth-child(6),
+    .total-title-table td:nth-child(6),
+    .total-title-table th:nth-child(7),
+    .total-title-table td:nth-child(7) {
         display: none; /* Hide the Champion, Runner-up, Top-4, and Top-8 columns */
     }
     

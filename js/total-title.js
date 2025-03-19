@@ -144,7 +144,19 @@ function renderTotalTitles(rankings) {
         // Total Titles
         const totalCell = document.createElement('td');
         totalCell.className = 'total-count';
-        totalCell.textContent = player.total;
+        
+        // Create desktop total content (regular number)
+        const desktopTotal = document.createElement('span');
+        desktopTotal.className = 'desktop-total';
+        desktopTotal.textContent = player.total;
+        totalCell.appendChild(desktopTotal);
+        
+        // Create mobile-formatted content
+        const mobileTotal = document.createElement('span');
+        mobileTotal.className = 'mobile-title-breakdown';
+        mobileTotal.innerHTML = `${player.total} (<span class="champion">${player.champion}</span>/<span class="runnerup">${player.runnerup}</span>/<span class="top4">${player.top4}</span>/<span class="top8">${player.top8}</span>)`;
+        totalCell.appendChild(mobileTotal);
+        
         // Add event listeners to total count column as well
         totalCell.addEventListener('mouseover', showTitleBreakdown);
         totalCell.addEventListener('mousemove', moveTooltip);
@@ -156,6 +168,16 @@ function renderTotalTitles(rankings) {
 
     // After table is populated, make rows clickable using local function
     makeTitleRowsClickable();
+    
+    // Add CSS styling for colored numbers in the mobile breakdown
+    const styleEl = document.createElement('style');
+    styleEl.textContent = `
+        .mobile-title-breakdown .champion { color: gold; font-weight: 700; }
+        .mobile-title-breakdown .runnerup { color: silver; font-weight: 600; }
+        .mobile-title-breakdown .top4 { color: #cd7f32; font-weight: 500; }
+        .mobile-title-breakdown .top8 { color: #a0d6b4; }
+    `;
+    document.head.appendChild(styleEl);
 }
 
 // Local implementation of makeTableRowsClickable for total-title.js
