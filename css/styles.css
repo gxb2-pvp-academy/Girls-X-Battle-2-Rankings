@@ -925,13 +925,9 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .total-title-table th:nth-child(4),
     .total-title-table td:nth-child(4),
-    .total-title-table th:nth-child(5),
     .total-title-table td:nth-child(5),
-    .total-title-table th:nth-child(6),
     .total-title-table td:nth-child(6),
-    .total-title-table th:nth-child(7),
     .total-title-table td:nth-child(7) {
         display: none; /* Hide individual title counts on very small screens */
     }
@@ -1122,5 +1118,66 @@ footer {
     .nav-menu {
         display: flex;
         flex-direction: row;
+    }
+}
+
+/* Mobile Responsive Tables */
+@media screen and (max-width: 768px) {
+    /* For all ranking tables except historical season */
+    .highest-score-table th:nth-child(2),
+    .highest-score-table td:nth-child(2),
+    .total-title-table th:nth-child(2),
+    .total-title-table td:nth-child(2),
+    .no1-table th:nth-child(2),
+    .no1-table td:nth-child(2) {
+        display: none; /* Hide the 2nd column (Player ID) */
+    }
+    
+    /* For total title table, also hide intermediate columns to only show rank, player info, and total */
+    .total-title-table th:nth-child(4),
+    .total-title-table td:nth-child(4),
+    .total-title-table th:nth-child(5),
+    .total-title-table td:nth-child(5),
+    .total-title-table th:nth-child(6),
+    .total-title-table td:nth-child(6),
+    .total-title-table th:nth-child(7),
+    .total-title-table td:nth-child(7) {
+        display: none; /* Hide the Champion, Runner-up, Top-4, and Top-8 columns */
+    }
+    
+    /* Set player image width to 100px on mobile */
+    .player-info img.player-img {
+        width: 100px;
+        height: auto;
+    }
+    
+    /* Adjust table for better mobile viewing */
+    .rankings-wrapper table {
+        table-layout: fixed;
+    }
+    
+    /* Adjust column widths for mobile */
+    .rankings-wrapper td:first-child {
+        width: 15%; /* Rank column */
+    }
+    
+    .rankings-wrapper td:nth-child(2):not(.highest-score-table td:nth-child(2), 
+                                         .total-title-table td:nth-child(2), 
+                                         .no1-table td:nth-child(2)) {
+        width: 35%; /* Player info column */
+        text-align: center;
+    }
+    
+    /* Special handling for last column (score/seasons/count) */
+    .highest-score-table td:last-child,
+    .total-title-table td:last-child,
+    .no1-table td:last-child {
+        width: 50%;
+        word-wrap: break-word;
+    }
+    
+    /* Make sure headers align with data cells */
+    .rankings-wrapper th {
+        width: auto;
     }
 }
