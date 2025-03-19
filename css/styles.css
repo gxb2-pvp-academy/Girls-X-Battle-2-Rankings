@@ -1132,16 +1132,21 @@ footer {
     .no1-table td:nth-child(2) {
         display: none; /* Hide the 2nd column (Player ID) */
     }
-    
-    /* For total title table, also hide intermediate columns to only show rank, player info, and total */
+
     .total-title-table th:nth-child(4),
-    .total-title-table td:nth-child(4),
+    .total-title-table td:nth-child(4) {
+        color: black; /* Champion count */
+    }
+    
+    /* For total title table, only show the champion count */
     .total-title-table th:nth-child(5),
     .total-title-table td:nth-child(5),
     .total-title-table th:nth-child(6),
     .total-title-table td:nth-child(6),
     .total-title-table th:nth-child(7),
-    .total-title-table td:nth-child(7) {
+    .total-title-table td:nth-child(7),
+    .total-title-table th:nth-child(8),
+    .total-title-table td:nth-child(8) {
         display: none; /* Hide the Champion, Runner-up, Top-4, and Top-8 columns */
     }
     
