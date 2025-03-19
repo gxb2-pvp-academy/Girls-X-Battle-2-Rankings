@@ -199,223 +199,6 @@ header h1 span {
     padding-left: 0;
 }
 
-/* Responsive adjustments for top menu */
-@media (max-width: 768px) {
-    .nav-menu {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--dark);
-        display: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .nav-menu.active {
-        display: flex;
-    }
-    
-    .menu-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        right: 20px;
-        top: 15px;
-    }
-    
-    .nav-item {
-        max-width: none;
-    }
-    
-    .dropdown-menu {
-        position: static;
-        width: 100%;
-        box-shadow: none;
-        background-color: rgba(0, 0, 0, 0.15);
-    }
-    
-    .dropdown-item {
-        padding-left: 30px;
-    }
-    
-    .nav-item:nth-child(1) .nav-link,
-    .nav-item:nth-child(2) .nav-link,
-    .nav-item:nth-child(3) .nav-link,
-    .nav-item:nth-child(4) .nav-link,
-    .nav-item:nth-child(5) .nav-link {
-        border-bottom: none;
-        border-left: 4px solid transparent;
-    }
-    
-    .nav-item:nth-child(1) .nav-link { border-left-color: #9b59b6; } /* Purple */
-    .nav-item:nth-child(2) .nav-link { border-left-color: #3498db; } /* Blue */
-    .nav-item:nth-child(3) .nav-link { border-left-color: #2ecc71; } /* Green */
-    .nav-item:nth-child(4) .nav-link { border-left-color: #f1c40f; } /* Yellow */
-    .nav-item:nth-child(5) .nav-link { border-left-color: #e74c3c; } /* Red */
-}
-
-/* Mobile Navigation - Fix for menu disappearing on small screens */
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .nav-menu {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        background-color: #2c3e50;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .nav-menu.active {
-        display: flex;
-    }
-    
-    .nav-item {
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-    
-    .nav-link {
-        padding: 15px;
-        width: 100%;
-        display: block;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    .dropdown-menu {
-        position: static;
-        background-color: #34495e;
-        width: 100%;
-        box-shadow: none;
-        max-height: none;
-        animation: none;
-    }
-    
-    .dropdown-item {
-        padding: 12px 15px;
-        text-align: center;
-    }
-    
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-        padding: 15px;
-        font-size: 24px;
-        color: white;
-        align-self: flex-end;
-        position: absolute;
-        right: 15px;
-        top: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    
-    .season-info {
-        flex-direction: column;
-        gap: 5px;
-    }
-    
-    #rankings-table th, 
-    #rankings-table td {
-        padding: 10px;
-    }
-    
-    .player-img {
-        width: 120px; /* Reduced from 120px to 40px (1/3) */
-    }
-
-    .nav-container {
-        width: 0;
-    }
-    
-    .nav-container.expanded {
-        width: 240px;
-    }
-    
-    .page-container {
-        padding-left: 0;
-    }
-    
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: var(--dark);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-    
-    .nav-menu.active {
-        left: 0;
-    }
-    
-    .nav-logo {
-        display: block;
-    }
-    
-    .hamburger {
-        display: block;
-    }
-    
-    .hamburger.active .hamburger-line:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger.active .hamburger-line:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    
-    .hamburger.active .hamburger-line:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    .dropdown-menu {
-        position: static;
-        display: none;
-        width: 100%;
-        box-shadow: none;
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-    
-    .dropdown.active .dropdown-menu {
-        display: block;
-    }
-    
-    .dropdown-toggle::after {
-        content: '+';
-        margin-left: 5px;
-    }
-    
-    .dropdown.active .dropdown-toggle::after {
-        content: '-';
-    }
-}
-
-@media (max-width: 576px) {
-    #rankings-table th:nth-child(3), 
-    #rankings-table td:nth-child(3) {
-        display: none; /* Hide player ID on small screens */
-    }
-    
-    .player-img {
-        width: 100px;
-    }
-}
-
 /* Content area for placeholder pages */
 .page-content {
     padding: 30px 0;
@@ -541,106 +324,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    
-    .season-info {
-        flex-direction: column;
-        gap: 5px;
-    }
-    
-    #rankings-table th, 
-    #rankings-table td {
-        padding: 10px;
-    }
-    
-    .player-img {
-        width: 120px; /* Reduced from 120px to 40px (1/3) */
-    }
-
-    .nav-container {
-        width: 0;
-    }
-    
-    .nav-container.expanded {
-        width: 240px;
-    }
-    
-    .page-container {
-        padding-left: 0;
-    }
-    
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: var(--dark);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-    
-    .nav-menu.active {
-        left: 0;
-    }
-    
-    .nav-logo {
-        display: block;
-    }
-    
-    .hamburger {
-        display: block;
-    }
-    
-    .hamburger.active .hamburger-line:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger.active .hamburger-line:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    
-    .hamburger.active .hamburger-line:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    .dropdown-menu {
-        position: static;
-        display: none;
-        width: 100%;
-        box-shadow: none;
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-    
-    .dropdown.active .dropdown-menu {
-        display: block;
-    }
-    
-    .dropdown-toggle::after {
-        content: '+';
-        margin-left: 5px;
-    }
-    
-    .dropdown.active .dropdown-toggle::after {
-        content: '-';
-    }
-}
-
-@media (max-width: 576px) {
-    #rankings-table th:nth-child(3), 
-    #rankings-table td:nth-child(3) {
-        display: none; /* Hide player ID on small screens */
-    }
-    
-    .player-img {
-        width: 100px;
-    }
-}
 
 /* Tooltip styling */
 .tooltip {
@@ -905,38 +588,6 @@ footer {
     width: 13%;
 }
 
-/* Responsive adjustments for total title table */
-@media (max-width: 992px) {
-    .total-title-table th,  
-    .total-title-table td {
-        padding: 10px 5px;
-        font-size: 0.9rem;
-    }
-    
-    #rankings-table.total-title-table .player-img {
-        width: 150px;
-    }
-}
-
-@media (max-width: 768px) {
-    #rankings-table.total-title-table .player-img {
-        width: 100px;
-    }
-}
-
-@media (max-width: 576px) {
-    .total-title-table td:nth-child(4),
-    .total-title-table td:nth-child(5),
-    .total-title-table td:nth-child(6),
-    .total-title-table td:nth-child(7) {
-        display: none; /* Hide individual title counts on very small screens */
-    }
-    
-    #rankings-table.total-title-table td:nth-child(2) {
-        font-size: 0.9rem;
-    }
-}
-
 /* Make highest score cell show a pointer cursor to indicate interactivity */
 .highest-score-cell {
     font-weight: 700;
@@ -980,9 +631,31 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
+/* Desktop Navigation */
+@media screen and (min-width: 769px) {
+    .menu-toggle, .menu-close, .menu-overlay {
+        display: none;
+    }
+    
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Hide mobile-formatted content on desktop */
+    .mobile-title-breakdown {
+        display: none;
+    }
+    
+    /* Show desktop total count on desktop */
+    .desktop-total {
+        display: inline;
+    }
+}
+
 /* Mobile Navigation - Side Menu for Small Screens */
 @media screen and (max-width: 768px) {
-    /* Container for the side menu */
+    /* Navigation container and menu toggle */
     .nav-container {
         position: fixed;
         width: 100%;
@@ -992,7 +665,6 @@ footer {
         background-color: transparent;
     }
     
-    /* Hamburger menu button - updated to remove background & make dark grey */
     .menu-toggle {
         display: block;
         position: fixed;
@@ -1006,52 +678,69 @@ footer {
         cursor: pointer;
     }
     
-    /* Hide regular menu by default */
     .navbar {
         width: 100%;
         padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
-    /* Style the side menu */
+    /* Side menu panel styling */
     .nav-menu {
         position: fixed;
         top: 10px;
         left: -80%;
         width: 80%;
-        height: 50vh;
+        height: 80vh;
         background-color: #2c3e50;
         display: flex;
         flex-direction: column;
-        padding:0;
+        padding: 0;
         overflow-y: auto;
         transition: left 0.3s ease;
-        z-index: 1001;
+        z-index: 1003; /* Above overlay */
         box-shadow: 3px 0 10px rgba(0,0,0,0.2);
     }
     
-    /* When menu is active, show it */
     .nav-menu.active {
         left: 0;
     }
     
-    /* Style menu items for mobile - updated to remove padding */
+    /* Menu items styling */
     .nav-item {
         width: 100%;
         margin: 0;
-        padding: 10px 0;
+        padding: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        max-width: none;
+        text-align: left;
     }
     
-    /* Remove bottom borders from nav links for mobile */
-    .nav-item .nav-link {
+    .nav-link {
         border-bottom: none !important;
-        padding: 10px 10px;
+        padding: 15px 20px;
         width: 100%;
         display: flex;
         align-items: center;
     }
     
-    /* Mobile dropdown styles */
+    /* Replace bottom borders with left borders for menu items */
+    .nav-item:nth-child(1) .nav-link,
+    .nav-item:nth-child(2) .nav-link,
+    .nav-item:nth-child(3) .nav-link,
+    .nav-item:nth-child(4) .nav-link,
+    .nav-item:nth-child(5) .nav-link {
+        border-bottom: none;
+        border-left: 4px solid transparent;
+    }
+    
+    .nav-item:nth-child(1) .nav-link { border-left-color: #9b59b6; } /* Purple */
+    .nav-item:nth-child(2) .nav-link { border-left-color: #3498db; } /* Blue */
+    .nav-item:nth-child(3) .nav-link { border-left-color: #2ecc71; } /* Green */
+    .nav-item:nth-child(4) .nav-link { border-left-color: #f1c40f; } /* Yellow */
+    .nav-item:nth-child(5) .nav-link { border-left-color: #e74c3c; } /* Red */
+    
+    /* Dropdown menu styling */
     .dropdown-menu {
         position: static;
         box-shadow: none;
@@ -1061,18 +750,27 @@ footer {
         transition: max-height 0.3s ease;
         margin: 0;
         padding: 0;
+        background-color: rgba(0, 0, 0, 0.15);
     }
     
     .dropdown.show .dropdown-menu {
         max-height: 300px;
-        padding: 0; /* Remove padding */
+        padding: 0;
     }
     
     .dropdown-item {
-        padding-left: 40px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-right: 15px;
+        padding: 12px 15px 12px 40px;
+        text-align: left;
+    }
+    
+    /* Toggle indicators */
+    .dropdown-toggle::after {
+        content: '+';
+        margin-left: 5px;
+    }
+    
+    .dropdown.show .dropdown-toggle::after {
+        content: '-';
     }
     
     /* Close button inside mobile menu */
@@ -1095,8 +793,9 @@ footer {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1000;
+        z-index: 1001; /* Below menu but above content */
         display: none;
+        pointer-events: auto;
     }
     
     .menu-overlay.active {
@@ -1105,30 +804,33 @@ footer {
     
     /* Fix header to account for hamburger menu */
     header .container {
-        padding-left: 50px;
-    }
-}
-
-/* Desktop Navigation */
-@media screen and (min-width: 769px) {
-    .menu-toggle, .menu-close, .menu-overlay {
-        display: none;
+        padding-left: 20px;
     }
     
-    .nav-menu {
-        display: flex;
-        flex-direction: row;
+    /* Mobile responsive layout */
+    header h1 {
+        font-size: 2rem;
     }
-}
-
-/* Mobile Responsive Tables */
-@media screen and (max-width: 768px) {
-    /* For all ranking tables except historical season */
+    
+    .season-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    /* Table adjustments for mobile */
+    #rankings-table th, 
+    #rankings-table td {
+        padding: 10px;
+    }
+    
+    /* Responsive Tables - Mobile Column Adjustments */
+    
+    /* For all ranking tables except historical season - hide player ID */
     .highest-score-table th:nth-child(2),
     .highest-score-table td:nth-child(2),
     .no1-table th:nth-child(2),
     .no1-table td:nth-child(2) {
-        display: none; /* Hide the 2nd column (Player ID) */
+        display: none;
     }
     
     /* Special handling for total title table on mobile */
@@ -1142,118 +844,59 @@ footer {
     .total-title-table td:nth-child(6),
     .total-title-table th:nth-child(7),
     .total-title-table td:nth-child(7) {
-        display: none; /* Hide the Player ID and individual title count columns */
+        display: none;
     }
     
-    /* Properly rename the Total column to "Total Titles" on mobile */
+    /* Rename the Total column to "Total Titles" on mobile */
     .total-title-table th:nth-child(8) {
-        font-size: 0; /* Hide original text */
+        font-size: 0;
     }
     
     .total-title-table th:nth-child(8):before {
         content: 'Total Titles';
-        font-size: initial; /* Restore font size */
+        font-size: initial;
         display: block;
     }
     
-    /* Make player info column occupy 40% of the table width */
+    /* Make player info column occupy appropriate width */
     .highest-score-table td.player-info,
     .total-title-table td.player-info,
     .no1-table td.player-info {
         width: 40%;
+        text-align: center;
     }
     
-    /* Adjust table for better mobile viewing */
+    /* Set player image width for mobile */
+    .player-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Adjust table layout for better mobile viewing */
     .rankings-wrapper table {
         table-layout: fixed;
     }
     
-    /* Adjust column widths for mobile */
-    .rankings-wrapper td:first-child {
-        width: 20%; /* Rank column */
-    }
-    
-    /* Special handling for last column (score/seasons/count) */
-    .highest-score-table td:last-child,
-    .total-title-table td:last-child,
-    .no1-table td:last-child {
-        width: 40%;
-        word-wrap: break-word;
-    }
-    
-    /* Make sure headers align with data cells */
-    .rankings-wrapper th {
-        width: auto;
-    }
-    
-    /* Show mobile-formatted content only on mobile */
-    .mobile-title-breakdown {
-        display: inline;
-    }
-    
-    /* Hide desktop total count on mobile */
-    .desktop-total {
-        display: none;
-    }
-}
-
-/* Desktop styling for title breakdown - add this outside the mobile media query */
-@media screen and (min-width: 769px) {
-    /* Hide mobile-formatted content on desktop */
-    .mobile-title-breakdown {
-        display: none;
-    }
-    
-    /* Show desktop total count on desktop */
-    .desktop-total {
-        display: inline;
-    }
-}
-
-/* Mobile Responsive Tables */
-@media screen and (max-width: 768px) {
-    /* For all ranking tables except historical season */
-    .highest-score-table th:nth-child(2),
-    .highest-score-table td:nth-child(2),
-    .highest-score-table th:nth-child(2),
-    .highest-score-table td:nth-child(2),
-    .no1-table th:nth-child(2),
-    .no1-table td:nth-child(2) {
-        display: none; /* Hide the 2nd column (Player ID) */
-    }
-    
-    /* For total title table, also hide intermediate columns to only show rank, player info, and total */
-    .total-title-table th:nth-child(4),
-    .total-title-table td:nth-child(4),
-    .total-title-table th:nth-child(5),
-    .total-title-table td:nth-child(5),
-    .total-title-table th:nth-child(6),
-    .total-title-table td:nth-child(6),
-    .total-title-table th:nth-child(7),
-    .total-title-table td:nth-child(7) {
-        display: none; /* Hide the Champion, Runner-up, Top-4, and Top-8 columns */
-    }
-    
-    /* Adjust table for better mobile viewing */
-    .rankings-wrapper table {
-        table-layout: fixed;
-    }
-    
-    /* Adjust column widths for mobile */
+    /* Column width adjustments */
     .rankings-wrapper td:first-child {
         width: 15%; /* Rank column */
     }
     
-    /* Special handling for last column (score/seasons/count) */
+    /* Special handling for last column */
     .highest-score-table td:last-child,
     .total-title-table td:last-child,
     .no1-table td:last-child {
-        width: 30%;
+        width: 45%;
         word-wrap: break-word;
     }
     
-    /* Make sure headers align with data cells */
-    .rankings-wrapper th {
-        width: auto;
+    /* Title breakdown display for mobile */
+    .mobile-title-breakdown {
+        display: inline;
+    }
+    
+    .desktop-total {
+        display: none;
     }
 }
