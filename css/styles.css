@@ -1161,14 +1161,6 @@ footer {
     .total-title-table td.player-info,
     .no1-table td.player-info {
         width: 40%;
-        text-align: center;
-    }
-    
-    /* Remove fixed width from player images */
-    .player-info img.player-img {
-        width: auto;
-        max-width: 100%;
-        height: auto;
     }
     
     /* Adjust table for better mobile viewing */
@@ -1242,12 +1234,6 @@ footer {
         display: none; /* Hide the Champion, Runner-up, Top-4, and Top-8 columns */
     }
     
-    /* Set player image width to 100px on mobile */
-    .player-info img.player-img {
-        width: 100px;
-        height: auto;
-    }
-    
     /* Adjust table for better mobile viewing */
     .rankings-wrapper table {
         table-layout: fixed;
@@ -1258,18 +1244,11 @@ footer {
         width: 15%; /* Rank column */
     }
     
-    .rankings-wrapper td:nth-child(2):not(.highest-score-table td:nth-child(2), 
-                                         .total-title-table td:nth-child(2), 
-                                         .no1-table td:nth-child(2)) {
-        width: 35%; /* Player info column */
-        text-align: center;
-    }
-    
     /* Special handling for last column (score/seasons/count) */
     .highest-score-table td:last-child,
     .total-title-table td:last-child,
     .no1-table td:last-child {
-        width: 50%;
+        width: 30%;
         word-wrap: break-word;
     }
     
