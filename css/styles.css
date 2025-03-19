@@ -1019,7 +1019,7 @@ footer {
     /* Style the side menu */
     .nav-menu {
         position: fixed;
-        top: 0;
+        top: 10px;
         left: -80%;
         width: 80%;
         height: 50vh;
