@@ -775,16 +775,9 @@ footer {
         transform: rotate(180deg);
     }
     
-    /* Close button inside mobile menu */
+    /* Close button inside mobile menu - keeping the style but it won't be used */
     .menu-close {
-        position: absolute;
-        top: 2px;
-        right: 10px;
-        background-color: transparent;
-        border: none;
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
+        display: none; /* Hide the close button completely */
     }
     
     /* Overlay when mobile menu is open */

@@ -58,25 +58,10 @@ function initializeNavMenu() {
         document.body.appendChild(overlay);
     }
     
-    // Create close button if it doesn't exist
-    const navMenu = document.querySelector('.nav-menu');
-    if (navMenu && !document.querySelector('.menu-close')) {
-        const closeBtn = document.createElement('button');
-        closeBtn.className = 'menu-close';
-        closeBtn.innerHTML = '<i class="fas fa-times"></i>';
-        navMenu.appendChild(closeBtn);
-        
-        // Add event listener to close button
-        closeBtn.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            document.querySelector('.menu-overlay').classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    }
-    
     // Mobile menu toggle functionality
     const menuToggle = document.querySelector('.menu-toggle');
     const overlay = document.querySelector('.menu-overlay');
+    const navMenu = document.querySelector('.nav-menu');
     
     if (menuToggle) {
         // Remove any existing event listeners by cloning and replacing
@@ -113,6 +98,16 @@ function initializeNavMenu() {
             document.body.style.overflow = '';
         });
     }
+    
+    // Add click handlers to menu items to close the menu when clicked
+    const menuItems = document.querySelectorAll('.nav-menu .nav-link:not(.dropdown-toggle)');
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+            if (overlay) overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
     
     // Fix dropdown toggle functionality
     const dropdowns = document.querySelectorAll('.dropdown');
