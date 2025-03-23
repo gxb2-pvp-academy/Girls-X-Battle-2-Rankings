@@ -828,6 +828,12 @@ footer {
         display: none;
     }
     
+    /* Hide Player ID column (3rd column) in World Ranking and Historical Season tables */
+    #rankings-table:not(.highest-score-table):not(.total-title-table):not(.no1-table) th:nth-child(3),
+    #rankings-table:not(.highest-score-table):not(.total-title-table):not(.no1-table) td:nth-child(3) {
+        display: none;
+    }
+    
     /* Special handling for total title table on mobile */
     .total-title-table th:nth-child(2),
     .total-title-table td:nth-child(2),
