@@ -68,6 +68,11 @@ async function fetchTotalTitles() {
     }
 }
 
+// Helper function to check if the device is mobile (width <= 768px)
+function isMobileDevice() {
+    return window.innerWidth <= 768;
+}
+
 // Render total title rankings
 function renderTotalTitles(rankings) {
     const tableBody = document.getElementById('rankings-body');
@@ -109,36 +114,57 @@ function renderTotalTitles(rankings) {
         const championCell = document.createElement('td');
         championCell.className = 'champion-count';
         championCell.textContent = player.champion;
-        championCell.addEventListener('mouseover', showTitleBreakdown);
-        championCell.addEventListener('mousemove', moveTooltip);
-        championCell.addEventListener('mouseout', hideTooltip);
+        
+        // Different event handlers for mobile vs desktop
+        if (isMobileDevice()) {
+            championCell.addEventListener('click', showTitleBreakdown);
+        } else {
+            championCell.addEventListener('mouseover', showTitleBreakdown);
+            championCell.addEventListener('mousemove', moveTooltip);
+            championCell.addEventListener('mouseout', hideTooltip);
+        }
         row.appendChild(championCell);
         
         // Runner-up Count
         const runnerupCell = document.createElement('td');
         runnerupCell.className = 'runnerup-count';
         runnerupCell.textContent = player.runnerup;
-        runnerupCell.addEventListener('mouseover', showTitleBreakdown);
-        runnerupCell.addEventListener('mousemove', moveTooltip);
-        runnerupCell.addEventListener('mouseout', hideTooltip);
+        
+        if (isMobileDevice()) {
+            runnerupCell.addEventListener('click', showTitleBreakdown);
+        } else {
+            runnerupCell.addEventListener('mouseover', showTitleBreakdown);
+            runnerupCell.addEventListener('mousemove', moveTooltip);
+            runnerupCell.addEventListener('mouseout', hideTooltip);
+        }
         row.appendChild(runnerupCell);
         
         // Top-4 Count
         const top4Cell = document.createElement('td');
         top4Cell.className = 'top4-count';
         top4Cell.textContent = player.top4;
-        top4Cell.addEventListener('mouseover', showTitleBreakdown);
-        top4Cell.addEventListener('mousemove', moveTooltip);
-        top4Cell.addEventListener('mouseout', hideTooltip);
+        
+        if (isMobileDevice()) {
+            top4Cell.addEventListener('click', showTitleBreakdown);
+        } else {
+            top4Cell.addEventListener('mouseover', showTitleBreakdown);
+            top4Cell.addEventListener('mousemove', moveTooltip);
+            top4Cell.addEventListener('mouseout', hideTooltip);
+        }
         row.appendChild(top4Cell);
         
         // Top-8 Count
         const top8Cell = document.createElement('td');
         top8Cell.className = 'top8-count';
         top8Cell.textContent = player.top8;
-        top8Cell.addEventListener('mouseover', showTitleBreakdown);
-        top8Cell.addEventListener('mousemove', moveTooltip);
-        top8Cell.addEventListener('mouseout', hideTooltip);
+        
+        if (isMobileDevice()) {
+            top8Cell.addEventListener('click', showTitleBreakdown);
+        } else {
+            top8Cell.addEventListener('mouseover', showTitleBreakdown);
+            top8Cell.addEventListener('mousemove', moveTooltip);
+            top8Cell.addEventListener('mouseout', hideTooltip);
+        }
         row.appendChild(top8Cell);
         
         // Total Titles
@@ -151,16 +177,110 @@ function renderTotalTitles(rankings) {
         desktopTotal.textContent = player.total;
         totalCell.appendChild(desktopTotal);
         
-        // Create mobile-formatted content
+        // Create mobile-formatted content with proper event handling
         const mobileTotal = document.createElement('span');
         mobileTotal.className = 'mobile-title-breakdown';
-        mobileTotal.innerHTML = `${player.total} (<span class="champion">${player.champion}</span>/<span class="runnerup">${player.runnerup}</span>/<span class="top4">${player.top4}</span>/<span class="top8">${player.top8}</span>)`;
+        
+        // Create spans separately so we can attach event listeners
+        const totalSpan = document.createElement('span'); // Changed from createTextNode to createElement
+        totalSpan.className = 'total-value'; // Add a class for styling and targeting
+        totalSpan.textContent = player.total; // Set the text content
+        
+        const openParen = document.createTextNode(' (');
+        
+        const championSpan = document.createElement('span');
+        championSpan.className = 'champion';
+        championSpan.textContent = player.champion;
+        
+        const separator1 = document.createTextNode('/');
+        
+        const runnerupSpan = document.createElement('span');
+        runnerupSpan.className = 'runnerup';
+        runnerupSpan.textContent = player.runnerup;
+        
+        const separator2 = document.createTextNode('/');
+        
+        const top4Span = document.createElement('span');
+        top4Span.className = 'top4';
+        top4Span.textContent = player.top4;
+        
+        const separator3 = document.createTextNode('/');
+        
+        const top8Span = document.createElement('span');
+        top8Span.className = 'top8';
+        top8Span.textContent = player.top8;
+        
+        const closeParen = document.createTextNode(')');
+        
+        // Assemble the mobile breakdown structure
+        mobileTotal.appendChild(totalSpan);
+        mobileTotal.appendChild(openParen);
+        mobileTotal.appendChild(championSpan);
+        mobileTotal.appendChild(separator1);
+        mobileTotal.appendChild(runnerupSpan);
+        mobileTotal.appendChild(separator2);
+        mobileTotal.appendChild(top4Span);
+        mobileTotal.appendChild(separator3);
+        mobileTotal.appendChild(top8Span);
+        mobileTotal.appendChild(closeParen);
+        
+        // If on mobile, attach click handlers to each span
+        if (isMobileDevice()) {
+            // Attach the same event handler to each span INCLUDING the total number
+            [totalSpan, championSpan, runnerupSpan, top4Span, top8Span].forEach(span => {
+                span.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Prevent bubbling to avoid double firing
+                    
+                    // Call showTitleBreakdown with the row's data
+                    const row = totalCell.closest('tr');
+                    if (row && row.dataset.titleBreakdown) {
+                        const customEvent = {
+                            currentTarget: totalCell,
+                            target: span,
+                            pageX: e.pageX,
+                            pageY: e.pageY
+                        };
+                        
+                        showTitleBreakdown(customEvent);
+                    }
+                });
+            });
+            
+            // Also make the entire mobile total span clickable
+            mobileTotal.addEventListener('click', function(e) {
+                // Only trigger if the click was directly on the mobileTotal element
+                // and not on one of its child spans (which have their own handlers)
+                if (e.target === mobileTotal) {
+                    const customEvent = {
+                        currentTarget: totalCell,
+                        target: mobileTotal,
+                        pageX: e.pageX,
+                        pageY: e.pageY
+                    };
+                    
+                    showTitleBreakdown(customEvent);
+                }
+            });
+        }
+        
         totalCell.appendChild(mobileTotal);
         
-        // Add event listeners to total count column as well
-        totalCell.addEventListener('mouseover', showTitleBreakdown);
-        totalCell.addEventListener('mousemove', moveTooltip);
-        totalCell.addEventListener('mouseout', hideTooltip);
+        // Add event listeners to total count column
+        if (isMobileDevice()) {
+            // Make the totalCell itself clickable
+            totalCell.addEventListener('click', function(e) {
+                // Only trigger if clicking directly on the cell,
+                // not on the spans (which have their own handlers)
+                if (e.target === totalCell) {
+                    showTitleBreakdown(e);
+                }
+            });
+        } else {
+            totalCell.addEventListener('mouseover', showTitleBreakdown);
+            totalCell.addEventListener('mousemove', moveTooltip);
+            totalCell.addEventListener('mouseout', hideTooltip);
+        }
+        
         row.appendChild(totalCell);
         
         tableBody.appendChild(row);
@@ -190,14 +310,37 @@ function makeTitleRowsClickable() {
         const playerIdCell = row.querySelector('td:nth-child(2)');
         
         if (playerIdCell) {
-            // Add click event listener to the row
-            row.addEventListener('click', function() {
-                const playerId = playerIdCell.textContent.trim();
-                console.log(`Title row clicked, navigating to player detail for ID: ${playerId}`);
+            // Different behavior for mobile vs desktop
+            if (isMobileDevice()) {
+                // On mobile: add click handlers to each cell except the last one
+                const cells = row.querySelectorAll('td');
                 
-                // Navigate to player detail page
-                window.location.href = `player-detail.html?id=${playerId}`;
-            });
+                // For all cells except the last column (total count), navigate to player profile
+                cells.forEach((cell, index) => {
+                    // Skip the last cell (total count) and the cells for individual counts
+                    // which are handled by the tooltip logic
+                    if (index < cells.length - 5 || (index === cells.length - 4)) {
+                        cell.addEventListener('click', function(e) {
+                            const playerId = playerIdCell.textContent.trim();
+                            console.log(`Cell clicked, navigating to player detail for ID: ${playerId}`);
+                            
+                            // Navigate to player detail page
+                            window.location.href = `player-detail.html?id=${playerId}&from=totaltitle`;
+                        });
+                    }
+                });
+                
+                // Last cells (champion, runner-up, top4, top8, total) are handled by tap-for-tooltip logic
+            } else {
+                // On desktop: keep original row click behavior
+                row.addEventListener('click', function() {
+                    const playerId = playerIdCell.textContent.trim();
+                    console.log(`Title row clicked, navigating to player detail for ID: ${playerId}`);
+                    
+                    // Navigate to player detail page
+                    window.location.href = `player-detail.html?id=${playerId}&from=totaltitle`;
+                });
+            }
             
             // Add hover class for better UX
             row.classList.add('clickable-row');
@@ -205,25 +348,41 @@ function makeTitleRowsClickable() {
     });
 }
 
-// Show title breakdown tooltip
+// Show title breakdown tooltip (enhanced to handle different click targets)
 function showTitleBreakdown(event) {
     const cell = event.currentTarget;
     const row = cell.closest('tr');
     const tooltip = document.getElementById('title-tooltip');
     
-    if (!tooltip || !row.dataset.titleBreakdown) return;
+    if (!tooltip || !row || !row.dataset.titleBreakdown) return;
     
     try {
         const breakdownData = JSON.parse(row.dataset.titleBreakdown);
         let tooltipContent = '<div class="breakdown-title">Title Breakdown</div>';
         
-        // Get which title type was hovered
+        // Get which title type was hovered/tapped
         let hoveredType = '';
-        if (cell.classList.contains('champion-count')) hoveredType = 'champion';
-        else if (cell.classList.contains('runnerup-count')) hoveredType = 'runnerup';
-        else if (cell.classList.contains('top4-count')) hoveredType = 'top4';
-        else if (cell.classList.contains('top8-count')) hoveredType = 'top8';
-        // For total-count, don't set any hoveredType - this will show all without highlighting
+        
+        // Determine which type was clicked based on classes
+        if (event.target.classList.contains('champion')) {
+            hoveredType = 'champion';
+        } else if (event.target.classList.contains('runnerup')) {
+            hoveredType = 'runnerup';
+        } else if (event.target.classList.contains('top4')) {
+            hoveredType = 'top4';
+        } else if (event.target.classList.contains('top8')) {
+            hoveredType = 'top8';
+        } else if (cell.classList.contains('champion-count')) {
+            hoveredType = 'champion';
+        } else if (cell.classList.contains('runnerup-count')) {
+            hoveredType = 'runnerup';
+        } else if (cell.classList.contains('top4-count')) {
+            hoveredType = 'top4';
+        } else if (cell.classList.contains('top8-count')) {
+            hoveredType = 'top8';
+        }
+        // Note: We don't set hoveredType for total-count or total-value class
+        // to show all without highlighting
         
         // Champion
         tooltipContent += '<div class="breakdown-item champion">Champion: ' + breakdownData.champion.length;
@@ -256,7 +415,7 @@ function showTitleBreakdown(event) {
         // Set tooltip content
         tooltip.innerHTML = tooltipContent;
         
-        // Highlight the hovered type (only if not hovering total count)
+        // Highlight the hovered/tapped type
         if (hoveredType) {
             const highlightEl = tooltip.querySelector(`.${hoveredType}`);
             if (highlightEl) highlightEl.style.fontWeight = 'bold';
@@ -302,3 +461,9 @@ function hideTooltip() {
         tooltip.classList.add('hidden');
     }
 }
+
+// Update event listeners when window resizes
+window.addEventListener('resize', function() {
+    // Refresh the table to update event listeners
+    fetchTotalTitles();
+});

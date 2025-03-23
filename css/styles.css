@@ -859,36 +859,29 @@ footer {
         display: block;
     }
     
-    /* Make player info column occupy appropriate width */
-    .highest-score-table td.player-info,
-    .total-title-table td.player-info,
-    .no1-table td.player-info {
-        width: 40%;
-        text-align: center;
-    }
-    
     /* Set player image width for mobile */
     .player-img {
         width: 100%;
         max-width: 100%;
-        height: auto;
+        height: 100%;
     }
     
     /* Adjust table layout for better mobile viewing */
     .rankings-wrapper table {
         table-layout: fixed;
     }
-    
-    /* Column width adjustments */
-    .rankings-wrapper td:first-child {
-        width: 15%; /* Rank column */
+
+    /* Special handling for first column */
+    #rankings-table th:first-child,
+    #rankings-table td:first-child {
+        width: 20% !important;
+        word-wrap: break-word;
     }
     
     /* Special handling for last column */
-    .highest-score-table td:last-child,
-    .total-title-table td:last-child,
-    .no1-table td:last-child {
-        width: 45%;
+    #rankings-table th:last-child,
+    #rankings-table td:last-child {
+        width: 30% !important;
         word-wrap: break-word;
     }
     
@@ -900,4 +893,49 @@ footer {
     .desktop-total {
         display: none;
     }
+    
+    /* Improve mobile title display for better tap targets */
+    .total-title-table td.total-count {
+        padding: 12px 8px;
+        cursor: pointer;
+    }
+    
+    /* Increase tap target size for mobile */
+    .mobile-title-breakdown {
+        padding: 5px 0;
+    }
+    
+    /* Ensure spans in breakdown have proper tap targets */
+    .mobile-title-breakdown span.champion,
+    .mobile-title-breakdown span.runnerup,
+    .mobile-title-breakdown span.top4,
+    .mobile-title-breakdown span.top8,
+    .mobile-title-breakdown span.total-value {
+        min-width: 12px;
+        min-height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+/* Improve mobile title breakdown styling for better tap targets */
+.mobile-title-breakdown {
+    display: inline-block; /* Change from inline to inline-block */
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/* Make inner spans in mobile breakdown explicitly tappable */
+.mobile-title-breakdown span {
+    display: inline-block;
+    pointer-events: auto;
+    padding: 0 3px; /* Add some padding for easier tapping */
+    cursor: pointer;
+}
+
+/* Style for the total value span */
+.mobile-title-breakdown .total-value {
+    font-weight: 700;
+    color: var(--dark);
+    padding-right: 0; /* Remove right padding to be closer to the parenthesis */
 }

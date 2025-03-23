@@ -64,6 +64,11 @@ async function fetchRegularNo1Rankings() {
     }
 }
 
+// Helper function to check if the device is mobile (width <= 768px)
+function isMobileDevice() {
+    return window.innerWidth <= 768;
+}
+
 // Render regular No.1 rankings
 function renderRegularNo1Rankings(rankings) {
     const tableBody = document.getElementById('rankings-body');
@@ -105,9 +110,15 @@ function renderRegularNo1Rankings(rankings) {
         
         // Add seasons data for tooltip
         seasonsCell.dataset.seasons = JSON.stringify(player.seasons);
-        seasonsCell.addEventListener('mouseover', showSeasonsBreakdown);
-        seasonsCell.addEventListener('mousemove', moveTooltip);
-        seasonsCell.addEventListener('mouseout', hideTooltip);
+        
+        // Different event handlers for mobile vs desktop
+        if (isMobileDevice()) {
+            seasonsCell.addEventListener('click', showSeasonsBreakdown);
+        } else {
+            seasonsCell.addEventListener('mouseover', showSeasonsBreakdown);
+            seasonsCell.addEventListener('mousemove', moveTooltip);
+            seasonsCell.addEventListener('mouseout', hideTooltip);
+        }
         
         row.appendChild(seasonsCell);
         
@@ -128,14 +139,36 @@ function makeNo1RowsClickable() {
         const playerIdCell = row.querySelector('td:nth-child(2)');
         
         if (playerIdCell) {
-            // Add click event listener to the row
-            row.addEventListener('click', function() {
-                const playerId = playerIdCell.textContent.trim();
-                console.log(`Regular No.1 row clicked, navigating to player detail for ID: ${playerId}`);
+            // Different behavior for mobile vs desktop
+            if (isMobileDevice()) {
+                // On mobile: add click handlers to each cell except the last one
+                const cells = row.querySelectorAll('td');
+                const lastCell = cells[cells.length - 1];
                 
-                // Navigate to player detail page
-                window.location.href = `player-detail.html?id=${playerId}`;
-            });
+                // For all cells except the last one, navigate to player profile
+                cells.forEach((cell, index) => {
+                    if (index < cells.length - 1) { // Not the last cell
+                        cell.addEventListener('click', function(e) {
+                            const playerId = playerIdCell.textContent.trim();
+                            console.log(`Cell clicked, navigating to player detail for ID: ${playerId}`);
+                            
+                            // Navigate to player detail page
+                            window.location.href = `player-detail.html?id=${playerId}&from=regularno1`;
+                        });
+                    }
+                });
+                
+                // Last cell is handled by the tap-for-tooltip logic already implemented
+            } else {
+                // On desktop: keep original row click behavior
+                row.addEventListener('click', function() {
+                    const playerId = playerIdCell.textContent.trim();
+                    console.log(`Regular No.1 row clicked, navigating to player detail for ID: ${playerId}`);
+                    
+                    // Navigate to player detail page
+                    window.location.href = `player-detail.html?id=${playerId}&from=regularno1`;
+                });
+            }
             
             // Add hover class for better UX
             row.classList.add('clickable-row');
@@ -201,3 +234,9 @@ function hideTooltip() {
         tooltip.classList.add('hidden');
     }
 }
+
+// Update event listeners when window resizes
+window.addEventListener('resize', function() {
+    // Refresh the table to update event listeners
+    fetchRegularNo1Rankings();
+});

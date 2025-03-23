@@ -69,6 +69,11 @@ async function fetchHighestScores() {
     }
 }
 
+// Helper function to check if the device is mobile (width <= 768px)
+function isMobileDevice() {
+    return window.innerWidth <= 768;
+}
+
 // Render highest score rankings
 function renderHighestScores(rankings) {
     const tableBody = document.getElementById('rankings-body');
@@ -115,9 +120,17 @@ function renderHighestScores(rankings) {
         if (player.score_breakdown) {
             console.log(`Adding breakdown for player ${player.player_id}`);
             scoreCell.dataset.scoreBreakdown = JSON.stringify(player.score_breakdown);
-            scoreCell.addEventListener('mouseover', showScoreBreakdown);
-            scoreCell.addEventListener('mousemove', moveTooltip);
-            scoreCell.addEventListener('mouseout', hideTooltip);
+            
+            // Different event handlers for mobile vs desktop
+            if (isMobileDevice()) {
+                // For mobile: use click/tap
+                scoreCell.addEventListener('click', showScoreBreakdown);
+            } else {
+                // For desktop: use hover
+                scoreCell.addEventListener('mouseover', showScoreBreakdown);
+                scoreCell.addEventListener('mousemove', moveTooltip);
+                scoreCell.addEventListener('mouseout', hideTooltip);
+            }
         } else {
             console.log(`No breakdown data for player ${player.player_id}`);
         }
@@ -143,14 +156,36 @@ function makeScoreRowsClickable() {
         const playerIdCell = row.querySelector('td:nth-child(2)');
         
         if (playerIdCell) {
-            // Add click event listener to the row
-            row.addEventListener('click', function() {
-                const playerId = playerIdCell.textContent.trim();
-                console.log(`Score row clicked, navigating to player detail for ID: ${playerId}`);
+            // Different behavior for mobile vs desktop
+            if (isMobileDevice()) {
+                // On mobile: add click handlers to each cell except the last one
+                const cells = row.querySelectorAll('td');
+                const lastCell = cells[cells.length - 1];
                 
-                // Navigate to player detail page
-                window.location.href = `player-detail.html?id=${playerId}`;
-            });
+                // For all cells except the last one, navigate to player profile
+                cells.forEach((cell, index) => {
+                    if (index < cells.length - 1) { // Not the last cell
+                        cell.addEventListener('click', function(e) {
+                            const playerId = playerIdCell.textContent.trim();
+                            console.log(`Cell clicked, navigating to player detail for ID: ${playerId}`);
+                            
+                            // Navigate to player detail page
+                            window.location.href = `player-detail.html?id=${playerId}&from=highestscore`;
+                        });
+                    }
+                });
+                
+                // Last cell is handled by the tap-for-tooltip logic already implemented
+            } else {
+                // On desktop: keep original row click behavior
+                row.addEventListener('click', function() {
+                    const playerId = playerIdCell.textContent.trim();
+                    console.log(`Score row clicked, navigating to player detail for ID: ${playerId}`);
+                    
+                    // Navigate to player detail page
+                    window.location.href = `player-detail.html?id=${playerId}&from=highestscore`;
+                });
+            }
             
             // Add hover class for better UX
             row.classList.add('clickable-row');
@@ -240,3 +275,9 @@ function hideTooltip() {
         tooltip.classList.add('hidden');
     }
 }
+
+// Update event listeners when window resizes
+window.addEventListener('resize', function() {
+    // Refresh the table to update event listeners
+    fetchHighestScores();
+});

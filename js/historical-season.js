@@ -197,6 +197,11 @@
         }
     }
 
+    // Helper function to check if the device is mobile (width <= 768px)
+    function isMobileDevice() {
+        return window.innerWidth <= 768;
+    }
+
     function renderRankings(rankings) {
         const tableBody = document.getElementById('rankings-body');
         tableBody.innerHTML = ''; // Clear any existing content
@@ -276,9 +281,17 @@
             // Add score breakdown data if available
             if (player.score_breakdown) {
                 scoreCell.dataset.scoreBreakdown = JSON.stringify(player.score_breakdown);
-                scoreCell.addEventListener('mouseover', showScoreBreakdown);
-                scoreCell.addEventListener('mousemove', moveTooltip);
-                scoreCell.addEventListener('mouseout', hideTooltip);
+                
+                // Different event handlers for mobile vs desktop
+                if (isMobileDevice()) {
+                    // For mobile: use click/tap
+                    scoreCell.addEventListener('click', showScoreBreakdown);
+                } else {
+                    // For desktop: use hover
+                    scoreCell.addEventListener('mouseover', showScoreBreakdown);
+                    scoreCell.addEventListener('mousemove', moveTooltip);
+                    scoreCell.addEventListener('mouseout', hideTooltip);
+                }
             }
             
             row.appendChild(scoreCell);
@@ -308,14 +321,36 @@
             const playerIdCell = row.querySelector('td:nth-child(3)');
             
             if (playerIdCell) {
-                // Add click event listener to the row
-                row.addEventListener('click', function() {
-                    const playerId = playerIdCell.textContent.trim();
-                    console.log(`Historical row clicked, navigating to player detail for ID: ${playerId} from season ${selectedSeason}`);
+                // Different behavior for mobile vs desktop
+                if (isMobileDevice()) {
+                    // On mobile: add click handlers to each cell except the last one
+                    const cells = row.querySelectorAll('td');
+                    const lastCell = cells[cells.length - 1];
                     
-                    // Navigate to player detail page with season parameter
-                    window.location.href = `player-detail.html?id=${playerId}&from=historicalseason&season=${selectedSeason}`;
-                });
+                    // For all cells except the last one, navigate to player profile
+                    cells.forEach((cell, index) => {
+                        if (index < cells.length - 1) { // Not the last cell
+                            cell.addEventListener('click', function(e) {
+                                const playerId = playerIdCell.textContent.trim();
+                                console.log(`Cell clicked, navigating to player detail for ID: ${playerId} from season ${selectedSeason}`);
+                                
+                                // Navigate to player detail page with season parameter
+                                window.location.href = `player-detail.html?id=${playerId}&from=historicalseason&season=${selectedSeason}`;
+                            });
+                        }
+                    });
+                    
+                    // Last cell is handled by the tap-for-tooltip logic already implemented
+                } else {
+                    // On desktop: keep original row click behavior
+                    row.addEventListener('click', function() {
+                        const playerId = playerIdCell.textContent.trim();
+                        console.log(`Historical row clicked, navigating to player detail for ID: ${playerId} from season ${selectedSeason}`);
+                        
+                        // Navigate to player detail page with season parameter
+                        window.location.href = `player-detail.html?id=${playerId}&from=historicalseason&season=${selectedSeason}`;
+                    });
+                }
                 
                 // Add hover class for better UX
                 row.classList.add('clickable-row');
@@ -586,4 +621,13 @@
     window.showHistoricalScoreBreakdown = showScoreBreakdown;
     window.moveHistoricalTooltip = moveTooltip;
     window.hideHistoricalTooltip = hideTooltip;
+
+    // Update event listeners when window resizes or season changes
+    window.addEventListener('resize', function() {
+        // Re-fetch data for the currently selected season
+        const seasonSelect = document.getElementById('season-select');
+        if (seasonSelect && seasonSelect.value) {
+            fetchHistoricalRankings(seasonSelect.value);
+        }
+    });
 })();

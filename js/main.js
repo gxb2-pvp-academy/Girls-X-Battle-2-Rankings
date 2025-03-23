@@ -41,6 +41,11 @@ function initializeTooltip() {
     console.log('Tooltip initialized successfully');
 }
 
+// Helper function to check if the device is mobile (width <= 768px)
+function isMobileDevice() {
+    return window.innerWidth <= 768;
+}
+
 function initializeNavMenu() {
     // Remove any duplicate menu-toggle elements
     const menuToggles = document.querySelectorAll('.menu-toggle');
@@ -321,9 +326,17 @@ function renderRankings(rankings) {
         // Add score breakdown data if available
         if (player.score_breakdown) {
             scoreCell.dataset.scoreBreakdown = JSON.stringify(player.score_breakdown);
-            scoreCell.addEventListener('mouseover', showScoreBreakdown);
-            scoreCell.addEventListener('mousemove', moveTooltip);
-            scoreCell.addEventListener('mouseout', hideTooltip);
+            
+            // Different event handlers for mobile vs desktop
+            if (isMobileDevice()) {
+                // For mobile: use click/tap
+                scoreCell.addEventListener('click', showScoreBreakdown);
+            } else {
+                // For desktop: use hover
+                scoreCell.addEventListener('mouseover', showScoreBreakdown);
+                scoreCell.addEventListener('mousemove', moveTooltip);
+                scoreCell.addEventListener('mouseout', hideTooltip);
+            }
         }
         
         row.appendChild(scoreCell);
@@ -517,7 +530,7 @@ function createPlayerChart(playerData) {
 }
 
 function showScoreBreakdown(event) {
-    console.log('Score hover detected');
+    console.log('Score interaction detected');
     const tooltip = document.getElementById('score-tooltip');
     
     // Check if tooltip exists, create if needed
@@ -643,32 +656,72 @@ function makeTableRowsClickable() {
         }
         
         if (playerIdCell) {
-            // Add click event listener to the row
-            row.addEventListener('click', function() {
-                const playerId = playerIdCell.textContent.trim();
+            // Different behavior for mobile vs desktop
+            if (isMobileDevice()) {
+                // On mobile: add click handlers to each cell except the last one
+                const cells = row.querySelectorAll('td');
+                const lastCell = cells[cells.length - 1];
                 
-                // Determine the current page to add as source parameter
-                let source = "worldranking"; // default
-                
-                if (document.querySelector('.total-title-table')) {
-                    source = "totaltitle";
-                } else if (document.querySelector('.highest-score-table')) {
-                    source = "highestscore";
-                } else if (document.querySelector('.no1-table')) {
-                    if (window.location.pathname.endsWith('no1-holder-consecutive.html')) {  // Updated from continuous to consecutive
-                        source = "consecutiveno1";  // Updated from continuousno1 to consecutiveno1
-                    } else {
-                        source = "regularno1";
+                // For all cells except the last one, navigate to player profile
+                cells.forEach((cell, index) => {
+                    if (index < cells.length - 1) { // Not the last cell
+                        cell.addEventListener('click', function(e) {
+                            const playerId = playerIdCell.textContent.trim();
+                            
+                            // Determine the current page to add as source parameter
+                            let source = "worldranking"; // default
+                            
+                            if (document.querySelector('.total-title-table')) {
+                                source = "totaltitle";
+                            } else if (document.querySelector('.highest-score-table')) {
+                                source = "highestscore";
+                            } else if (document.querySelector('.no1-table')) {
+                                if (window.location.pathname.endsWith('no1-holder-consecutive.html')) {
+                                    source = "consecutiveno1";
+                                } else {
+                                    source = "regularno1";
+                                }
+                            } else if (window.location.pathname.endsWith('historical-season.html')) {
+                                source = "historicalseason";
+                            }
+                            
+                            console.log(`Cell clicked, navigating to player detail for ID: ${playerId} from ${source}`);
+                            
+                            // Navigate to player detail page with source parameter
+                            window.location.href = `player-detail.html?id=${playerId}&from=${source}`;
+                        });
                     }
-                } else if (window.location.pathname.endsWith('historical-season.html')) {
-                    source = "historicalseason";
-                }
+                });
                 
-                console.log(`Row clicked, navigating to player detail for ID: ${playerId} from ${source}`);
-                
-                // Navigate to player detail page with source parameter
-                window.location.href = `player-detail.html?id=${playerId}&from=${source}`;
-            });
+                // Last cell is handled by the tap-for-tooltip logic already implemented
+            } else {
+                // On desktop: keep original row click behavior
+                row.addEventListener('click', function() {
+                    const playerId = playerIdCell.textContent.trim();
+                    
+                    // Determine the current page to add as source parameter
+                    let source = "worldranking"; // default
+                    
+                    if (document.querySelector('.total-title-table')) {
+                        source = "totaltitle";
+                    } else if (document.querySelector('.highest-score-table')) {
+                        source = "highestscore";
+                    } else if (document.querySelector('.no1-table')) {
+                        if (window.location.pathname.endsWith('no1-holder-consecutive.html')) {
+                            source = "consecutiveno1";
+                        } else {
+                            source = "regularno1";
+                        }
+                    } else if (window.location.pathname.endsWith('historical-season.html')) {
+                        source = "historicalseason";
+                    }
+                    
+                    console.log(`Row clicked, navigating to player detail for ID: ${playerId} from ${source}`);
+                    
+                    // Navigate to player detail page with source parameter
+                    window.location.href = `player-detail.html?id=${playerId}&from=${source}`;
+                });
+            }
             
             // Add hover class for better UX
             row.classList.add('clickable-row');
@@ -677,6 +730,14 @@ function makeTableRowsClickable() {
         }
     });
 }
+
+// Update event listeners when window resizes
+window.addEventListener('resize', function() {
+    // Re-initialize event listeners based on current viewport size
+    if (rankingsData && rankingsData.rankings) {
+        renderRankings(rankingsData.rankings);
+    }
+});
 
 // Make function available globally
 window.makeTableRowsClickable = makeTableRowsClickable;
