@@ -418,8 +418,9 @@ footer {
 }
 
 /* Always show chart on player profile page regardless of screen width */
-.player-profile-container .chart-container {
-    display: block;
+.player-profile-container .chart-container,
+.chart-section .chart-container {
+    display: block !important; /* Use !important to override any conflicting rules */
 }
 
 .chart-container.hidden {
@@ -664,6 +665,13 @@ footer {
     .desktop-total {
         display: inline;
     }
+    
+    /* Hide mobile-only column on desktop */
+    .mobile-only-column,
+    td:nth-child(9),
+    th:nth-child(9) {
+        display: none;
+    }
 }
 
 /* Mobile Navigation - Side Menu for Small Screens */
@@ -857,11 +865,30 @@ footer {
     .total-title-table th:nth-child(6),
     .total-title-table td:nth-child(6),
     .total-title-table th:nth-child(7),
-    .total-title-table td:nth-child(7) {
+    .total-title-table td:nth-child(7),
+    .total-title-table th:nth-child(8),
+    .total-title-table td:nth-child(8) {
         display: none;
     }
     
-    /* Rename the Total column to "Total Titles" on mobile */
+    /* Show mobile-only column on mobile */
+    .mobile-only-column {
+        display: table-cell;
+    }
+    
+    /* Make the 9th column (Total Titles) visible with proper styling */
+    .total-title-table th:nth-child(9),
+    .total-title-table td:nth-child(9) {
+        display: table-cell;
+        font-weight: 700;
+        width: 40% !important;
+        text-align: left;
+        cursor: pointer;
+        position: relative;
+        -webkit-tap-highlight-color: rgba(243, 156, 18, 0.2); /* Visual feedback on tap */
+    }
+    
+    /* Rename the Total column to "Total Titles" on mobile - not needed anymore */
     .total-title-table th:nth-child(8) {
         font-size: 0;
     }
@@ -951,4 +978,24 @@ footer {
     font-weight: 700;
     color: var(--dark);
     padding-right: 0; /* Remove right padding to be closer to the parenthesis */
+}
+
+/* Add new class for mobile-only column */
+.mobile-only-column {
+    display: none;
+}
+
+/* Add specific mobile styling to ensure the entire cell is tappable */
+.mobile-total-breakdown-cell {
+    padding: 12px 8px !important;
+    cursor: pointer;
+}
+
+/* Ensure mobile breakdown fills the entire cell area for better tap target */
+.mobile-title-breakdown {
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    padding: 0;
 }

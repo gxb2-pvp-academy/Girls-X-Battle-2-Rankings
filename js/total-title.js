@@ -187,121 +187,86 @@ function renderTotalTitles(rankings) {
         }
         row.appendChild(top8Cell);
         
-        // Total Titles
+        // Total Titles - 8th column (for desktop)
         const totalCell = document.createElement('td');
         totalCell.className = 'total-count';
+        totalCell.textContent = player.total;
         
-        // Create desktop total content (regular number)
-        const desktopTotal = document.createElement('span');
-        desktopTotal.className = 'desktop-total';
-        desktopTotal.textContent = player.total;
-        totalCell.appendChild(desktopTotal);
-        
-        // Create mobile-formatted content with proper event handling
-        const mobileTotal = document.createElement('span');
-        mobileTotal.className = 'mobile-title-breakdown';
-        
-        // Create spans separately so we can attach event listeners
-        const totalSpan = document.createElement('span'); // Changed from createTextNode to createElement
-        totalSpan.className = 'total-value'; // Add a class for styling and targeting
-        totalSpan.textContent = player.total; // Set the text content
-        
-        const openParen = document.createTextNode(' (');
-        
-        const championSpan = document.createElement('span');
-        championSpan.className = 'champion';
-        championSpan.textContent = player.champion;
-        
-        const separator1 = document.createTextNode('/');
-        
-        const runnerupSpan = document.createElement('span');
-        runnerupSpan.className = 'runnerup';
-        runnerupSpan.textContent = player.runnerup;
-        
-        const separator2 = document.createTextNode('/');
-        
-        const top4Span = document.createElement('span');
-        top4Span.className = 'top4';
-        top4Span.textContent = player.top4;
-        
-        const separator3 = document.createTextNode('/');
-        
-        const top8Span = document.createElement('span');
-        top8Span.className = 'top8';
-        top8Span.textContent = player.top8;
-        
-        const closeParen = document.createTextNode(')');
-        
-        // Assemble the mobile breakdown structure
-        mobileTotal.appendChild(totalSpan);
-        mobileTotal.appendChild(openParen);
-        mobileTotal.appendChild(championSpan);
-        mobileTotal.appendChild(separator1);
-        mobileTotal.appendChild(runnerupSpan);
-        mobileTotal.appendChild(separator2);
-        mobileTotal.appendChild(top4Span);
-        mobileTotal.appendChild(separator3);
-        mobileTotal.appendChild(top8Span);
-        mobileTotal.appendChild(closeParen);
-        
-        // If on mobile, attach click handlers to each span
-        if (isMobileDevice()) {
-            // Attach the same event handler to each span INCLUDING the total number
-            [totalSpan, championSpan, runnerupSpan, top4Span, top8Span].forEach(span => {
-                span.addEventListener('click', function(e) {
-                    e.stopPropagation(); // Prevent bubbling to avoid double firing
-                    
-                    // Call showTitleBreakdown with the row's data
-                    const row = totalCell.closest('tr');
-                    if (row && row.dataset.titleBreakdown) {
-                        const customEvent = {
-                            currentTarget: totalCell,
-                            target: span,
-                            pageX: e.pageX,
-                            pageY: e.pageY
-                        };
-                        
-                        showTitleBreakdown(customEvent);
-                    }
-                });
-            });
-            
-            // Also make the entire mobile total span clickable
-            mobileTotal.addEventListener('click', function(e) {
-                // Only trigger if the click was directly on the mobileTotal element
-                // and not on one of its child spans (which have their own handlers)
-                if (e.target === mobileTotal) {
-                    const customEvent = {
-                        currentTarget: totalCell,
-                        target: mobileTotal,
-                        pageX: e.pageX,
-                        pageY: e.pageY
-                    };
-                    
-                    showTitleBreakdown(customEvent);
-                }
-            });
-        }
-        
-        totalCell.appendChild(mobileTotal);
-        
-        // Add event listeners to total count column
-        if (isMobileDevice()) {
-            // Make the totalCell itself clickable
-            totalCell.addEventListener('click', function(e) {
-                // Only trigger if clicking directly on the cell,
-                // not on the spans (which have their own handlers)
-                if (e.target === totalCell) {
-                    showTitleBreakdown(e);
-                }
-            });
-        } else {
+        // Add event handlers for desktop tooltip
+        if (!isMobileDevice()) {
             totalCell.addEventListener('mouseover', showTitleBreakdown);
             totalCell.addEventListener('mousemove', moveTooltip);
             totalCell.addEventListener('mouseout', hideTooltip);
+        } else {
+            totalCell.addEventListener('click', showTitleBreakdown);
         }
         
         row.appendChild(totalCell);
+        
+        // Total Titles with Breakdown - 9th column (for mobile only)
+        const mobileTotalCell = document.createElement('td');
+        mobileTotalCell.className = 'mobile-total-breakdown-cell';
+        
+        // Create mobile-formatted content with proper event handling
+        const mobileBreakdown = document.createElement('div');
+        mobileBreakdown.className = 'mobile-title-breakdown';
+        
+        // Format: Total (C/R/T4/T8)
+        mobileBreakdown.innerHTML = `
+            <span class="total-value">${player.total}</span> 
+            (<span class="champion">${player.champion}</span>/
+            <span class="runnerup">${player.runnerup}</span>/
+            <span class="top4">${player.top4}</span>/
+            <span class="top8">${player.top8}</span>)
+        `;
+        
+        // IMPORTANT: Make the entire mobile cell clickable to show title breakdown without highlighting
+        mobileTotalCell.addEventListener('click', function(e) {
+            // Only handle click if it's directly on the cell or on the mobile breakdown div,
+            // not on the individual spans (which have their own handlers)
+            if (e.target === mobileTotalCell || e.target === mobileBreakdown) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Create custom event that uses totalCell as the currentTarget
+                // to ensure no specific title type is highlighted
+                const customEvent = {
+                    currentTarget: totalCell, // Use totalCell to show all types without highlighting
+                    target: e.target,
+                    pageX: e.pageX,
+                    pageY: e.pageY
+                };
+                
+                // Show the title breakdown
+                showTitleBreakdown(customEvent);
+            }
+        });
+        
+        // Make individual spans clickable with their specific behaviors
+        const spans = mobileBreakdown.querySelectorAll('span');
+        spans.forEach(span => {
+            span.addEventListener('click', function(e) {
+                e.stopPropagation();
+                
+                // Here we're creating custom events to mimic clicking on the specific title cells
+                // for the champion/runnerup/etc. spans
+                const customEvent = {
+                    currentTarget: span.classList.contains('champion') ? championCell :
+                                  span.classList.contains('runnerup') ? runnerupCell :
+                                  span.classList.contains('top4') ? top4Cell :
+                                  span.classList.contains('top8') ? top8Cell : 
+                                  totalCell,
+                    target: span,
+                    pageX: e.pageX,
+                    pageY: e.pageY
+                };
+                
+                showTitleBreakdown(customEvent);
+            });
+        });
+        
+        mobileTotalCell.appendChild(mobileBreakdown);
+        row.appendChild(mobileTotalCell);
         
         tableBody.appendChild(row);
     });
@@ -332,25 +297,21 @@ function makeTitleRowsClickable() {
         if (playerIdCell) {
             // Different behavior for mobile vs desktop
             if (isMobileDevice()) {
-                // On mobile: add click handlers to each cell except the last one
-                const cells = row.querySelectorAll('td');
+                // On mobile: add click handlers to first and third cells (rank and player info)
+                const rankCell = row.querySelector('td:nth-child(1)');
+                const playerInfoCell = row.querySelector('td:nth-child(3)');
                 
-                // For all cells except the last column (total count), navigate to player profile
-                cells.forEach((cell, index) => {
-                    // Skip the last cell (total count) and the cells for individual counts
-                    // which are handled by the tooltip logic
-                    if (index < cells.length - 5 || (index === cells.length - 4)) {
-                        cell.addEventListener('click', function(e) {
-                            const playerId = playerIdCell.textContent.trim();
-                            console.log(`Cell clicked, navigating to player detail for ID: ${playerId}`);
-                            
-                            // Navigate to player detail page
-                            window.location.href = `player-detail.html?id=${playerId}&from=totaltitle`;
-                        });
-                    }
+                [rankCell, playerInfoCell].forEach(cell => {
+                    cell.addEventListener('click', function(e) {
+                        const playerId = playerIdCell.textContent.trim();
+                        console.log(`Cell clicked, navigating to player detail for ID: ${playerId}`);
+                        
+                        // Navigate to player detail page
+                        window.location.href = `player-detail.html?id=${playerId}&from=totaltitle`;
+                    });
                 });
                 
-                // Last cells (champion, runner-up, top4, top8, total) are handled by tap-for-tooltip logic
+                // Other cells are handled by tap-for-tooltip logic
             } else {
                 // On desktop: keep original row click behavior
                 row.addEventListener('click', function() {

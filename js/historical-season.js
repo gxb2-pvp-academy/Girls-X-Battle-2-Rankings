@@ -1,60 +1,73 @@
 // Use an IIFE to create a closure and avoid global variable conflicts
 (function() {
     document.addEventListener('DOMContentLoaded', function() {
-        // Check if we're on the historical season ranking page more precisely
-        if (isHistoricalSeasonPage()) {
-            console.log("Historical season page detected");
-            
-            // Initialize tooltip
-            initializeHistoricalTooltip();
-            
-            // Populate season dropdown
-            populateSeasonDropdown();
-            
-            // Add event listener to season select dropdown
-            const seasonSelect = document.getElementById('season-select');
-            if (seasonSelect) {
-                // Remove any existing event listeners
-                const newSelect = seasonSelect.cloneNode(true);
-                seasonSelect.parentNode.replaceChild(newSelect, seasonSelect);
-                
-                // Add new event listener
-                newSelect.addEventListener('change', function() {
-                    const selectedSeason = this.value;
-                    console.log("Selected season:", selectedSeason);
-                    if (selectedSeason) {
-                        fetchHistoricalRankings(selectedSeason);
-                        
-                        // Update the URL with the selected season
-                        const url = new URL(window.location);
-                        url.searchParams.set('season', selectedSeason);
-                        window.history.pushState({}, '', url);
-                    }
-                });
-            } else {
-                console.error("Season select dropdown not found");
-            }
-        }
+        console.log("DOM loaded - checking if this is historical season page");
+        
+        // Always try to initialize the historical season page, regardless of URL checks
+        // This ensures the dropdown gets populated even if URL detection fails
+        initializeHistoricalPage();
     });
     
-    // Helper function to more reliably determine if we're on the historical season page
-    function isHistoricalSeasonPage() {
-        // Check URL path
-        if (window.location.pathname.endsWith('historical-season.html')) {
-            return true;
-        }
+    function initializeHistoricalPage() {
+        console.log("Initializing historical season page");
         
-        // Check for season select dropdown
-        const seasonSelect = document.getElementById('season-select');
-        if (seasonSelect && document.getElementById('rankings-container')) {
-            // Ensure we add a data attribute to prevent re-initialization
-            if (!seasonSelect.dataset.initialized) {
-                seasonSelect.dataset.initialized = 'true';
-                return true;
+        // Initialize tooltip
+        initializeHistoricalTooltip();
+        
+        // Populate season dropdown - this is the critical part
+        populateSeasonDropdown()
+            .then(() => {
+                console.log("Season dropdown populated successfully");
+                
+                // Add event listener to season select dropdown
+                const seasonSelect = document.getElementById('season-select');
+                if (seasonSelect) {
+                    // Remove any existing event listeners
+                    const newSelect = seasonSelect.cloneNode(true);
+                    seasonSelect.parentNode.replaceChild(newSelect, seasonSelect);
+                    
+                    // Add new event listener
+                    newSelect.addEventListener('change', function() {
+                        const selectedSeason = this.value;
+                        console.log("Selected season:", selectedSeason);
+                        if (selectedSeason) {
+                            fetchHistoricalRankings(selectedSeason);
+                            
+                            // Update the URL with the selected season
+                            const url = new URL(window.location);
+                            url.searchParams.set('season', selectedSeason);
+                            window.history.pushState({}, '', url);
+                        }
+                    });
+                    
+                    // Check for URL parameter right after initialization
+                    checkUrlForSeasonParameter();
+                } else {
+                    console.error("Season select dropdown not found");
+                }
+            })
+            .catch(error => {
+                console.error("Failed to initialize season dropdown:", error);
+            });
+    }
+    
+    // Helper function to check URL for season parameter
+    function checkUrlForSeasonParameter() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const seasonParam = urlParams.get('season');
+        
+        if (seasonParam) {
+            console.log(`Season parameter found in URL: ${seasonParam}`);
+            const seasonSelect = document.getElementById('season-select');
+            
+            if (seasonSelect) {
+                // Set the selected season
+                seasonSelect.value = seasonParam;
+                
+                // Trigger change event to load the season data
+                seasonSelect.dispatchEvent(new Event('change'));
             }
         }
-        
-        return false;
     }
 
     // Store data for this module - local to this closure
@@ -95,9 +108,15 @@
         console.log("Populating season dropdown...");
         
         try {
-            // Fetch available seasons
+            // Fetch available seasons with explicit no-cache to avoid stale data
             console.log("Fetching seasons data...");
-            const response = await fetch('data/historical/seasons.json');
+            const response = await fetch('data/historical/seasons.json', {
+                cache: 'no-store', // Don't use cache
+                headers: {
+                    'Cache-Control': 'no-cache',
+                    'Pragma': 'no-cache'
+                }
+            });
             
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
@@ -106,9 +125,15 @@
             const data = await response.json();
             console.log("Seasons data received:", data);
             
+            // Check if data has the expected structure
+            if (!data.historical_seasons || !Array.isArray(data.historical_seasons)) {
+                console.error("Invalid seasons data format:", data);
+                throw new Error("Invalid seasons data format");
+            }
+            
             // Set current season in welcome message
             const currentSeasonNote = document.getElementById('current-season-note');
-            if (currentSeasonNote) {
+            if (currentSeasonNote && data.current_season) {
                 currentSeasonNote.textContent = data.current_season;
             }
             
@@ -129,19 +154,7 @@
                 seasonSelect.appendChild(option);
             });
             
-            // Check for season parameter in URL after populating dropdown
-            const urlParams = new URLSearchParams(window.location.search);
-            const seasonParam = urlParams.get('season');
-            
-            if (seasonParam) {
-                console.log(`Season parameter found in URL: ${seasonParam}`);
-                // Set the selected season after a short delay to ensure dropdown is ready
-                setTimeout(() => {
-                    seasonSelect.value = seasonParam;
-                    // Trigger change event to load the season data
-                    seasonSelect.dispatchEvent(new Event('change'));
-                }, 100);
-            }
+            console.log("Added", historicalSeasons.length, "season options to dropdown");
             
             return Promise.resolve();
             
@@ -167,39 +180,35 @@
         }
         
         // Update loading message and hide welcome message
-        loadingEl.textContent = `Loading Season ${season} rankings data...`;
-        loadingEl.classList.remove('hidden');
+        if (loadingEl) loadingEl.textContent = `Loading Season ${season} rankings data...`;
+        if (loadingEl) loadingEl.classList.remove('hidden');
         if (errorEl) errorEl.classList.add('hidden');
         if (welcomeEl) welcomeEl.style.display = 'none';
         
         try {
-            const response = await fetch(`data/historical/season_${season}.json`);
+            console.log(`Fetching data for season ${season}...`);
+            const response = await fetch(`data/historical/season_${season}.json`, {
+                cache: 'no-store', // Don't use cache
+                headers: {
+                    'Cache-Control': 'no-cache',
+                    'Pragma': 'no-cache'
+                }
+            });
             
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
             
             const data = await response.json();
+            console.log(`Data for season ${season} loaded:`, data);
             
             // Store data globally
             historicalRankingsData = data;
             
-            // Update season display in dropdown (instead of using current-season span)
-            const seasonSelect = document.getElementById('season-select');
-            if (seasonSelect) {
-                // Make sure the correct season is selected in the dropdown
-                for (let i = 0; i < seasonSelect.options.length; i++) {
-                    if (seasonSelect.options[i].value == season) {
-                        seasonSelect.selectedIndex = i;
-                        break;
-                    }
-                }
-            }
-            
             // Update last updated info
             const lastUpdatedEl = document.getElementById('last-updated');
             if (lastUpdatedEl) {
-                lastUpdatedEl.textContent = data.last_updated;
+                lastUpdatedEl.textContent = data.last_updated || new Date().toLocaleDateString();
             }
             
             // Populate rankings table
@@ -209,13 +218,16 @@
             addRowEventListeners();
             
             // Hide loading, show rankings container
-            loadingEl.classList.add('hidden');
+            if (loadingEl) loadingEl.classList.add('hidden');
             if (rankingsContainerEl) rankingsContainerEl.style.display = 'block';
             
         } catch (error) {
             console.error(`Error fetching Season ${season} rankings:`, error);
-            loadingEl.classList.add('hidden');
-            if (errorEl) errorEl.classList.remove('hidden');
+            if (loadingEl) loadingEl.classList.add('hidden');
+            if (errorEl) {
+                errorEl.classList.remove('hidden');
+                errorEl.textContent = `Failed to load Season ${season} data. Please try again later.`;
+            }
             // Show welcome message again on error
             if (welcomeEl) welcomeEl.style.display = 'block';
         }
