@@ -1,9 +1,8 @@
 // Use an IIFE to create a closure and avoid global variable conflicts
 (function() {
     document.addEventListener('DOMContentLoaded', function() {
-        // Check if we're on the historical season ranking page
-        if (window.location.pathname.endsWith('historical-season.html') || 
-            document.getElementById('season-select')) {
+        // Check if we're on the historical season ranking page more precisely
+        if (isHistoricalSeasonPage()) {
             console.log("Historical season page detected");
             
             // Initialize tooltip
@@ -15,7 +14,12 @@
             // Add event listener to season select dropdown
             const seasonSelect = document.getElementById('season-select');
             if (seasonSelect) {
-                seasonSelect.addEventListener('change', function() {
+                // Remove any existing event listeners
+                const newSelect = seasonSelect.cloneNode(true);
+                seasonSelect.parentNode.replaceChild(newSelect, seasonSelect);
+                
+                // Add new event listener
+                newSelect.addEventListener('change', function() {
                     const selectedSeason = this.value;
                     console.log("Selected season:", selectedSeason);
                     if (selectedSeason) {
@@ -32,6 +36,26 @@
             }
         }
     });
+    
+    // Helper function to more reliably determine if we're on the historical season page
+    function isHistoricalSeasonPage() {
+        // Check URL path
+        if (window.location.pathname.endsWith('historical-season.html')) {
+            return true;
+        }
+        
+        // Check for season select dropdown
+        const seasonSelect = document.getElementById('season-select');
+        if (seasonSelect && document.getElementById('rankings-container')) {
+            // Ensure we add a data attribute to prevent re-initialization
+            if (!seasonSelect.dataset.initialized) {
+                seasonSelect.dataset.initialized = 'true';
+                return true;
+            }
+        }
+        
+        return false;
+    }
 
     // Store data for this module - local to this closure
     let historicalRankingsData = null;
@@ -201,6 +225,11 @@
     function isMobileDevice() {
         return window.innerWidth <= 768;
     }
+    
+    // Helper function to check if screen is wide enough for side charts
+    function isWideScreen() {
+        return window.innerWidth > 2100;
+    }
 
     function renderRankings(rankings) {
         const tableBody = document.getElementById('rankings-body');
@@ -360,6 +389,11 @@
 
     // Add event listeners to table rows for chart display
     function addRowEventListeners() {
+        // Only add hover chart event listeners if screen is wide enough
+        if (!isWideScreen()) {
+            return;
+        }
+        
         const rows = document.querySelectorAll('#rankings-body tr');
         
         rows.forEach(row => {
@@ -370,6 +404,11 @@
 
     // Show chart when hovering over a player row
     function showPlayerChart(event) {
+        // Don't show chart if screen is not wide enough
+        if (!isWideScreen()) {
+            return;
+        }
+        
         const row = event.currentTarget;
         const idCell = row.querySelector('td:nth-child(3)');
         const playerId = parseInt(idCell.textContent);

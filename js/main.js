@@ -5,10 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize navigation menu
     initializeNavMenu();
     
-    // Check if we're on the World Rankings page
-    if (window.location.pathname.endsWith('world-ranking.html') || 
-        document.getElementById('rankings-table')) {
-        
+    // IMPORTANT FIX: Check page type before initializing world rankings
+    if (shouldInitializeWorldRanking()) {
+        console.log('Initializing world ranking page');
         // Initialize tooltip
         initializeTooltip();
         
@@ -16,6 +15,57 @@ document.addEventListener('DOMContentLoaded', function() {
         fetchRankings();
     }
 });
+
+// Helper function to determine if we should initialize world ranking
+function shouldInitializeWorldRanking() {
+    // Check current page
+    const currentPath = window.location.pathname.toLowerCase();
+    
+    // Only initialize world ranking on the world ranking page
+    // Make sure we're NOT on any other ranking pages
+    if (currentPath.endsWith('world-ranking.html')) {
+        return true;
+    }
+    
+    // Don't initialize world ranking on these specific pages
+    const otherRankingPages = [
+        'highest-score.html', 
+        'historical-season.html', 
+        'total-title.html', 
+        'no1-holder-consecutive.html', 
+        'no1-holder-regular.html',
+        'player-detail.html',
+        'player-search.html',
+        'about.html'
+    ];
+    
+    for (const page of otherRankingPages) {
+        if (currentPath.endsWith(page)) {
+            return false;
+        }
+    }
+    
+    // If we're on index.html or a path without a specific HTML file, 
+    // check for the presence of the rankings table without other classes
+    if (currentPath.endsWith('index.html') || currentPath.endsWith('/')) {
+        // Don't initialize world ranking on index page
+        return false;
+    }
+    
+    // Check DOM structure to confirm this is world ranking
+    const rankingsTable = document.getElementById('rankings-table');
+    if (rankingsTable && 
+        !rankingsTable.classList.contains('highest-score-table') &&
+        !rankingsTable.classList.contains('total-title-table') &&
+        !rankingsTable.classList.contains('no1-table')) {
+        
+        // If we have a rankings table that doesn't have special classes
+        // for other ranking types, initialize world ranking
+        return true;
+    }
+    
+    return false;
+}
 
 function initializeTooltip() {
     // Check if tooltip exists, if not create it
@@ -44,6 +94,11 @@ function initializeTooltip() {
 // Helper function to check if the device is mobile (width <= 768px)
 function isMobileDevice() {
     return window.innerWidth <= 768;
+}
+
+// Helper function to check if screen is wide enough for side charts
+function isWideScreen() {
+    return window.innerWidth > 2100;
 }
 
 function initializeNavMenu() {
@@ -353,6 +408,11 @@ function renderRankings(rankings) {
 
 // Add event listeners to table rows for chart display
 function addRowEventListeners() {
+    // Only add hover chart event listeners if screen is wide enough
+    if (!isWideScreen()) {
+        return;
+    }
+    
     const rows = document.querySelectorAll('#rankings-body tr');
     
     rows.forEach(row => {
@@ -363,6 +423,11 @@ function addRowEventListeners() {
 
 // Show chart when hovering over a player row
 function showPlayerChart(event) {
+    // Don't show chart if screen is not wide enough
+    if (!isWideScreen()) {
+        return;
+    }
+    
     const row = event.currentTarget;
     const idCell = row.querySelector('td:nth-child(3)');
     const playerId = parseInt(idCell.textContent);

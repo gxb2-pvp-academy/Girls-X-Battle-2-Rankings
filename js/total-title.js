@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if we're on the total title ranking page
-    if (window.location.pathname.endsWith('total-title.html') || 
-        document.querySelector('.total-title-table')) {
+    // Check if we're on the total title ranking page more precisely
+    if (isTotalTitlePage()) {
+        console.log("Total title page detected");
         
         // Initialize tooltip for title breakdowns
         initializeTitleTooltip();
@@ -10,6 +10,26 @@ document.addEventListener('DOMContentLoaded', function() {
         fetchTotalTitles();
     }
 });
+
+// Helper function to more reliably determine if we're on the total title page
+function isTotalTitlePage() {
+    // Check URL path
+    if (window.location.pathname.endsWith('total-title.html')) {
+        return true;
+    }
+    
+    // Check for table with total-title-table class
+    const table = document.querySelector('.total-title-table');
+    if (table) {
+        // Ensure we add a data attribute to prevent re-initialization
+        if (!table.dataset.initialized) {
+            table.dataset.initialized = 'true';
+            return true;
+        }
+    }
+    
+    return false;
+}
 
 function initializeTitleTooltip() {
     // Check if tooltip exists, if not create it

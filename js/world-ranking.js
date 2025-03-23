@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if we're on the world ranking page
-    if (window.location.pathname.endsWith('world-ranking.html')) {
+    // Only initialize if we're definitely on the world ranking page
+    if (isWorldRankingPage()) {
         console.log("World ranking page detected");
         
         // Add our own event listener to make rows clickable after the table is rendered
@@ -26,11 +26,80 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.observe(rankingsBody, { childList: true });
         }
     }
+    
+    // Check if we need to update chart-related elements based on screen width
+    updateChartVisibility();
+    
+    // Listen for window resize events to update chart visibility
+    window.addEventListener('resize', updateChartVisibility);
 });
+
+// Helper function to determine if we're on the world ranking page
+function isWorldRankingPage() {
+    // Check URL path
+    if (window.location.pathname.endsWith('world-ranking.html')) {
+        return true;
+    }
+    
+    // Don't initialize on these specific pages
+    const otherPages = [
+        'highest-score.html', 
+        'historical-season.html', 
+        'total-title.html', 
+        'no1-holder-consecutive.html', 
+        'no1-holder-regular.html',
+        'player-detail.html',
+        'player-search.html',
+        'about.html',
+        'index.html'
+    ];
+    
+    for (const page of otherPages) {
+        if (window.location.pathname.endsWith(page)) {
+            return false;
+        }
+    }
+    
+    // Check for rankings table without other specific classes
+    const table = document.getElementById('rankings-table');
+    if (table && 
+        !table.classList.contains('highest-score-table') &&
+        !table.classList.contains('total-title-table') &&
+        !table.classList.contains('no1-table')) {
+        
+        // Ensure we add a data attribute to prevent re-initialization
+        if (!table.dataset.initialized) {
+            table.dataset.initialized = 'true';
+            return true;
+        }
+    }
+    
+    return false;
+}
 
 // Helper function to check if the device is mobile
 function isMobileDevice() {
     return window.innerWidth <= 768;
+}
+
+// Helper function to check if screen is wide enough for side charts
+function isWideScreen() {
+    return window.innerWidth > 2100;
+}
+
+// Function to update chart container visibility based on screen width
+function updateChartVisibility() {
+    const chartContainer = document.getElementById('player-chart-container');
+    if (!chartContainer) return;
+    
+    // If we're on a wide screen, make sure the chart container is ready
+    if (isWideScreen()) {
+        chartContainer.style.display = 'block';
+    } else {
+        chartContainer.style.display = 'none';
+        chartContainer.classList.add('hidden');
+        chartContainer.classList.remove('visible');
+    }
 }
 
 // Custom implementation of row click functionality for world ranking table

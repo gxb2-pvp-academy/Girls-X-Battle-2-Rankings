@@ -407,6 +407,19 @@ footer {
     z-index: 1000;
     transition: opacity 0.3s ease;
     border: 1px solid var(--border);
+    display: none; /* Hide by default */
+}
+
+/* Only show chart on screens wider than 2100px - for world ranking and historical pages */
+@media screen and (min-width: 2101px) {
+    .page-container .chart-container {
+        display: block;
+    }
+}
+
+/* Always show chart on player profile page regardless of screen width */
+.player-profile-container .chart-container {
+    display: block;
 }
 
 .chart-container.hidden {

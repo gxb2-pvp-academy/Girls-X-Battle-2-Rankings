@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if we're on the consecutive no1 ranking page
-    if (window.location.pathname.endsWith('no1-holder-consecutive.html')) {
+    // Check if we're on the consecutive no1 ranking page more precisely
+    if (isConsecutiveNo1Page()) {
         console.log("Consecutive No.1 ranking page detected");
         
         // Initialize tooltip for season breakdowns
@@ -10,6 +10,28 @@ document.addEventListener('DOMContentLoaded', function() {
         fetchConsecutiveNo1Rankings();
     }
 });
+
+// Helper function to more reliably determine if we're on the consecutive no1 page
+function isConsecutiveNo1Page() {
+    // Check URL path
+    if (window.location.pathname.endsWith('no1-holder-consecutive.html')) {
+        return true;
+    }
+    
+    // Check for table with no1-table class and page title containing "Consecutive"
+    const table = document.querySelector('.no1-table');
+    const title = document.querySelector('header h1');
+    
+    if (table && title && title.textContent.includes('Consecutive')) {
+        // Ensure we add a data attribute to prevent re-initialization
+        if (!table.dataset.initialized) {
+            table.dataset.initialized = 'true';
+            return true;
+        }
+    }
+    
+    return false;
+}
 
 function initializeNo1Tooltip() {
     // Check if tooltip exists, if not create it

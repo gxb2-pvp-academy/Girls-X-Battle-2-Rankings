@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if we're on the highest score ranking page
-    if (window.location.pathname.endsWith('highest-score.html') || 
-        document.querySelector('.highest-score-table')) {
-        
+    // Check if we're on the highest score ranking page more precisely
+    if (isHighestScorePage()) {
         console.log("Highest score page detected");
         
         // Initialize tooltip
@@ -12,6 +10,26 @@ document.addEventListener('DOMContentLoaded', function() {
         fetchHighestScores();
     }
 });
+
+// Helper function to more reliably determine if we're on the highest score page
+function isHighestScorePage() {
+    // Check URL path
+    if (window.location.pathname.endsWith('highest-score.html')) {
+        return true;
+    }
+    
+    // Check for table with highest-score-table class
+    const table = document.querySelector('.highest-score-table');
+    if (table) {
+        // Ensure we add a data attribute to prevent re-initialization
+        if (!table.dataset.initialized) {
+            table.dataset.initialized = 'true';
+            return true;
+        }
+    }
+    
+    return false;
+}
 
 function initializeTooltip() {
     // Check if tooltip exists, if not create it
