@@ -8,7 +8,332 @@
     <link rel="stylesheet" href="css/player-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* Enhanced player search page styling */
+        body {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        /* Decorative header with trophy icons */
+        header {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.07;
+        }
+        
+        header h1 {
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .search-container {
+            max-width: 800px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        /* Enhanced search form styling */
+        .search-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+            position: relative;
+            overflow: visible; /* Changed from hidden to allow dropdown to show fully */
+            border-top: 4px solid var(--primary);
+            transition: transform 0.3s ease;
+            width: 100%; /* Ensure it takes full width of parent container */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        
+        .search-form::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.04;
+            z-index: 0;
+        }
+        
+        .search-form h2 {
+            color: var(--dark);
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(243, 156, 18, 0.2);
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-form h2::before {
+            content: "\f002";
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            margin-right: 12px;
+            color: var(--primary);
+            font-size: 1.4rem;
+            background-color: rgba(243, 156, 18, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .search-form h2::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 80px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+        
+        .search-form p {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+        
+        /* Enhanced search input container */
+        .search-input-container {
+            display: flex;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 100; /* Add higher z-index to ensure dropdown appears above everything */
+        }
+        
+        .autocomplete {
+            position: relative;
+            flex-grow: 1;
+        }
+        
+        /* Styled search input */
+        #player-id-input {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            border: 2px solid #e9ecef;
+            border-radius: 8px 0 0 8px;
+            transition: all 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        #player-id-input:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.2);
+        }
+        
+        /* Stylized search button */
+        .search-btn {
+            padding: 0 25px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(243, 156, 18, 0.3);
+        }
+        
+        .search-btn::before {
+            content: "\f002";
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            margin-right: 8px;
+        }
+        
+        .search-btn:hover {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            box-shadow: 0 6px 12px rgba(243, 156, 18, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .search-btn:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 4px rgba(243, 156, 18, 0.3);
+        }
+        
+        /* Dropdown styling */
+        .autocomplete-items {
+            position: absolute;
+            border: 1px solid #e9ecef;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            z-index: 1000; /* Increased z-index for dropdown */
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            max-height: 250px;
+            overflow-y: auto;
+            /* Fix for mobile devices */
+            width: 100%;
+        }
+        
+        .autocomplete-items div {
+            padding: 12px 15px;
+            cursor: pointer;
+            transition: background 0.2s;
+            border-bottom: 1px solid #f1f1f1;
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+        
+        .autocomplete-items div:hover {
+            background-color: rgba(243, 156, 18, 0.1);
+        }
+        
+        .autocomplete-active {
+            background-color: rgba(243, 156, 18, 0.2) !important;
+        }
+        
+        /* Error message styling */
+        .error-message {
+            background: #fee;
+            color: #d63031;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            border-left: 4px solid #d63031;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .error-message::before {
+            content: "\f071";
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            margin-right: 10px;
+            color: #d63031;
+        }
+
+        /* Fix for hidden class being overridden */
+        .error-message.hidden {
+            display: none !important;
+        }
+        
+        /* Enhanced search tips styling */
+        .search-tips {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+            border-left: 4px solid var(--secondary);
+            width: 100%; /* Ensure it takes full width of parent container */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        
+        .search-tips::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.04;
+            z-index: 0;
+        }
+        
+        .search-tips h3 {
+            color: var(--secondary);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-tips h3 i {
+            color: var(--secondary);
+            margin-right: 10px;
+            background: rgba(230, 126, 34, 0.1);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .search-tips ul {
+            padding-left: 5px;
+            list-style-type: none;
+            color: #555;
+        }
+        
+        .search-tips li {
+            margin-bottom: 12px;
+            padding-left: 28px;
+            position: relative;
+        }
+        
+        .search-tips li::before {
+            content: "\f058";
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--secondary);
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        
+        .search-tips strong {
+            color: var(--dark);
+            font-weight: 600;
+        }
+        
+        /* Enhanced footer styling */
+        footer {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+    </style>
 </head>
 <body>
     
@@ -40,11 +365,21 @@
                         <i class="fas fa-list-ol nav-icon"></i>Other Rankings
                     </a>
                     <ul class="dropdown-menu">
-                        <a href="highest-score.html" class="dropdown-item">Highest Score Ranking</a>
-                        <a href="historical-season.html" class="dropdown-item">Historical Season Ranking</a>
-                        <a href="total-title.html" class="dropdown-item">Total Title Ranking</a>
-                        <a href="no1-holder-consecutive.html" class="dropdown-item">World No.1 Ranking (Consecutive)</a>
-                        <a href="no1-holder-regular.html" class="dropdown-item">World No.1 Ranking (Regular)</a>
+                        <a href="highest-score.html" class="dropdown-item">
+                            <i class="fas fa-chart-line" style="margin-right: 8px;"></i>Highest Score Ranking
+                        </a>
+                        <a href="historical-season.html" class="dropdown-item">
+                            <i class="fas fa-history" style="margin-right: 8px;"></i>Historical Season Ranking
+                        </a>
+                        <a href="total-title.html" class="dropdown-item">
+                            <i class="fas fa-trophy" style="margin-right: 8px;"></i>Total Title Ranking
+                        </a>
+                        <a href="no1-holder-consecutive.html" class="dropdown-item">
+                            <i class="fas fa-crown" style="margin-right: 8px;"></i>World No.1 Ranking (Consecutive)
+                        </a>
+                        <a href="no1-holder-regular.html" class="dropdown-item">
+                            <i class="fas fa-crown" style="margin-right: 8px;"></i>World No.1 Ranking (Regular)
+                        </a>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -53,15 +388,12 @@
                     </a>
                 </li>
             </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
     </nav>
 
     <header>
         <div class="container">
-            <h1>Player Search</h1>
+            <h1><i class="fas fa-search" style="color: gold; margin-right: 15px;"></i>Player Search</h1>
         </div>
     </header>
     
@@ -70,7 +402,7 @@
             <div class="search-container">
                 <div class="search-form">
                     <h2>Find Player Information</h2>
-                    <p>Enter a player ID to view detailed statistics</p>
+                    <p>Enter and select a player ID to view detailed player profile</p>
                     
                     <div class="search-input-container">
                         <div class="autocomplete">
@@ -80,15 +412,15 @@
                         <button id="search-button" class="search-btn">Search</button>
                     </div>
                     
-                    <div id="search-error" class="error-message hidden">Please select a valid player ID</div>
+                    <div id="search-error" class="error-message hidden">Please select a valid player ID from the dropdown menu</div>
                 </div>
                 
                 <div class="search-tips">
-                    <h3><i class="fas fa-lightbulb"></i> Search Tips</h3>
+                    <h3><i class="fas fa-lightbulb"></i>Search Tips</h3>
                     <ul>
-                        <li><strong>Only players who appeared in the Ultimate League Final stage at least once can be searched</strong></li>
+                        <li><strong>Only players who appeared in the Ultimate League Final stage at least once can be searched. Otherwise, you will not find the player ID from the dropdown menu.</strong></li>
                         <li>Start typing to see matching player IDs</li>
-                        <li>Select from the dropdown or enter a complete ID</li>
+                        <li>Select from the dropdown menu and click on the "Search" button</li>
                         <li>Player IDs are 10-digit numbers</li>
                     </ul>
                 </div>
@@ -97,7 +429,7 @@
         
         <footer>
             <div class="container">
-                <p>GXB2 Rankings | <span id="footer-year">2025</span></p>
+                <p>Girls X Battle 2 Rankings | <span id="footer-year">2025</span></p>
             </div>
         </footer>
     </div>

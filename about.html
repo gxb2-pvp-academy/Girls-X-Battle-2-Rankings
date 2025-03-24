@@ -7,7 +7,211 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* Enhanced about page styling */
+        body {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        /* Decorative header with trophy icons */
+        header {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 24 24' fill='%23ffffff10'%3E%3Cpath d='M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z'/%3E%3C/svg%3E");
+            opacity: 0.07;
+        }
+        
+        header h1 {
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .about-section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            position: relative;
+            overflow: hidden;
+            border-top: 4px solid var(--primary);
+        }
+        
+        .section-title {
+            color: var(--dark);
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(243, 156, 18, 0.3);
+            position: relative;
+            font-weight: 700;
+            font-size: 1.8rem;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 80px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+        
+        .section-title i {
+            margin-right: 15px;
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+        
+        .about-content p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .about-content strong {
+            color: var(--dark);
+            font-weight: 600;
+        }
+        
+        .about-content a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+        
+        .about-content a:hover {
+            color: var(--secondary);
+        }
+        
+        .about-content a::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: right;
+        }
+        
+        .about-content a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        
+        /* Project list */
+        .project-list {
+            list-style-type: none;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+        
+        .project-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .project-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(243, 156, 18, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .project-list li::after {
+            display: none;
+        }
+        
+        /* Contact card */
+        .contact-card {
+            background: linear-gradient(135deg, #f9f9f9 0%, #f5f5f5 100%);
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(243, 156, 18, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            font-size: 28px;
+            color: var(--primary);
+        }
+        
+        .contact-details {
+            flex-grow: 1;
+        }
+        
+        .contact-details p {
+            margin: 0;
+        }
+        
+        /* Disclaimer box */
+        .disclaimer-box {
+            background-color: rgba(52, 73, 94, 0.05);
+            border-left: 4px solid var(--dark);
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        
+        .disclaimer-box p {
+            margin: 0;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     
@@ -39,11 +243,21 @@
                         <i class="fas fa-list-ol nav-icon"></i>Other Rankings
                     </a>
                     <ul class="dropdown-menu">
-                        <a href="highest-score.html" class="dropdown-item">Highest Score Ranking</a>
-                        <a href="historical-season.html" class="dropdown-item">Historical Season Ranking</a>
-                        <a href="total-title.html" class="dropdown-item">Total Title Ranking</a>
-                        <a href="no1-holder-consecutive.html" class="dropdown-item">World No.1 Ranking (Consecutive)</a>
-                        <a href="no1-holder-regular.html" class="dropdown-item">World No.1 Ranking (Regular)</a>
+                        <a href="highest-score.html" class="dropdown-item">
+                            <i class="fas fa-chart-line" style="margin-right: 8px;"></i>Highest Score Ranking
+                        </a>
+                        <a href="historical-season.html" class="dropdown-item">
+                            <i class="fas fa-history" style="margin-right: 8px;"></i>Historical Season Ranking
+                        </a>
+                        <a href="total-title.html" class="dropdown-item">
+                            <i class="fas fa-trophy" style="margin-right: 8px;"></i>Total Title Ranking
+                        </a>
+                        <a href="no1-holder-consecutive.html" class="dropdown-item">
+                            <i class="fas fa-crown" style="margin-right: 8px;"></i>World No.1 Ranking (Consecutive)
+                        </a>
+                        <a href="no1-holder-regular.html" class="dropdown-item">
+                            <i class="fas fa-crown" style="margin-right: 8px;"></i>World No.1 Ranking (Regular)
+                        </a>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -52,46 +266,76 @@
                     </a>
                 </li>
             </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
     </nav>
 
     <header>
         <div class="container">
-            <h1>About Girls X Battle 2 Rankings</h1>
+            <h1><i class="fas fa-info-circle" style="color: var(--primary); margin-right: 15px;"></i>About GXB2 Rankings</h1>
         </div>
     </header>
     
     <div class="page-container">
-        <main class="container">
-            <div class="page-content">
-                <h3 style="margin-top: 30px; color: var(--dark); border-bottom: 1px solid var(--border); padding-bottom: 5px;">About This Website</h3>
+        <main class="container about-content">
+            <!-- About This Website Section -->
+            <section class="about-section website-section">
+                <h2 class="section-title"><i class="fas fa-globe"></i>About This Website</h2>
                 <p>The Girls X Battle 2 Rankings website is created and maintained by <strong>The GXB2 PVP Academy</strong>.</p>
-                <p>This website aims to provide a comprehensive and user-friendly platform for professional players to access their rankings, statistics, and other relevant information related to the game.</p>
+                <p>This website aims to provide a comprehensive and user-friendly platform for professional players to access their world rankings and Ultimate League statistics.</p>
 
-                <h3 style="margin-top: 30px; color: var(--dark); border-bottom: 1px solid var(--border); padding-bottom: 5px;">About Us</h3>
+            </section>
+            
+            <!-- About Us Section -->
+            <section class="about-section team-section">
+                <h2 class="section-title"><i class="fas fa-users"></i>About Us</h2>
                 <p>The GXB2 PVP Academy is a dedicated group of professional and passionate players who focus specifically on end-game PVP, aiming to pursue PVP sophistication and excellence.</p>
                 <p>Unlike regular professional players, our dedication is more on the academic and technical side.</p>
-                <p>Aside from this webpage, we also work on the following projects:</p>
-                <li>Collect detailed match records of active professional players</li>
-                <li>Develop new end-game PVP lineups and corresponding countermeasure lineups</li>
-                <li>Establish foundational PVP theories and tactics</li>
-                <li>Use reinforcement learning to train AI agents that are capable of competing in end-game PVP</li>
-
-                <h3 style="margin-top: 30px; color: var(--dark); border-bottom: 1px solid var(--border); padding-bottom: 5px;">Contact Information</h3>
-                <p>For questions, suggestions, or feedback about this website, please contact:</p>
-                <p><strong>Email:</strong> <a href="mailto:GXB2.PVP.Academy@gmail.com">GXB2.PVP.Academy@gmail.com</a></p>
                 
-                <h3 style="margin-top: 30px; color: var(--dark); border-bottom: 1px solid var(--border); padding-bottom: 5px;">Disclaimer</h3>
-                <p>This website, as well as The GXB2 PVP Academy, are not affiliated with, endorsed, sponsored, or specifically approved by Carolgames or any other parties.</p>
-            </div>
+                <div style="position: relative; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); border-radius: 10px; padding: 25px; margin: 30px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <h3 style="color: var(--dark); margin-top: 0; font-size: 1.4rem; border-bottom: 2px solid rgba(243, 156, 18, 0.2); padding-bottom: 10px; margin-bottom: 20px;">
+                        <i class="fas fa-project-diagram" style="color: var(--primary); margin-right: 10px;"></i>Our Projects
+                    </h3>
+                    
+                    <p>Aside from this webpage, we also work on the following projects:</p>
+                    
+                    <ul class="project-list">
+                        <li>Collect detailed match records of active professional players</li>
+                        <li>Develop new end-game PVP lineups and corresponding countermeasure lineups</li>
+                        <li>Establish foundational PVP theories and tactics</li>
+                        <li>Use reinforcement learning to train AI agents that are capable of competing in end-game PVP</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Contact Information Section -->
+            <section class="about-section contact-section">
+                <h2 class="section-title"><i class="fas fa-envelope"></i>Contact Information</h2>
+                <p>For questions, suggestions, or feedback about this website, please contact:</p>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <p><strong>Email:</strong></p>
+                        <a href="mailto:GXB2.PVP.Academy@gmail.com" style="font-size: 1.1rem;">GXB2.PVP.Academy@gmail.com</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Disclaimer Section -->
+            <section class="about-section disclaimer-section">
+                <h2 class="section-title"><i class="fas fa-exclamation-circle"></i>Disclaimer</h2>
+                <div class="disclaimer-box">
+                    <p>This website, as well as The GXB2 PVP Academy, are not affiliated with, endorsed, sponsored, or specifically approved by Carolgames or any other parties.</p>
+                </div>
+            </section>
         </main>
         
-        <footer>
+        <footer style="position: relative; overflow: hidden;">
             <div class="container">
-                <p>GXB2 Rankings | <span id="footer-year">2025</span></p>
+                <p>Girls X Battle 2 Rankings | <span id="footer-year">2025</span></p>
+                <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(to right, var(--primary), var(--secondary));"></div>
             </div>
         </footer>
     </div>

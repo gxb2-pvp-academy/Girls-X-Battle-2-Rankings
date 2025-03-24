@@ -7,55 +7,152 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
-        /* Additional welcome page styling */
+        /* Enhanced welcome page styling */
+        body {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
         .welcome-content {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
+            position: relative;
+        }
+        
+        /* Decorative header with trophy icons */
+        header {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 24 24' fill='%23ffffff10'%3E%3Cpath d='M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z'/%3E%3C/svg%3E");
+            opacity: 0.07;
+        }
+        
+        header h1 {
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
         
         .welcome-section {
             margin-bottom: 40px;
             background-color: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            position: relative;
+            overflow: hidden;
+            border-top: 4px solid var(--primary);
         }
         
         .welcome-title {
             color: var(--dark);
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--primary);
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(243, 156, 18, 0.3);
+            position: relative;
+            font-weight: 700;
+            font-size: 1.8rem;
+            letter-spacing: -0.5px;
+        }
+        
+        .welcome-title::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 80px;
+            height: 2px;
+            background-color: var(--primary);
         }
         
         .welcome-subtitle {
-            color: var(--primary);
-            margin: 25px 0 15px;
+            color: var(--dark);
+            margin: 30px 0 15px;
             font-weight: 600;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.3px;
         }
         
+        .welcome-subtitle::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 24px;
+            background-color: var(--primary);
+            margin-right: 12px;
+            border-radius: 4px;
+        }
+        
+        /* Enhanced card design */
         .feature-card {
-            background: #f9f9f9;
-            border-left: 4px solid var(--primary);
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 0 4px 4px 0;
+            background: linear-gradient(to right, #fff, #f9f9f9);
+            border-left: 5px solid var(--primary);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
         }
         
         .feature-title {
             font-weight: 600;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             color: var(--dark);
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-title i {
+            color: var(--primary);
+            margin-right: 10px;
+            font-size: 1.4em;
+        }
+        
+        .feature-title a {
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+        
+        .feature-title a:hover {
+            color: var(--primary);
         }
         
         .navigation-list, .interaction-list {
-            padding-left: 20px;
+            padding-left: 10px;
+            list-style-type: none;
         }
         
         .navigation-list li, .interaction-list li {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
+            position: relative;
+            list-style-type: none; /* Ensure no default bullets */
+        }
+        
+        /* Remove the arrow symbols that were previously added */
+        .navigation-list li::before,
+        .interaction-list li::before {
+            content: none; /* Remove the arrow symbol */
         }
         
         .menu-item {
@@ -63,19 +160,146 @@
             color: var(--primary);
         }
         
-        .interaction-type {
-            font-weight: 600;
-            color: var(--secondary);
-            margin-top: 15px;
-            margin-bottom: 8px;
-            display: block;
+        /* Enhanced mobile notice */
+        .mobile-notice {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff5d6 100%);
+            border-left: 4px solid #f1c40f;
+            border-radius: 12px;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
         }
         
-        .table-type {
+        .mobile-notice-content {
+            padding: 25px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .mobile-notice::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 150px;
+            height: 150px;
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+        
+        /* Enhanced calculation example card */
+        .calculation-example {
+            background: linear-gradient(135deg, #f4f9ff 0%, #edf5ff 100%);
+            border: 1px solid rgba(52, 152, 219, 0.2);
+            border-left: 5px solid #3498db;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 20px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.1);
+        }
+        
+        .calculation-example .feature-title {
+            color: #2980b9;
+            font-size: 1.2rem;
+        }
+        
+        .calculation-example .feature-title i {
+            color: #3498db;
+        }
+        
+        /* Points allocation card */
+        .points-card {
+            background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .points-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .points-list li {
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        
+        .points-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            border-radius: 5px 0 0 5px;
+        }
+        
+        .points-list li:nth-child(1)::before { background-color: gold; }
+        .points-list li:nth-child(2)::before { background-color: silver; }
+        .points-list li:nth-child(3)::before { background-color: #cd7f32; }
+        .points-list li:nth-child(4)::before { background-color: #a0d6b4; }
+        .points-list li:nth-child(5)::before { background-color: black; }
+        
+        .points-list .rank-value {
+            font-weight: 700;
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+        
+        /* Score seasons breakdown */
+        .season-score-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        
+        .season-score-list li {
+            padding: 10px;
+            margin-bottom: 8px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .season-score-list .season-name {
             font-weight: 500;
+        }
+        
+        .season-score-list .placement {
+            font-weight: 700;
+            min-width: 120px;
+        }
+        
+        .season-score-list .score-value {
+            font-weight: 700;
+            font-family: monospace;
+        }
+        
+        .total-score {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: right;
+            font-size: 1.1rem;
+            border-top: 2px dashed #ddd;
             margin-top: 15px;
-            color: var(--dark);
-            display: block;
+        }
+        
+        .total-score span {
+            font-weight: 700;
+            color: var(--primary);
+            font-family: monospace;
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -109,11 +333,21 @@
                         <i class="fas fa-list-ol nav-icon"></i>Other Rankings
                     </a>
                     <ul class="dropdown-menu">
-                        <a href="highest-score.html" class="dropdown-item">Highest Score Ranking</a>
-                        <a href="historical-season.html" class="dropdown-item">Historical Season Ranking</a>
-                        <a href="total-title.html" class="dropdown-item">Total Title Ranking</a>
-                        <a href="no1-holder-consecutive.html" class="dropdown-item">World No.1 Ranking (Consecutive)</a>
-                        <a href="no1-holder-regular.html" class="dropdown-item">World No.1 Ranking (Regular)</a>
+                        <a href="highest-score.html" class="dropdown-item">
+                            <i class="fas fa-chart-line" style="margin-right: 8px;"></i>Highest Score Ranking
+                        </a>
+                        <a href="historical-season.html" class="dropdown-item">
+                            <i class="fas fa-history" style="margin-right: 8px;"></i>Historical Season Ranking
+                        </a>
+                        <a href="total-title.html" class="dropdown-item">
+                            <i class="fas fa-trophy" style="margin-right: 8px;"></i>Total Title Ranking
+                        </a>
+                        <a href="no1-holder-consecutive.html" class="dropdown-item">
+                            <i class="fas fa-crown" style="margin-right: 8px;"></i>World No.1 Ranking (Consecutive)
+                        </a>
+                        <a href="no1-holder-regular.html" class="dropdown-item">
+                            <i class="fas fa-crown" style="margin-right: 8px;"></i>World No.1 Ranking (Regular)
+                        </a>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -127,159 +361,350 @@
 
     <header>
         <div class="container">
-            <h1>Girls X Battle 2 Rankings</h1>
+            <h1><i class="fa-solid fa-ranking-star" style="color: gold; margin-right: 15px;"></i>Girls X Battle 2 Rankings</h1>
         </div>
     </header>
     
     <div class="page-container">
         <main class="container welcome-content">
             <!-- Mobile Notice Banner -->
-            <div class="welcome-section" style="background-color: #f8f4e5; border-left: 4px solid #f1c40f;">
-                <div style="display: flex; align-items: flex-start;">
-                    <i class="fas fa-mobile-alt" style="font-size: 24px; margin-right: 15px; color: #f1c40f;"></i>
-                    <div>
-                        <h3 style="margin-top: 0; color: #7d6608;">Mobile Device Notice</h3>
-                        <p>This site is optimized for desktop viewing. While we've made it responsive for mobile devices and touch screens, some interactive features work best on larger screens with mouse interaction.</p>
-                        <p><strong>For the best experience, we recommend using a desktop or laptop computer.</strong></p>
+            <div class="welcome-section mobile-notice">
+                <div class="mobile-notice-content">
+                    <div style="display: flex; align-items: flex-start;">
+                        <i class="fas fa-mobile-alt" style="font-size: 24px; margin-right: 15px; color: #f1c40f; background-color: rgba(241, 196, 15, 0.1); padding: 15px; border-radius: 50%;"></i>
+                        <div>
+                            <h3 style="margin-top: 0; color: #7d6608; font-size: 1.4rem;">Mobile Device Notice</h3>
+                            <p>This site is optimized for desktop viewing. While we've made it responsive for mobile devices and touch screens, some interactive features work best on larger screens with mouse interaction.</p>
+                            <p style="font-weight: 500; background-color: rgba(241, 196, 15, 0.1); padding: 10px; border-radius: 5px; display: inline-block;"><i class="fas fa-desktop" style="margin-right: 8px;"></i><strong>For the best experience, we recommend using a desktop or laptop computer.</strong></p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <!-- Introduction Section -->
             <section class="welcome-section">
-                <h2 class="welcome-title">Welcome to Girls X Battle 2 Rankings</h2>
-                <p>This comprehensive portal ranks and analyzes professional players based on their performance in Girls X Battle 2 Ultimate League. Similar to many esport rankings, this ranking system rewards consistent high performance throughout multiple seasons.</p>
-                <p>Use the navigation menu at the top to explore different ranking categories and search for specific player statistics.</p>
-                <p><strong>Note: For fair evaluation, only placements after the Ultimate League feature is updated are taken into account, so some statistics may look different from the in-game ones.</strong></p>
+                <h2 class="welcome-title"><i class="fas fa-star" style="color: var(--primary); margin-right: 10px;"></i>Welcome to Girls X Battle 2 Rankings</h2>
+                <p>The Girls X Battle 2 Rankings ranks and analyzes professional players based on their performance in Girls X Battle 2 Ultimate League. Similar to many esport rankings, this ranking rewards consistent high performance throughout multiple consecutive seasons.</p>
+                <p>Use the <strong>navigation menu</strong> at the top to explore different rankings and search for specific player statistics.</p>
+                <div style="background-color: #f8f9fa; border-left: 4px solid var(--dark); padding: 15px; margin-top: 20px; border-radius: 4px;">
+                    <p style="margin: 0;"><i class="fas fa-info-circle" style="color: var(--dark); margin-right: 10px;"></i><strong>Note:</strong> For fair evaluation, only placements after the Ultimate League feature is updated are taken into account, so some statistics may look different from the in-game ones.</p>
+                </div>
             </section>
             
             <!-- Scoring System Section -->
-            <section class="welcome-section">
-                <h2 class="welcome-title">Scoring System Explanation</h2>
-                <p>The GXB2 World Ranking is based on a point system that rewards players for their final placements in the Ultimate League. Here's how it works:</p>
+            <section class="welcome-section scoring-section">
+                <h2 class="welcome-title"><i class="fas fa-calculator" style="color: var(--primary); margin-right: 10px;"></i>Scoring System Explanation</h2>
+                <p>The Girls X Battle 2 Rankings is based on a point system that rewards players for their final placements in the Ultimate League. Players need to qualify for the Final stage of the Ultimate League to earn points. Here's how it works:</p>
                 
                 <h3 class="welcome-subtitle">Points Allocation</h3>
-                <div class="feature-card">
-                    <div class="feature-title">Base Points by Placement</div>
-                    <ul style="list-style-type: none; padding-left: 0;">
-                        <li><strong class="champion" style="color: gold;">Champion:</strong> 1000 points</li>
-                        <li><strong class="runnerup" style="color: silver;">Runner-up:</strong> 400 points</li>
-                        <li><strong class="top4" style="color: #cd7f32;">Top-4:</strong> 200 points</li>
-                        <li><strong class="top8" style="color: #a0d6b4;">Top-8:</strong> 100 points</li>
-                        <li><strong style="color: #000000;">Not qualified for the Final stage:</strong> 0 point</li>
+                <div class="points-card">
+                    <ul class="points-list">
+                        <li><strong class="champion" style="color: gold;"><i class="fas fa-trophy" style="margin-right: 8px;"></i>Champion</strong> <span class="rank-value">1000 points</span></li>
+                        <li><strong class="runnerup" style="color: silver;"><i class="fas fa-medal" style="margin-right: 8px;"></i>Runner-up</strong> <span class="rank-value">400 points</span></li>
+                        <li><strong class="top4" style="color: #cd7f32;"><i class="fas fa-medal" style="margin-right: 8px;"></i>Top-4</strong> <span class="rank-value">200 points</span></li>
+                        <li><strong class="top8" style="color: #a0d6b4;"><i class="fas fa-award" style="margin-right: 8px;"></i>Top-8</strong> <span class="rank-value">100 points</span></li>
+                        <li><strong style="color: black;"><i class="fas fa-times-circle" style="margin-right: 8px;"></i>Not qualified</strong> <span class="rank-value">0 points</span></li>
                     </ul>
                 </div>
                 
                 <h3 class="welcome-subtitle">Calculation Method</h3>
-                <p>The World Ranking score for a player is calculated as follows:</p>
-                    <li><strong>Six-Season Window:</strong> Only performances from the most recent six seasons are considered</li>
-                    <li><strong>Cumulative Points:</strong> All points earned within the six-season window are added together</li>
-                    <li><strong>No Decay:</strong> Points do not decay over time within the six-season window</li>
-                    <li><strong>Multiple Achievements:</strong> If a player achieves multiple placements within the six-season window, they receive points for all these placements</li>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                    <div class="feature-card">
+                        <div class="feature-title"><i class="fas fa-calendar-alt"></i> Six-Season Window</div>
+                        <p>Only performances from the most recent six seasons are considered for ranking calculations.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-title"><i class="fas fa-plus-circle"></i> Cumulative Points</div>
+                        <p>All points earned within the six-season window are added together for the total score.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-title"><i class="fas fa-hourglass"></i> No Decay</div>
+                        <p>Points do not decay over time within the six-season window.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-title"><i class="fas fa-trophy"></i> Multiple Achievements</div>
+                        <p>Players receive points for all placements achieved within the six-season window.</p>
+                    </div>
+                </div>
                 
                 <h3 class="welcome-subtitle">Ranking Determination</h3>
-                <p>Players are ranked based on the following criteria:</p>
-                    <li><strong>Total Score:</strong> Players with higher total scores are ranked higher</li>
-                    <li><strong>Tie-Breaker:</strong> If two or more players have the same score, they receive the same rank</li>
-                    <li><strong>ID Order:</strong> When displaying tied players, they are sorted by player ID (ascending)</li>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                    <div class="feature-card">
+                        <div class="feature-title"><i class="fas fa-sort-amount-down"></i> Total Score</div>
+                        <p>Players with higher total scores are ranked higher in the standings.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-title"><i class="fas fa-equals"></i> Ties Allowed</div>
+                        <p>If two or more players have the same score, they receive the same rank.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-title"><i class="fas fa-sort-numeric-down"></i> ID Order</div>
+                        <p>When displaying tied players, they are sorted by player ID (ascending).</p>
+                    </div>
+                </div>
                 
-                <div class="feature-card" style="background-color: rgba(243, 156, 18, 0.1); margin-top: 15px;">
+                <div class="calculation-example">
                     <div class="feature-title"><i class="fas fa-calculator"></i> Example Calculation</div>
-                    <p>If a player achieves the following placements over the past six seasons (assume the current season is Season 36):</p>
-                        <li>Season 36: <strong style="color: #000000;">Not qualified for the Final stage</strong> (0 point)</li>
-                        <li>Season 35: <strong class="champion" style="color: gold;">Champion</strong> (1000 points)</li>
-                        <li>Season 34: <strong style="color: #000000;">Not qualified for the Final stage</strong> (0 point)</li>
-                        <li>Season 33: <strong class="top4" style="color: #cd7f32;">Top-4</strong> (200 points)</li>
-                        <li>Season 32: <strong class="top8" style="color: #a0d6b4;">Top-8</strong> (100 points)</li>
-                        <li>Season 31: <strong class="runnerup" style="color: silver;">Runner-up</strong> (400 point)</li>
-                    <p>This player's total score for the current season would be: 400 + 100 + 200 + 0 + 1000 + 0 = 1700 points</p>
+                    <p>Suppose that a player achieves the following placements over the past six seasons (assuming the current season is Season 36):</p>
+                    
+                    <ul class="season-score-list">
+                        <li>
+                            <span class="season-name">Season 36</span>
+                            <span class="placement" style="color: black;"><i class="fas fa-times-circle"></i> Not qualified</span>
+                            <span class="rank-value">0 points</span>
+                        </li>
+                        <li>
+                            <span class="season-name">Season 35</span>
+                            <span class="placement" style="color: gold;"><i class="fas fa-trophy"></i> Champion</span>
+                            <span class="rank-value">1000 points</span>
+                        </li>
+                        <li>
+                            <span class="season-name">Season 34</span>
+                            <span class="placement" style="color: black;"><i class="fas fa-times-circle"></i> Not qualified</span>
+                            <span class="rank-value">0 points</span>
+                        </li>
+                        <li>
+                            <span class="season-name">Season 33</span>
+                            <span class="placement" style="color: #cd7f32;"><i class="fas fa-medal"></i> Top-4</span>
+                            <span class="rank-value">200 points</span>
+                        </li>
+                        <li>
+                            <span class="season-name">Season 32</span>
+                            <span class="placement" style="color: #a0d6b4;"><i class="fas fa-award"></i> Top-8</span>
+                            <span class="rank-value">100 points</span>
+                        </li>
+                        <li>
+                            <span class="season-name">Season 31</span>
+                            <span class="placement" style="color: silver;"><i class="fas fa-medal"></i> Runner-up</span>
+                            <span class="rank-value">400 points</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="total-score">
+                        This player's total score: <span>1700 points</span>
+                    </div>
                 </div>
             </section>
             
             <!-- Navigation Features Section -->
-            <section class="welcome-section">
-                <h2 class="welcome-title">Navigation Guide</h2>
-                <p>This website offers several specialized views to analyze player performance:</p>
+            <section class="welcome-section navigation-section">
+                <h2 class="welcome-title"><i class="fas fa-compass" style="color: var(--primary); margin-right: 10px;"></i>Navigation Guide</h2>
+                <p>This website offers several specialized features to analyze player performance:</p>
                 
                 <h3 class="welcome-subtitle">Main Menu Items</h3>
                 <ul class="navigation-list">
                     <li>
                         <div class="feature-card">
-                            <div class="feature-title"><a href="world-ranking.html"><i class="fas fa-medal"></i> World Ranking</a></div>
-                            <p>The primary ranking system showing overall player performance across the most recent six seasons. Players earn points based on their final placements (Champion, Runner-up, Top-4, Top-8).</p>
+                            <div class="feature-title">
+                                <a href="world-ranking.html">
+                                    <i class="fas fa-medal"></i> 
+                                    <span style="text-decoration: underline;">World Ranking</span>
+                                </a>
+                            </div>
+                            <p>The primary ranking system showing overall player performance across the most recent six seasons. Players earn points based on their final placements (Champion, Runner-up, Top-4, Top-8) of each season.</p>
                         </div>
                     </li>
                     <li>
                         <div class="feature-card">
-                            <div class="feature-title"><a href="player-search.html"><i class="fas fa-user"></i> Player Search</a></div>
-                            <p>Look up detailed statistics for any player who has appeared in the Ultimate League Final stage. View their complete history, highest achievements, and performance trends over time.</p>
+                            <div class="feature-title">
+                                <a href="player-search.html">
+                                    <i class="fas fa-user"></i> 
+                                    <span style="text-decoration: underline;">Player Search</span>
+                                </a>
+                            </div>
+                            <p>Search for detailed statistics for any player who has appeared in the Ultimate League Final stage. View their complete history, highest achievements, and performance trends over time.</p>
                         </div>
                     </li>
                     <li>
                         <div class="feature-card">
                             <div class="feature-title"><i class="fas fa-list-ol"></i> Other Rankings</div>
-                            <p>Additional specialized ranking categories that highlight different aspects of competitive achievement:</p>
+                            <p>Additional specialized ranking categories that highlight different aspects of players' competitive achievements:</p>
                             
-                            <ul style="padding-left: 20px; margin-top: 10px;">
-                                <li>
-                                    <span class="menu-item"><a href="highest-score.html">Highest Score Ranking</a>:</span> Shows the highest point total ever achieved by players in any six-season window, recognizing historically dominant performances.
-                                </li>
-                                <li>
-                                    <span class="menu-item"><a href="historical-season.html">Historical Season Ranking</a>:</span> Access complete rankings from previous seasons to track how the competitive landscape has evolved over time.
-                                </li>
-                                <li>
-                                    <span class="menu-item"><a href="total-title.html">Total Title Ranking</a>:</span> Players ranked by their total number of championship titles and finalist appearances, prioritizing higher placements.
-                                </li>
-                                <li>
-                                    <span class="menu-item"><a href="no1-holder-consecutive.html">World No.1 Ranking (Consecutive)</a>:</span> Highlights players who maintained the World No.1 position for the longest consecutive streak of seasons.
-                                </li>
-                                <li>
-                                    <span class="menu-item"><a href="no1-holder-regular.html">World No.1 Ranking (Regular)</a>:</span> Tracks players with the most total seasons (not necessarily consecutive) as the World No.1.
-                                </li>
-                            </ul>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-top: 15px;">
+                                <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                    <span class="menu-item"><a href="highest-score.html"><i class="fas fa-chart-line" style="margin-right: 8px;"></i>Highest Score Ranking</a></span>
+                                    <p style="margin: 10px 0 0; font-size: 0.95rem;">Shows the highest point total ever achieved by players in any six-season window, recognizing historically dominant performances.</p>
+                                </div>
+                                
+                                <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                    <span class="menu-item"><a href="historical-season.html"><i class="fas fa-history" style="margin-right: 8px;"></i>Historical Season Ranking</a></span>
+                                    <p style="margin: 10px 0 0; font-size: 0.95rem;">Access complete rankings from previous seasons to track how the competitive landscape has evolved over time.</p>
+                                </div>
+                                
+                                <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                    <span class="menu-item"><a href="total-title.html"><i class="fas fa-trophy" style="margin-right: 8px;"></i>Total Title Ranking</a></span>
+                                    <p style="margin: 10px 0 0; font-size: 0.95rem;">Rank players by their total number of championship placements, prioritizing higher ones.</p>
+                                </div>
+                                
+                                <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                    <span class="menu-item"><a href="no1-holder-consecutive.html"><i class="fas fa-crown" style="margin-right: 8px;"></i>World No.1 Ranking (Consecutive)</a></span>
+                                    <p style="margin: 10px 0 0; font-size: 0.95rem;">Rank players who achieved the World No.1 by their longest consecutive streak of seasons as World No.1.</p>
+                                </div>
+                                
+                                <div style="background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                    <span class="menu-item"><a href="no1-holder-regular.html"><i class="fas fa-crown" style="margin-right: 8px;"></i>World No.1 Ranking (Regular)</a></span>
+                                    <p style="margin: 10px 0 0; font-size: 0.95rem;">Rank players who achieved the World No.1 by their total (not necessarily consecutive) seasons as World No.1.</p>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </section>
             
             <!-- User Interactions Section -->
-            <section class="welcome-section">
-                <h2 class="welcome-title">Interactive Features Guide</h2>
-                <p>Our ranking tables offer rich interactive elements that reveal additional information and statistics:</p>
+            <section class="welcome-section interaction-section">
+                <h2 class="welcome-title"><i class="fas fa-hand-pointer" style="color: var(--primary); margin-right: 10px;"></i>Interactive Features Guide</h2>
+                <p>Our ranking tables offer rich interactive elements that reveal additional information and statistics. Look for relevant interactions based on your device type:</p>
                 
-                <div class="interaction-list">
-                    <span class="interaction-type">Clickable Rows</span>
-                    <p>All ranking tables have clickable rows that navigate to detailed player profiles:</p>
-                        <li>Click on any row in any ranking table to view that player's complete profile</li>
-                        <li>The player profile page includes a comprehensive history chart showing score and rank over time</li>
-                        <li>Use the "Back to..." link in the player profile to return to your previous ranking view</li>
+                <!-- Desktop/Laptop Interactions -->
+                <div class="interaction-list" style="background: linear-gradient(to right, #e8f5e9, #c8e6c9); padding: 25px; border-radius: 12px; margin-top: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); border-left: 5px solid #2ecc71; position: relative; overflow: hidden; transition: all 0.3s ease;">
+                    <!-- Corner ribbon decoration -->                    
+                    <span class="interaction-type" style="display: flex; align-items: center; font-size: 1.2rem; margin-bottom: 15px; color: #2c3e50;">
+                        <i class="fas fa-desktop" style="margin-right: 12px; font-size: 1.8rem; color: #2ecc71; background: rgba(46, 204, 113, 0.2); padding: 10px; border-radius: 50%;"></i>
+                        Desktop & Laptop Interactions
+                    </span>
                     
-                    <span class="interaction-type">Score and Title Breakdowns</span>
-                    <p>Access detailed breakdowns of player achievements by hovering over specific cells:</p>
+                    <div style="padding-left: 15px; border-left: 3px solid rgba(46, 204, 113, 0.3);">
+                        <p><strong style="color: #2c3e50;">For any ranking table:</strong> Click any table row to view that player's detailed profile page.</p>
+                        
+                        <div style="margin: 15px 0;">
+                            <div class="table-type" style="font-weight: 600; color: #2c3e50; border-bottom: 2px dotted rgba(46, 204, 113, 0.5); padding-bottom: 5px; margin-bottom: 10px;">
+                                <i class="fas fa-medal" style="margin-right: 8px; color: #2ecc71;"></i>World Ranking
+                            </div>
+                            <ul style="list-style-type: none; padding-left: 15px;">
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-mouse-pointer" style="position: absolute; left: 0; top: 5px; color: #2ecc71;"></i>
+                                    <span>Hover over values in the <strong>Score (Score Change)</strong> column to view the six-season title (Champion, Runner-up, Top-4, and Top-8) breakdown that contirbutes to the current score.</span>
+                                </li>
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-desktop" style="position: absolute; left: 0; top: 5px; color: #2ecc71;"></i>
+                                    <span><strong>For wide screens only:</strong> Hover over any player row to display the <strong>Score History Chart</strong> showing performance trends across the six most recent seasons.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div style="margin: 15px 0;">
+                            <div class="table-type" style="font-weight: 600; color: #2c3e50; border-bottom: 2px dotted rgba(46, 204, 113, 0.5); padding-bottom: 5px; margin-bottom: 10px;">
+                                <i class="fas fa-history" style="margin-right: 8px; color: #2ecc71;"></i>Historical Season Ranking
+                            </div>
+                            <ul style="list-style-type: none; padding-left: 15px;">
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-list-alt" style="position: absolute; left: 0; top: 5px; color: #2ecc71;"></i>
+                                    <span>Select a specific season from the dropdown menu.</span>
+                                </li>
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-mouse-pointer" style="position: absolute; left: 0; top: 5px; color: #2ecc71;"></i>
+                                    <span>Hover over values in the <strong>Score (Score Change)</strong> column to view the six-season title (Champion, Runner-up, Top-4, and Top-8) breakdown that contirbutes to the score of the selected season.</span>
+                                </li>
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-desktop" style="position: absolute; left: 0; top: 5px; color: #2ecc71;"></i>
+                                    <span><strong>For wide screens only:</strong> Hover over any player row to display the <strong>Score History Chart</strong> showing that player's six-season performance trends up to the selected season.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div style="margin: 15px 0;">
+                            <div class="table-type" style="font-weight: 600; color: #2c3e50; border-bottom: 2px dotted rgba(46, 204, 113, 0.5); padding-bottom: 5px; margin-bottom: 10px;">
+                                <i class="fas fa-list-ol" style="margin-right: 8px; color: #2ecc71;"></i>Other Rankings
+                            </div>
+                            <ul style="list-style-type: none; padding-left: 15px;">
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-chart-line" style="position: absolute; left: 0; top: 5px; color: #2ecc71;"></i>
+                                    <span><strong>Highest Score Ranking:</strong> Hover over values in the <strong>Highest Score (Achieved Season)</strong> column to view the six-season title (Champion, Runner-up, Top-4, and Top-8) breakdown that contirbutes to this highest score.</span>
+                                </li>
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-trophy" style="position: absolute; left: 0; top: 5px; color: #2ecc71;"></i>
+                                    <span><strong>Total Title Ranking:</strong> Hover over the <strong>Champion</strong>, <strong>Runner-up</strong>, <strong>Top-4</strong>, <strong>Top-8</strong>, or <strong>Total</strong> columns to see which seasons the player achieved those placements.</span>
+                                </li>
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-crown" style="position: absolute; left: 0; top: 5px; color: #2ecc71;"></i>
+                                    <span><strong>World No.1 Ranking (Consecutive):</strong> Hover over the <strong>Number of Consecutive Seasons as World No.1 (Achieved Season)</strong> column to see which consecutive seasons the player held the World No.1 position.</span>
+                                </li>
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-crown" style="position: absolute; left: 0; top: 5px; color: #2ecc71;"></i>
+                                    <span><strong>World No.1 Ranking (Regular):</strong> Hover over the <strong>Number of Seasons as World No.1 (Achieved Season)</strong> column to see which specific seasons the player held the World No.1 position.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Interactions -->
+                <div class="interaction-list" style="background: linear-gradient(to right, #e3f2fd, #bbdefb); padding: 25px; border-radius: 12px; margin-top: 30px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); border-left: 5px solid #3498db; position: relative; overflow: hidden; transition: all 0.3s ease;">
+                    <!-- Corner ribbon decoration -->                    
+                    <span class="interaction-type" style="display: flex; align-items: center; font-size: 1.2rem; margin-bottom: 15px; color: #2c3e50;">
+                        <i class="fas fa-mobile-alt" style="margin-right: 12px; font-size: 1.8rem; color: #3498db; background: rgba(52, 152, 219, 0.2); padding: 12px 14px; border-radius: 50%;"></i>
+                        Mobile Phone Interactions
+                    </span>
                     
-                    <span class="table-type">World Ranking Table:</span>
-                        <li>Hover over (or tap on mobile devices) values of the <strong>Score</strong> column to see a breakdown of Championship, Runner-up, Top-4, and Top-8 placements that contributed to that score</li>
-                        <li><strong>(NA for mobile phones)</strong>Hover over any player row to display a <strong>Score History Chart</strong> showing that player's performance trend in the six most recent seasons</li>
-                    
-                    <span class="table-type">Highest Score Ranking Table:</span>
-                        <li>Hover over (or tap on mobile devices) values of the <strong>Highest Score</strong> column to see a breakdown of Championship, Runner-up, Top-4, and Top-8 placements that contributed to that score</li>
-                    
-                    <span class="table-type">Total Title Ranking Table:</span>
-                        <li>Hover over (or tap on mobile devices) values of any title count column (<strong>Champion</strong>, <strong>Runner-up</strong>, <strong>Top-4</strong>, <strong>Top-8</strong>, <strong>Total</strong>) to see which specific seasons the player achieved that placement</li>
-                    
-                    <span class="table-type">World No.1 Rankings (both types):</span>
-                        <li>Hover over (or tap on mobile devices) values of the <strong>Seasons</strong> column to see which seasons the player held the No.1 position</li>
-                    
-                    <span class="table-type">Historical Season Ranking:</span>
-                        <li>Select a specific season from the dropdown to view rankings from that season</li>
-                        <li>Hover over (or tap on mobile devices) values of the <strong>Score</strong> column to see title breakdowns for that historical season</li>
-                        <li><strong>(NA for mobile phones)</strong>Hover over any player row to display a <strong>Score History Chart</strong> showing that player's six most recent seasons' performance up to that season</li>
+                    <div style="padding-left: 15px; border-left: 3px solid rgba(52, 152, 219, 0.3);">
+                        <p><strong style="color: #2c3e50;">For any ranking table:</strong> Tap any column except the last column in a table row to navigate to that player's detailed profile page.</p>
+                        
+                        <div style="margin: 15px 0;">
+                            <div class="table-type" style="font-weight: 600; color: #2c3e50; border-bottom: 2px dotted rgba(52, 152, 219, 0.5); padding-bottom: 5px; margin-bottom: 10px;">
+                                <i class="fas fa-medal" style="margin-right: 8px; color: #3498db;"></i>World Ranking
+                            </div>
+                            <ul style="list-style-type: none; padding-left: 15px;">
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-hand-pointer" style="position: absolute; left: 0; top: 5px; color: #3498db;"></i>
+                                    <span>Tap on values in the <strong>Score (Score Change)</strong> column to view the six-season title (Champion, Runner-up, Top-4, and Top-8) breakdown that contirbutes to the current score.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div style="margin: 15px 0;">
+                            <div class="table-type" style="font-weight: 600; color: #2c3e50; border-bottom: 2px dotted rgba(52, 152, 219, 0.5); padding-bottom: 5px; margin-bottom: 10px;">
+                                <i class="fas fa-history" style="margin-right: 8px; color: #3498db;"></i>Historical Season Ranking
+                            </div>
+                            <ul style="list-style-type: none; padding-left: 15px;">
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-list-alt" style="position: absolute; left: 0; top: 5px; color: #3498db;"></i>
+                                    <span>Select a season from the dropdown menu.</span>
+                                </li>
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-hand-pointer" style="position: absolute; left: 0; top: 5px; color: #3498db;"></i>
+                                    <span>Tap on values in the <strong>Score (Score Change)</strong> column to view the six-season title (Champion, Runner-up, Top-4, and Top-8) breakdown that contirbutes to the score of the selected season.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div style="margin: 15px 0;">
+                            <div class="table-type" style="font-weight: 600; color: #2c3e50; border-bottom: 2px dotted rgba(52, 152, 219, 0.5); padding-bottom: 5px; margin-bottom: 10px;">
+                                <i class="fas fa-list-ol" style="margin-right: 8px; color: #3498db;"></i>Other Rankings
+                            </div>
+                            <ul style="list-style-type: none; padding-left: 15px;">
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-chart-line" style="position: absolute; left: 0; top: 5px; color: #3498db;"></i>
+                                    <span><strong>Highest Score Ranking:</strong> Tap on values in the <strong>Highest Score (Achieved Season)</strong> column to view the six-season title (Champion, Runner-up, Top-4, and Top-8) breakdown that contirbutes to this highest score.</span>
+                                </li>
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-trophy" style="position: absolute; left: 0; top: 5px; color: #3498db;"></i>
+                                    <span><strong>Total Title Ranking:</strong> Tap on the <strong>Total Titles</strong> column to see which seasons the player achieved those placements.</span>
+                                </li>
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-crown" style="position: absolute; left: 0; top: 5px; color: #3498db;"></i>
+                                    <span><strong>World No.1 Ranking (Consecutive):</strong> Tap on values in the <strong>Number of Consecutive Seasons as World No.1 (Achieved Season)</strong> column to see which consecutive seasons the player held the World No.1 position.</span>
+                                </li>
+                                <li style="margin-bottom: 10px; position: relative; padding-left: 20px;">
+                                    <i class="fas fa-crown" style="position: absolute; left: 0; top: 5px; color: #3498db;"></i>
+                                    <span><strong>World No.1 Ranking (Regular):</strong> Tap on values in the <strong>Number of Seasons as World No.1 (Achieved Season)</strong> column to see which specific seasons the player held the World No.1 position.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
         
-        <footer>
+        <footer style="position: relative; overflow: hidden;">
             <div class="container">
-                <p>GXB2 Rankings | <span id="footer-year">2025</span></p>
+                <p>Girls X Battle 2 Rankings | <span id="footer-year">2025</span></p>
+                <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(to right, var(--primary), var(--secondary));"></div>
             </div>
         </footer>
     </div>

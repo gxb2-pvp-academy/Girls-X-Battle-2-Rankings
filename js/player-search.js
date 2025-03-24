@@ -68,23 +68,33 @@ function setupAutocomplete() {
             id.toString().startsWith(inputValue)
         );
         
-        // Limit to 3 matches (changed from 5)
+        // Limit to 3 matches
         const limitedMatches = matches.slice(0, 3);
         
         // Add matches to the dropdown
         if (limitedMatches.length > 0) {
-            limitedMatches.forEach(match => {
-                const item = document.createElement('div');
-                item.textContent = match;
+            // Ensure the autocomplete container is visible and positioned correctly
+            const autoCompleteContainer = document.querySelector('.autocomplete');
+            if (autoCompleteContainer) {
+                // Make sure nothing is cutting off the dropdown
+                autoCompleteContainer.style.overflow = 'visible';
                 
-                // Set the item as the input value when clicked
-                item.addEventListener('click', function() {
-                    inputElement.value = this.textContent;
-                    closeAllLists();
+                // Update the list with matches
+                limitedMatches.forEach(match => {
+                    const item = document.createElement('div');
+                    item.textContent = match;
+                    item.style.padding = '12px 15px';
+                    item.style.cursor = 'pointer';
+                    
+                    // Set the item as the input value when clicked
+                    item.addEventListener('click', function() {
+                        inputElement.value = this.textContent;
+                        closeAllLists();
+                    });
+                    
+                    autocompleteList.appendChild(item);
                 });
-                
-                autocompleteList.appendChild(item);
-            });
+            }
         }
     });
     
