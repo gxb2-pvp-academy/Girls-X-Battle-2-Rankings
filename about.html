@@ -191,10 +191,22 @@
         
         .contact-details {
             flex-grow: 1;
+            overflow-wrap: break-word; /* Enable word breaking for long content */
+            word-wrap: break-word; /* For older browsers */
+            word-break: break-word; /* For better handling of long words */
         }
         
         .contact-details p {
             margin: 0;
+        }
+        
+        .contact-details a {
+            word-wrap: break-word; /* Enable email to wrap on small screens */
+            overflow-wrap: break-word;
+            word-break: break-word; 
+            hyphens: auto; /* Add hyphens when breaking words */
+            display: inline-block; /* Allow full width for wrapping */
+            max-width: 100%; /* Ensure it doesn't overflow its container */
         }
         
         /* Disclaimer box */
