@@ -923,7 +923,13 @@ footer {
     /* Special handling for first column */
     #rankings-table th:first-child,
     #rankings-table td:first-child {
-        width: 20% !important;
+        width: 15% !important;
+        word-wrap: break-word;
+    }
+
+    #rankings-table:not(.highest-score-table):not(.total-title-table):not(.no1-table) th:nth-child(2),
+    #rankings-table:not(.highest-score-table):not(.total-title-table):not(.no1-table) td:nth-child(2) {
+        width: 15% !important;
         word-wrap: break-word;
     }
     
