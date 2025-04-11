@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-17",
+  "last_updated": "2025-04-11",
   "highest_scores": [
     {
       "rank": 1,
@@ -817,7 +817,37 @@
       }
     },
     {
-      "rank": 26,
+      "rank": 24,
+      "player_id": 1009384962,
+      "score": 2400,
+      "achieved_season": 45,
+      "score_breakdown": {
+        "champion": {
+          "count": 2,
+          "seasons": [
+            41,
+            45
+          ]
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 2,
+          "seasons": [
+            40,
+            42
+          ]
+        },
+        "top8": {
+          "count": 0,
+          "seasons": []
+        }
+      }
+    },
+    {
+      "rank": 27,
       "player_id": 1001342010,
       "score": 2300,
       "achieved_season": 37,
@@ -848,7 +878,7 @@
       }
     },
     {
-      "rank": 26,
+      "rank": 27,
       "player_id": 1007154468,
       "score": 2300,
       "achieved_season": 44,
@@ -879,7 +909,7 @@
       }
     },
     {
-      "rank": 28,
+      "rank": 29,
       "player_id": 1010771671,
       "score": 2200,
       "achieved_season": 9,
@@ -909,7 +939,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 30,
       "player_id": 1008253117,
       "score": 2100,
       "achieved_season": 34,
@@ -938,7 +968,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 31,
       "player_id": 1001465025,
       "score": 1900,
       "achieved_season": 38,
@@ -971,7 +1001,7 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 32,
       "player_id": 1009915734,
       "score": 1800,
       "achieved_season": 39,
@@ -1002,7 +1032,7 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 32,
       "player_id": 1013543706,
       "score": 1800,
       "achieved_season": 41,
@@ -1030,39 +1060,6 @@
             37,
             39,
             40
-          ]
-        }
-      }
-    },
-    {
-      "rank": 31,
-      "player_id": 1009384962,
-      "score": 1800,
-      "achieved_season": 42,
-      "score_breakdown": {
-        "champion": {
-          "count": 1,
-          "seasons": [
-            41
-          ]
-        },
-        "runnerup": {
-          "count": 0,
-          "seasons": []
-        },
-        "top4": {
-          "count": 3,
-          "seasons": [
-            38,
-            40,
-            42
-          ]
-        },
-        "top8": {
-          "count": 2,
-          "seasons": [
-            37,
-            39
           ]
         }
       }
@@ -1778,7 +1775,35 @@
       }
     },
     {
-      "rank": 57,
+      "rank": 54,
+      "player_id": 1016084994,
+      "score": 1100,
+      "achieved_season": 45,
+      "score_breakdown": {
+        "champion": {
+          "count": 1,
+          "seasons": [
+            45
+          ]
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            44
+          ]
+        }
+      }
+    },
+    {
+      "rank": 58,
       "player_id": 1001598193,
       "score": 1000,
       "achieved_season": 1,
@@ -1804,7 +1829,7 @@
       }
     },
     {
-      "rank": 57,
+      "rank": 58,
       "player_id": 1006055152,
       "score": 1000,
       "achieved_season": 5,
@@ -1830,7 +1855,7 @@
       }
     },
     {
-      "rank": 57,
+      "rank": 58,
       "player_id": 1000308591,
       "score": 1000,
       "achieved_season": 8,
@@ -1862,7 +1887,7 @@
       }
     },
     {
-      "rank": 57,
+      "rank": 58,
       "player_id": 1010401683,
       "score": 1000,
       "achieved_season": 10,
@@ -1894,7 +1919,7 @@
       }
     },
     {
-      "rank": 57,
+      "rank": 58,
       "player_id": 1007896045,
       "score": 1000,
       "achieved_season": 12,
@@ -1927,7 +1952,7 @@
       }
     },
     {
-      "rank": 57,
+      "rank": 58,
       "player_id": 1012919870,
       "score": 1000,
       "achieved_season": 20,
@@ -1957,7 +1982,7 @@
       }
     },
     {
-      "rank": 63,
+      "rank": 64,
       "player_id": 1006597043,
       "score": 900,
       "achieved_season": 12,
@@ -1988,7 +2013,7 @@
       }
     },
     {
-      "rank": 63,
+      "rank": 64,
       "player_id": 1002498437,
       "score": 900,
       "achieved_season": 41,
@@ -2019,7 +2044,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 66,
       "player_id": 1003723459,
       "score": 800,
       "achieved_season": 8,
@@ -2048,7 +2073,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 66,
       "player_id": 1000778393,
       "score": 800,
       "achieved_season": 9,
@@ -2079,7 +2104,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 66,
       "player_id": 1004933793,
       "score": 800,
       "achieved_season": 14,
@@ -2110,7 +2135,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 66,
       "player_id": 1010282712,
       "score": 800,
       "achieved_season": 18,
@@ -2141,7 +2166,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 66,
       "player_id": 1013634786,
       "score": 800,
       "achieved_season": 19,
@@ -2168,7 +2193,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 66,
       "player_id": 1012634994,
       "score": 800,
       "achieved_season": 26,
@@ -2199,7 +2224,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 72,
       "player_id": 1006001102,
       "score": 700,
       "achieved_season": 5,
@@ -2229,7 +2254,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 72,
       "player_id": 1000087066,
       "score": 700,
       "achieved_season": 10,
@@ -2259,7 +2284,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 72,
       "player_id": 1000016726,
       "score": 700,
       "achieved_season": 18,
@@ -2289,7 +2314,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 72,
       "player_id": 1004418671,
       "score": 700,
       "achieved_season": 20,
@@ -2320,7 +2345,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 72,
       "player_id": 1002131686,
       "score": 700,
       "achieved_season": 41,
@@ -2351,7 +2376,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 77,
       "player_id": 1011683399,
       "score": 600,
       "achieved_season": 5,
@@ -2380,7 +2405,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 77,
       "player_id": 1000708405,
       "score": 600,
       "achieved_season": 15,
@@ -2408,7 +2433,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 77,
       "player_id": 1000141948,
       "score": 600,
       "achieved_season": 20,
@@ -2436,7 +2461,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 77,
       "player_id": 1012691184,
       "score": 600,
       "achieved_season": 23,
@@ -2466,7 +2491,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 77,
       "player_id": 1015790249,
       "score": 600,
       "achieved_season": 35,
@@ -2494,7 +2519,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 77,
       "player_id": 1010769760,
       "score": 600,
       "achieved_season": 38,
@@ -2523,7 +2548,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 77,
       "player_id": 1014848743,
       "score": 600,
       "achieved_season": 39,
@@ -2552,7 +2577,36 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 77,
+      "player_id": 1009729459,
+      "score": 600,
+      "achieved_season": 45,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 1,
+          "seasons": [
+            44
+          ]
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 2,
+          "seasons": [
+            42,
+            45
+          ]
+        }
+      }
+    },
+    {
+      "rank": 85,
       "player_id": 1005701569,
       "score": 500,
       "achieved_season": 2,
@@ -2580,7 +2634,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 85,
       "player_id": 1000671672,
       "score": 500,
       "achieved_season": 5,
@@ -2609,7 +2663,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 85,
       "player_id": 1001986106,
       "score": 500,
       "achieved_season": 5,
@@ -2638,7 +2692,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 85,
       "player_id": 1005558306,
       "score": 500,
       "achieved_season": 7,
@@ -2667,7 +2721,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 85,
       "player_id": 1011954531,
       "score": 500,
       "achieved_season": 9,
@@ -2696,7 +2750,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 85,
       "player_id": 1010610745,
       "score": 500,
       "achieved_season": 10,
@@ -2725,7 +2779,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 85,
       "player_id": 1013914485,
       "score": 500,
       "achieved_season": 22,
@@ -2754,7 +2808,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 85,
       "player_id": 1015153546,
       "score": 500,
       "achieved_season": 38,
@@ -2783,7 +2837,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 85,
       "player_id": 1016780744,
       "score": 500,
       "achieved_season": 39,
@@ -2812,35 +2866,7 @@
       }
     },
     {
-      "rank": 83,
-      "player_id": 1009729459,
-      "score": 500,
-      "achieved_season": 44,
-      "score_breakdown": {
-        "champion": {
-          "count": 0,
-          "seasons": []
-        },
-        "runnerup": {
-          "count": 1,
-          "seasons": [
-            44
-          ]
-        },
-        "top4": {
-          "count": 0,
-          "seasons": []
-        },
-        "top8": {
-          "count": 1,
-          "seasons": [
-            42
-          ]
-        }
-      }
-    },
-    {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1000159635,
       "score": 400,
       "achieved_season": 1,
@@ -2866,7 +2892,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1000931257,
       "score": 400,
       "achieved_season": 1,
@@ -2892,7 +2918,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1004034555,
       "score": 400,
       "achieved_season": 4,
@@ -2921,7 +2947,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1005578181,
       "score": 400,
       "achieved_season": 5,
@@ -2947,7 +2973,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1007048151,
       "score": 400,
       "achieved_season": 5,
@@ -2976,7 +3002,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1000757345,
       "score": 400,
       "achieved_season": 9,
@@ -3003,7 +3029,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1009721814,
       "score": 400,
       "achieved_season": 13,
@@ -3032,7 +3058,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1000176731,
       "score": 400,
       "achieved_season": 15,
@@ -3061,7 +3087,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1011133252,
       "score": 400,
       "achieved_season": 16,
@@ -3090,7 +3116,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1012694234,
       "score": 400,
       "achieved_season": 16,
@@ -3119,7 +3145,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1001694666,
       "score": 400,
       "achieved_season": 17,
@@ -3148,7 +3174,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1005703083,
       "score": 400,
       "achieved_season": 17,
@@ -3177,7 +3203,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1010470705,
       "score": 400,
       "achieved_season": 17,
@@ -3206,7 +3232,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1004297917,
       "score": 400,
       "achieved_season": 19,
@@ -3235,7 +3261,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1007030173,
       "score": 400,
       "achieved_season": 21,
@@ -3261,7 +3287,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1004033010,
       "score": 400,
       "achieved_season": 25,
@@ -3287,7 +3313,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1017512160,
       "score": 400,
       "achieved_season": 37,
@@ -3316,7 +3342,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1009001109,
       "score": 400,
       "achieved_season": 38,
@@ -3345,7 +3371,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1015543253,
       "score": 400,
       "achieved_season": 44,
@@ -3374,7 +3400,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1016805088,
       "score": 400,
       "achieved_season": 44,
@@ -3403,7 +3429,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1000569969,
       "score": 300,
       "achieved_season": 2,
@@ -3431,7 +3457,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1006248137,
       "score": 300,
       "achieved_season": 3,
@@ -3459,7 +3485,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1002809575,
       "score": 300,
       "achieved_season": 5,
@@ -3487,7 +3513,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1000442864,
       "score": 300,
       "achieved_season": 8,
@@ -3515,7 +3541,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1000203410,
       "score": 300,
       "achieved_season": 11,
@@ -3543,7 +3569,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1007183744,
       "score": 300,
       "achieved_season": 12,
@@ -3571,7 +3597,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1004279547,
       "score": 300,
       "achieved_season": 13,
@@ -3599,7 +3625,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1011571906,
       "score": 300,
       "achieved_season": 14,
@@ -3627,7 +3653,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1008799512,
       "score": 300,
       "achieved_season": 17,
@@ -3655,7 +3681,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1011671264,
       "score": 300,
       "achieved_season": 18,
@@ -3683,7 +3709,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1015232568,
       "score": 300,
       "achieved_season": 24,
@@ -3711,7 +3737,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1013233557,
       "score": 300,
       "achieved_season": 28,
@@ -3739,7 +3765,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1015898599,
       "score": 300,
       "achieved_season": 31,
@@ -3767,7 +3793,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1003196558,
       "score": 300,
       "achieved_season": 33,
@@ -3795,7 +3821,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1016325370,
       "score": 300,
       "achieved_season": 39,
@@ -3823,7 +3849,7 @@
       }
     },
     {
-      "rank": 113,
+      "rank": 114,
       "player_id": 1014600660,
       "score": 300,
       "achieved_season": 40,
@@ -3851,7 +3877,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1000187385,
       "score": 200,
       "achieved_season": 1,
@@ -3877,7 +3903,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1008087504,
       "score": 200,
       "achieved_season": 1,
@@ -3903,7 +3929,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1009260412,
       "score": 200,
       "achieved_season": 1,
@@ -3929,7 +3955,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1012954538,
       "score": 200,
       "achieved_season": 1,
@@ -3955,7 +3981,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1009115730,
       "score": 200,
       "achieved_season": 2,
@@ -3981,7 +4007,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1010226965,
       "score": 200,
       "achieved_season": 2,
@@ -4008,7 +4034,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1004743871,
       "score": 200,
       "achieved_season": 4,
@@ -4035,7 +4061,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1009545087,
       "score": 200,
       "achieved_season": 4,
@@ -4062,7 +4088,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1004578555,
       "score": 200,
       "achieved_season": 6,
@@ -4089,7 +4115,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1004977110,
       "score": 200,
       "achieved_season": 6,
@@ -4116,7 +4142,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1007092047,
       "score": 200,
       "achieved_season": 6,
@@ -4143,7 +4169,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1011350600,
       "score": 200,
       "achieved_season": 6,
@@ -4169,7 +4195,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1002284777,
       "score": 200,
       "achieved_season": 7,
@@ -4196,7 +4222,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1005699761,
       "score": 200,
       "achieved_season": 7,
@@ -4223,7 +4249,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1010386247,
       "score": 200,
       "achieved_season": 7,
@@ -4249,7 +4275,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1001804360,
       "score": 200,
       "achieved_season": 8,
@@ -4276,7 +4302,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1003016100,
       "score": 200,
       "achieved_season": 8,
@@ -4302,7 +4328,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1007832972,
       "score": 200,
       "achieved_season": 8,
@@ -4328,7 +4354,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1007407494,
       "score": 200,
       "achieved_season": 9,
@@ -4355,7 +4381,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1008581843,
       "score": 200,
       "achieved_season": 9,
@@ -4381,7 +4407,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1004635140,
       "score": 200,
       "achieved_season": 11,
@@ -4408,7 +4434,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1009247467,
       "score": 200,
       "achieved_season": 11,
@@ -4434,7 +4460,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1005774033,
       "score": 200,
       "achieved_season": 14,
@@ -4460,7 +4486,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1009805701,
       "score": 200,
       "achieved_season": 14,
@@ -4486,7 +4512,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1000113662,
       "score": 200,
       "achieved_season": 15,
@@ -4513,7 +4539,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1008987008,
       "score": 200,
       "achieved_season": 15,
@@ -4540,7 +4566,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1010777105,
       "score": 200,
       "achieved_season": 15,
@@ -4567,7 +4593,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1011246740,
       "score": 200,
       "achieved_season": 15,
@@ -4593,7 +4619,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1008319357,
       "score": 200,
       "achieved_season": 16,
@@ -4620,7 +4646,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1010802395,
       "score": 200,
       "achieved_season": 16,
@@ -4647,7 +4673,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1011132639,
       "score": 200,
       "achieved_season": 16,
@@ -4674,7 +4700,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1015320033,
       "score": 200,
       "achieved_season": 16,
@@ -4700,7 +4726,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1000736711,
       "score": 200,
       "achieved_season": 17,
@@ -4727,7 +4753,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1007908791,
       "score": 200,
       "achieved_season": 17,
@@ -4754,7 +4780,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1010311971,
       "score": 200,
       "achieved_season": 18,
@@ -4781,7 +4807,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1001364606,
       "score": 200,
       "achieved_season": 20,
@@ -4808,7 +4834,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1009669842,
       "score": 200,
       "achieved_season": 20,
@@ -4835,33 +4861,7 @@
       }
     },
     {
-      "rank": 129,
-      "player_id": 1016084994,
-      "score": 200,
-      "achieved_season": 22,
-      "score_breakdown": {
-        "champion": {
-          "count": 0,
-          "seasons": []
-        },
-        "runnerup": {
-          "count": 0,
-          "seasons": []
-        },
-        "top4": {
-          "count": 1,
-          "seasons": [
-            22
-          ]
-        },
-        "top8": {
-          "count": 0,
-          "seasons": []
-        }
-      }
-    },
-    {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1016589939,
       "score": 200,
       "achieved_season": 23,
@@ -4888,7 +4888,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1014113634,
       "score": 200,
       "achieved_season": 28,
@@ -4914,7 +4914,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1005157876,
       "score": 200,
       "achieved_season": 29,
@@ -4941,7 +4941,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1000180094,
       "score": 200,
       "achieved_season": 33,
@@ -4968,7 +4968,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1000155984,
       "score": 200,
       "achieved_season": 34,
@@ -4995,7 +4995,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1008490630,
       "score": 200,
       "achieved_season": 35,
@@ -5022,7 +5022,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1015766681,
       "score": 200,
       "achieved_season": 37,
@@ -5049,7 +5049,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1011259299,
       "score": 200,
       "achieved_season": 38,
@@ -5076,7 +5076,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1011642170,
       "score": 200,
       "achieved_season": 38,
@@ -5102,7 +5102,7 @@
       }
     },
     {
-      "rank": 129,
+      "rank": 130,
       "player_id": 1009348378,
       "score": 200,
       "achieved_season": 43,
@@ -5129,7 +5129,34 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 130,
+      "player_id": 1011327613,
+      "score": 200,
+      "achieved_season": 45,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 2,
+          "seasons": [
+            42,
+            45
+          ]
+        }
+      }
+    },
+    {
+      "rank": 178,
       "player_id": 1000154345,
       "score": 100,
       "achieved_season": 1,
@@ -5155,7 +5182,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000885690,
       "score": 100,
       "achieved_season": 1,
@@ -5181,7 +5208,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000924552,
       "score": 100,
       "achieved_season": 1,
@@ -5207,7 +5234,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1004411711,
       "score": 100,
       "achieved_season": 1,
@@ -5233,7 +5260,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1007196538,
       "score": 100,
       "achieved_season": 1,
@@ -5259,7 +5286,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1008480319,
       "score": 100,
       "achieved_season": 1,
@@ -5285,7 +5312,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1010857525,
       "score": 100,
       "achieved_season": 1,
@@ -5311,7 +5338,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000382637,
       "score": 100,
       "achieved_season": 2,
@@ -5337,7 +5364,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1002394893,
       "score": 100,
       "achieved_season": 2,
@@ -5363,7 +5390,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1009492171,
       "score": 100,
       "achieved_season": 2,
@@ -5389,7 +5416,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1012704103,
       "score": 100,
       "achieved_season": 2,
@@ -5415,7 +5442,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000936677,
       "score": 100,
       "achieved_season": 4,
@@ -5441,7 +5468,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1006023215,
       "score": 100,
       "achieved_season": 4,
@@ -5467,7 +5494,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1009668073,
       "score": 100,
       "achieved_season": 4,
@@ -5493,7 +5520,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1011617345,
       "score": 100,
       "achieved_season": 4,
@@ -5519,7 +5546,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000016044,
       "score": 100,
       "achieved_season": 5,
@@ -5545,7 +5572,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000641695,
       "score": 100,
       "achieved_season": 5,
@@ -5571,7 +5598,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1008112329,
       "score": 100,
       "achieved_season": 5,
@@ -5597,7 +5624,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1011609741,
       "score": 100,
       "achieved_season": 5,
@@ -5623,7 +5650,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1011832810,
       "score": 100,
       "achieved_season": 5,
@@ -5649,7 +5676,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1001627033,
       "score": 100,
       "achieved_season": 6,
@@ -5675,7 +5702,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1006060341,
       "score": 100,
       "achieved_season": 6,
@@ -5701,7 +5728,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1009427722,
       "score": 100,
       "achieved_season": 6,
@@ -5727,7 +5754,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1011178420,
       "score": 100,
       "achieved_season": 6,
@@ -5753,7 +5780,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1013165416,
       "score": 100,
       "achieved_season": 6,
@@ -5779,7 +5806,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1009782256,
       "score": 100,
       "achieved_season": 7,
@@ -5805,7 +5832,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1013191443,
       "score": 100,
       "achieved_season": 7,
@@ -5831,7 +5858,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000080565,
       "score": 100,
       "achieved_season": 8,
@@ -5857,7 +5884,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000152580,
       "score": 100,
       "achieved_season": 8,
@@ -5883,7 +5910,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1005265465,
       "score": 100,
       "achieved_season": 8,
@@ -5909,7 +5936,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1005784908,
       "score": 100,
       "achieved_season": 8,
@@ -5935,7 +5962,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1007908391,
       "score": 100,
       "achieved_season": 8,
@@ -5961,7 +5988,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1013888676,
       "score": 100,
       "achieved_season": 8,
@@ -5987,7 +6014,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1015214712,
       "score": 100,
       "achieved_season": 8,
@@ -6013,7 +6040,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000905952,
       "score": 100,
       "achieved_season": 9,
@@ -6039,7 +6066,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1012899207,
       "score": 100,
       "achieved_season": 9,
@@ -6065,7 +6092,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1004257718,
       "score": 100,
       "achieved_season": 10,
@@ -6091,7 +6118,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1011774289,
       "score": 100,
       "achieved_season": 10,
@@ -6117,7 +6144,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1015219682,
       "score": 100,
       "achieved_season": 10,
@@ -6143,7 +6170,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1005183342,
       "score": 100,
       "achieved_season": 11,
@@ -6169,7 +6196,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1010267251,
       "score": 100,
       "achieved_season": 11,
@@ -6195,7 +6222,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000198641,
       "score": 100,
       "achieved_season": 12,
@@ -6221,7 +6248,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1011139077,
       "score": 100,
       "achieved_season": 12,
@@ -6247,7 +6274,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1001620432,
       "score": 100,
       "achieved_season": 13,
@@ -6273,7 +6300,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1009091755,
       "score": 100,
       "achieved_season": 13,
@@ -6299,7 +6326,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000371825,
       "score": 100,
       "achieved_season": 14,
@@ -6325,7 +6352,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1001668136,
       "score": 100,
       "achieved_season": 14,
@@ -6351,7 +6378,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1001700739,
       "score": 100,
       "achieved_season": 14,
@@ -6377,7 +6404,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1005048569,
       "score": 100,
       "achieved_season": 14,
@@ -6403,7 +6430,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1005219081,
       "score": 100,
       "achieved_season": 14,
@@ -6429,7 +6456,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1010822175,
       "score": 100,
       "achieved_season": 15,
@@ -6455,7 +6482,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000719163,
       "score": 100,
       "achieved_season": 16,
@@ -6481,7 +6508,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1006622074,
       "score": 100,
       "achieved_season": 16,
@@ -6507,7 +6534,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1006562409,
       "score": 100,
       "achieved_season": 17,
@@ -6533,7 +6560,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1006462090,
       "score": 100,
       "achieved_season": 18,
@@ -6559,7 +6586,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1009040439,
       "score": 100,
       "achieved_season": 18,
@@ -6585,7 +6612,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1002120122,
       "score": 100,
       "achieved_season": 19,
@@ -6611,7 +6638,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1004668839,
       "score": 100,
       "achieved_season": 19,
@@ -6637,7 +6664,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000179615,
       "score": 100,
       "achieved_season": 20,
@@ -6663,7 +6690,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000617413,
       "score": 100,
       "achieved_season": 20,
@@ -6689,7 +6716,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1002839709,
       "score": 100,
       "achieved_season": 21,
@@ -6715,7 +6742,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1015635923,
       "score": 100,
       "achieved_season": 21,
@@ -6741,7 +6768,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1009819070,
       "score": 100,
       "achieved_season": 22,
@@ -6767,7 +6794,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1010042475,
       "score": 100,
       "achieved_season": 22,
@@ -6793,7 +6820,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1008904301,
       "score": 100,
       "achieved_season": 23,
@@ -6819,7 +6846,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1013552053,
       "score": 100,
       "achieved_season": 23,
@@ -6845,7 +6872,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1013559376,
       "score": 100,
       "achieved_season": 23,
@@ -6871,7 +6898,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000923097,
       "score": 100,
       "achieved_season": 25,
@@ -6897,7 +6924,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1015359931,
       "score": 100,
       "achieved_season": 25,
@@ -6923,7 +6950,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1016629173,
       "score": 100,
       "achieved_season": 25,
@@ -6949,7 +6976,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1007439153,
       "score": 100,
       "achieved_season": 28,
@@ -6975,7 +7002,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1009108787,
       "score": 100,
       "achieved_season": 28,
@@ -7001,7 +7028,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000342386,
       "score": 100,
       "achieved_season": 31,
@@ -7027,7 +7054,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000376747,
       "score": 100,
       "achieved_season": 32,
@@ -7053,7 +7080,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1012137772,
       "score": 100,
       "achieved_season": 32,
@@ -7079,7 +7106,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1011531291,
       "score": 100,
       "achieved_season": 33,
@@ -7105,7 +7132,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1007820890,
       "score": 100,
       "achieved_season": 35,
@@ -7131,7 +7158,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000148302,
       "score": 100,
       "achieved_season": 36,
@@ -7157,7 +7184,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1012180455,
       "score": 100,
       "achieved_season": 37,
@@ -7183,7 +7210,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1013616607,
       "score": 100,
       "achieved_season": 37,
@@ -7209,7 +7236,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1000733261,
       "score": 100,
       "achieved_season": 39,
@@ -7235,7 +7262,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1009401294,
       "score": 100,
       "achieved_season": 40,
@@ -7261,7 +7288,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1001502836,
       "score": 100,
       "achieved_season": 41,
@@ -7287,33 +7314,7 @@
       }
     },
     {
-      "rank": 177,
-      "player_id": 1011327613,
-      "score": 100,
-      "achieved_season": 42,
-      "score_breakdown": {
-        "champion": {
-          "count": 0,
-          "seasons": []
-        },
-        "runnerup": {
-          "count": 0,
-          "seasons": []
-        },
-        "top4": {
-          "count": 0,
-          "seasons": []
-        },
-        "top8": {
-          "count": 1,
-          "seasons": [
-            42
-          ]
-        }
-      }
-    },
-    {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1015296763,
       "score": 100,
       "achieved_season": 42,
@@ -7339,7 +7340,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1015768624,
       "score": 100,
       "achieved_season": 42,
@@ -7365,7 +7366,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1005497840,
       "score": 100,
       "achieved_season": 43,
@@ -7391,7 +7392,7 @@
       }
     },
     {
-      "rank": 177,
+      "rank": 178,
       "player_id": 1016760318,
       "score": 100,
       "achieved_season": 43,
@@ -7412,6 +7413,58 @@
           "count": 1,
           "seasons": [
             43
+          ]
+        }
+      }
+    },
+    {
+      "rank": 178,
+      "player_id": 1002827372,
+      "score": 100,
+      "achieved_season": 45,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            45
+          ]
+        }
+      }
+    },
+    {
+      "rank": 178,
+      "player_id": 1005621014,
+      "score": 100,
+      "achieved_season": 45,
+      "score_breakdown": {
+        "champion": {
+          "count": 0,
+          "seasons": []
+        },
+        "runnerup": {
+          "count": 0,
+          "seasons": []
+        },
+        "top4": {
+          "count": 0,
+          "seasons": []
+        },
+        "top8": {
+          "count": 1,
+          "seasons": [
+            45
           ]
         }
       }

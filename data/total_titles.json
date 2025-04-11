@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-17",
+  "last_updated": "2025-04-11",
   "total_titles": [
     {
       "rank": 1,
@@ -85,9 +85,9 @@
       "player_id": 1008410793,
       "champion": 8,
       "runnerup": 5,
-      "top4": 8,
+      "top4": 9,
       "top8": 4,
-      "total": 25,
+      "total": 26,
       "title_breakdown": {
         "champion": [
           24,
@@ -114,7 +114,8 @@
           31,
           35,
           41,
-          42
+          42,
+          45
         ],
         "top8": [
           12,
@@ -241,8 +242,8 @@
       "champion": 6,
       "runnerup": 2,
       "top4": 5,
-      "top8": 9,
-      "total": 22,
+      "top8": 10,
+      "total": 23,
       "title_breakdown": {
         "champion": [
           31,
@@ -272,7 +273,8 @@
           32,
           33,
           42,
-          44
+          44,
+          45
         ]
       }
     },
@@ -605,8 +607,8 @@
       "champion": 2,
       "runnerup": 7,
       "top4": 7,
-      "top8": 3,
-      "total": 19,
+      "top8": 4,
+      "total": 20,
       "title_breakdown": {
         "champion": [
           26,
@@ -633,7 +635,8 @@
         "top8": [
           10,
           12,
-          34
+          34,
+          45
         ]
       }
     },
@@ -730,6 +733,64 @@
     },
     {
       "rank": 22,
+      "player_id": 1008253117,
+      "champion": 2,
+      "runnerup": 2,
+      "top4": 1,
+      "top8": 1,
+      "total": 6,
+      "title_breakdown": {
+        "champion": [
+          32,
+          34
+        ],
+        "runnerup": [
+          38,
+          45
+        ],
+        "top4": [
+          39
+        ],
+        "top8": [
+          30
+        ]
+      }
+    },
+    {
+      "rank": 23,
+      "player_id": 1009384962,
+      "champion": 2,
+      "runnerup": 1,
+      "top4": 5,
+      "top8": 6,
+      "total": 14,
+      "title_breakdown": {
+        "champion": [
+          41,
+          45
+        ],
+        "runnerup": [
+          32
+        ],
+        "top4": [
+          26,
+          30,
+          38,
+          40,
+          42
+        ],
+        "top8": [
+          24,
+          29,
+          31,
+          35,
+          37,
+          39
+        ]
+      }
+    },
+    {
+      "rank": 24,
       "player_id": 1011900902,
       "champion": 2,
       "runnerup": 1,
@@ -758,7 +819,36 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 25,
+      "player_id": 1009915734,
+      "champion": 2,
+      "runnerup": 1,
+      "top4": 3,
+      "top8": 4,
+      "total": 10,
+      "title_breakdown": {
+        "champion": [
+          34,
+          42
+        ],
+        "runnerup": [
+          37
+        ],
+        "top4": [
+          35,
+          39,
+          45
+        ],
+        "top8": [
+          9,
+          10,
+          21,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 26,
       "player_id": 1006343033,
       "champion": 2,
       "runnerup": 1,
@@ -787,7 +877,7 @@
       }
     },
     {
-      "rank": 24,
+      "rank": 27,
       "player_id": 1001342010,
       "champion": 2,
       "runnerup": 1,
@@ -815,35 +905,7 @@
       }
     },
     {
-      "rank": 24,
-      "player_id": 1009915734,
-      "champion": 2,
-      "runnerup": 1,
-      "top4": 2,
-      "top8": 4,
-      "total": 9,
-      "title_breakdown": {
-        "champion": [
-          34,
-          42
-        ],
-        "runnerup": [
-          37
-        ],
-        "top4": [
-          35,
-          39
-        ],
-        "top8": [
-          9,
-          10,
-          21,
-          44
-        ]
-      }
-    },
-    {
-      "rank": 26,
+      "rank": 28,
       "player_id": 1002020918,
       "champion": 2,
       "runnerup": 1,
@@ -868,37 +930,13 @@
       }
     },
     {
-      "rank": 27,
-      "player_id": 1008253117,
-      "champion": 2,
-      "runnerup": 1,
-      "top4": 1,
-      "top8": 1,
-      "total": 5,
-      "title_breakdown": {
-        "champion": [
-          32,
-          34
-        ],
-        "runnerup": [
-          38
-        ],
-        "top4": [
-          39
-        ],
-        "top8": [
-          30
-        ]
-      }
-    },
-    {
-      "rank": 28,
+      "rank": 29,
       "player_id": 1007154468,
       "champion": 2,
       "runnerup": 0,
       "top4": 1,
-      "top8": 2,
-      "total": 5,
+      "top8": 3,
+      "total": 6,
       "title_breakdown": {
         "champion": [
           39,
@@ -910,12 +948,13 @@
         ],
         "top8": [
           34,
-          40
+          40,
+          45
         ]
       }
     },
     {
-      "rank": 28,
+      "rank": 30,
       "player_id": 1012076535,
       "champion": 2,
       "runnerup": 0,
@@ -938,7 +977,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 31,
       "player_id": 1010771671,
       "champion": 1,
       "runnerup": 5,
@@ -967,13 +1006,13 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 32,
       "player_id": 1001465025,
       "champion": 1,
       "runnerup": 2,
-      "top4": 2,
+      "top4": 3,
       "top8": 3,
-      "total": 8,
+      "total": 9,
       "title_breakdown": {
         "champion": [
           36
@@ -984,7 +1023,8 @@
         ],
         "top4": [
           34,
-          38
+          38,
+          45
         ],
         "top8": [
           28,
@@ -994,7 +1034,37 @@
       }
     },
     {
-      "rank": 32,
+      "rank": 33,
+      "player_id": 1013543706,
+      "champion": 1,
+      "runnerup": 2,
+      "top4": 2,
+      "top8": 6,
+      "total": 11,
+      "title_breakdown": {
+        "champion": [
+          38
+        ],
+        "runnerup": [
+          41,
+          45
+        ],
+        "top4": [
+          32,
+          43
+        ],
+        "top8": [
+          22,
+          36,
+          37,
+          39,
+          40,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 34,
       "player_id": 1016561087,
       "champion": 1,
       "runnerup": 2,
@@ -1018,39 +1088,7 @@
       }
     },
     {
-      "rank": 33,
-      "player_id": 1009384962,
-      "champion": 1,
-      "runnerup": 1,
-      "top4": 5,
-      "top8": 6,
-      "total": 13,
-      "title_breakdown": {
-        "champion": [
-          41
-        ],
-        "runnerup": [
-          32
-        ],
-        "top4": [
-          26,
-          30,
-          38,
-          40,
-          42
-        ],
-        "top8": [
-          24,
-          29,
-          31,
-          35,
-          37,
-          39
-        ]
-      }
-    },
-    {
-      "rank": 34,
+      "rank": 35,
       "player_id": 1008937858,
       "champion": 1,
       "runnerup": 1,
@@ -1073,35 +1111,6 @@
         "top8": [
           5,
           13
-        ]
-      }
-    },
-    {
-      "rank": 35,
-      "player_id": 1013543706,
-      "champion": 1,
-      "runnerup": 1,
-      "top4": 2,
-      "top8": 6,
-      "total": 10,
-      "title_breakdown": {
-        "champion": [
-          38
-        ],
-        "runnerup": [
-          41
-        ],
-        "top4": [
-          32,
-          43
-        ],
-        "top8": [
-          22,
-          36,
-          37,
-          39,
-          40,
-          44
         ]
       }
     },
@@ -1361,6 +1370,29 @@
     },
     {
       "rank": 46,
+      "player_id": 1016084994,
+      "champion": 1,
+      "runnerup": 0,
+      "top4": 1,
+      "top8": 3,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [
+          45
+        ],
+        "runnerup": [],
+        "top4": [
+          22
+        ],
+        "top8": [
+          28,
+          34,
+          44
+        ]
+      }
+    },
+    {
+      "rank": 47,
       "player_id": 1011590199,
       "champion": 1,
       "runnerup": 0,
@@ -1382,7 +1414,7 @@
       }
     },
     {
-      "rank": 47,
+      "rank": 48,
       "player_id": 1001598193,
       "champion": 1,
       "runnerup": 0,
@@ -1403,7 +1435,7 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 49,
       "player_id": 1004691636,
       "champion": 1,
       "runnerup": 0,
@@ -1422,7 +1454,7 @@
       }
     },
     {
-      "rank": 49,
+      "rank": 50,
       "player_id": 1006055152,
       "champion": 1,
       "runnerup": 0,
@@ -1439,13 +1471,13 @@
       }
     },
     {
-      "rank": 50,
+      "rank": 51,
       "player_id": 1010881123,
       "champion": 0,
       "runnerup": 3,
-      "top4": 10,
+      "top4": 11,
       "top8": 11,
-      "total": 24,
+      "total": 25,
       "title_breakdown": {
         "champion": [],
         "runnerup": [
@@ -1463,7 +1495,8 @@
           38,
           40,
           41,
-          44
+          44,
+          45
         ],
         "top8": [
           13,
@@ -1481,7 +1514,7 @@
       }
     },
     {
-      "rank": 51,
+      "rank": 52,
       "player_id": 1009094519,
       "champion": 0,
       "runnerup": 3,
@@ -1515,7 +1548,7 @@
       }
     },
     {
-      "rank": 52,
+      "rank": 53,
       "player_id": 1012151138,
       "champion": 0,
       "runnerup": 3,
@@ -1542,7 +1575,7 @@
       }
     },
     {
-      "rank": 53,
+      "rank": 54,
       "player_id": 1002894128,
       "champion": 0,
       "runnerup": 3,
@@ -1567,7 +1600,7 @@
       }
     },
     {
-      "rank": 54,
+      "rank": 55,
       "player_id": 1001784853,
       "champion": 0,
       "runnerup": 3,
@@ -1588,7 +1621,7 @@
       }
     },
     {
-      "rank": 55,
+      "rank": 56,
       "player_id": 1011460886,
       "champion": 0,
       "runnerup": 2,
@@ -1614,7 +1647,7 @@
       }
     },
     {
-      "rank": 56,
+      "rank": 57,
       "player_id": 1002498437,
       "champion": 0,
       "runnerup": 2,
@@ -1650,7 +1683,7 @@
       }
     },
     {
-      "rank": 57,
+      "rank": 58,
       "player_id": 1000389433,
       "champion": 0,
       "runnerup": 2,
@@ -1679,7 +1712,7 @@
       }
     },
     {
-      "rank": 58,
+      "rank": 59,
       "player_id": 1000778393,
       "champion": 0,
       "runnerup": 2,
@@ -1703,7 +1736,7 @@
       }
     },
     {
-      "rank": 59,
+      "rank": 60,
       "player_id": 1013634786,
       "champion": 0,
       "runnerup": 2,
@@ -1728,7 +1761,7 @@
       }
     },
     {
-      "rank": 60,
+      "rank": 61,
       "player_id": 1011683399,
       "champion": 0,
       "runnerup": 2,
@@ -1750,7 +1783,7 @@
       }
     },
     {
-      "rank": 61,
+      "rank": 62,
       "player_id": 1012919870,
       "champion": 0,
       "runnerup": 1,
@@ -1778,7 +1811,7 @@
       }
     },
     {
-      "rank": 62,
+      "rank": 63,
       "player_id": 1000308591,
       "champion": 0,
       "runnerup": 1,
@@ -1808,7 +1841,7 @@
       }
     },
     {
-      "rank": 63,
+      "rank": 64,
       "player_id": 1011099144,
       "champion": 0,
       "runnerup": 1,
@@ -1839,7 +1872,7 @@
       }
     },
     {
-      "rank": 64,
+      "rank": 65,
       "player_id": 1007896045,
       "champion": 0,
       "runnerup": 1,
@@ -1869,7 +1902,7 @@
       }
     },
     {
-      "rank": 65,
+      "rank": 66,
       "player_id": 1010401683,
       "champion": 0,
       "runnerup": 1,
@@ -1895,7 +1928,7 @@
       }
     },
     {
-      "rank": 66,
+      "rank": 67,
       "player_id": 1000016804,
       "champion": 0,
       "runnerup": 1,
@@ -1918,7 +1951,7 @@
       }
     },
     {
-      "rank": 66,
+      "rank": 67,
       "player_id": 1006597043,
       "champion": 0,
       "runnerup": 1,
@@ -1941,7 +1974,7 @@
       }
     },
     {
-      "rank": 66,
+      "rank": 67,
       "player_id": 1015790249,
       "champion": 0,
       "runnerup": 1,
@@ -1964,7 +1997,7 @@
       }
     },
     {
-      "rank": 69,
+      "rank": 70,
       "player_id": 1010769760,
       "champion": 0,
       "runnerup": 1,
@@ -1995,7 +2028,7 @@
       }
     },
     {
-      "rank": 70,
+      "rank": 71,
       "player_id": 1012634994,
       "champion": 0,
       "runnerup": 1,
@@ -2021,7 +2054,7 @@
       }
     },
     {
-      "rank": 71,
+      "rank": 72,
       "player_id": 1000087066,
       "champion": 0,
       "runnerup": 1,
@@ -2046,13 +2079,13 @@
       }
     },
     {
-      "rank": 72,
+      "rank": 73,
       "player_id": 1015153546,
       "champion": 0,
       "runnerup": 1,
       "top4": 2,
-      "top8": 2,
-      "total": 5,
+      "top8": 3,
+      "total": 6,
       "title_breakdown": {
         "champion": [],
         "runnerup": [
@@ -2064,12 +2097,13 @@
         ],
         "top8": [
           26,
-          33
+          33,
+          45
         ]
       }
     },
     {
-      "rank": 73,
+      "rank": 74,
       "player_id": 1003723459,
       "champion": 0,
       "runnerup": 1,
@@ -2089,7 +2123,7 @@
       }
     },
     {
-      "rank": 74,
+      "rank": 75,
       "player_id": 1004933793,
       "champion": 0,
       "runnerup": 1,
@@ -2113,7 +2147,7 @@
       }
     },
     {
-      "rank": 74,
+      "rank": 75,
       "player_id": 1014848743,
       "champion": 0,
       "runnerup": 1,
@@ -2137,7 +2171,7 @@
       }
     },
     {
-      "rank": 76,
+      "rank": 77,
       "player_id": 1000016726,
       "champion": 0,
       "runnerup": 1,
@@ -2159,7 +2193,7 @@
       }
     },
     {
-      "rank": 77,
+      "rank": 78,
       "player_id": 1006001102,
       "champion": 0,
       "runnerup": 1,
@@ -2180,7 +2214,7 @@
       }
     },
     {
-      "rank": 78,
+      "rank": 79,
       "player_id": 1000141948,
       "champion": 0,
       "runnerup": 1,
@@ -2199,7 +2233,7 @@
       }
     },
     {
-      "rank": 78,
+      "rank": 79,
       "player_id": 1007030173,
       "champion": 0,
       "runnerup": 1,
@@ -2218,7 +2252,7 @@
       }
     },
     {
-      "rank": 80,
+      "rank": 81,
       "player_id": 1010282712,
       "champion": 0,
       "runnerup": 1,
@@ -2242,7 +2276,29 @@
       }
     },
     {
-      "rank": 81,
+      "rank": 82,
+      "player_id": 1009729459,
+      "champion": 0,
+      "runnerup": 1,
+      "top4": 0,
+      "top8": 4,
+      "total": 5,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [
+          44
+        ],
+        "top4": [],
+        "top8": [
+          36,
+          38,
+          42,
+          45
+        ]
+      }
+    },
+    {
+      "rank": 83,
       "player_id": 1000931257,
       "champion": 0,
       "runnerup": 1,
@@ -2263,28 +2319,7 @@
       }
     },
     {
-      "rank": 81,
-      "player_id": 1009729459,
-      "champion": 0,
-      "runnerup": 1,
-      "top4": 0,
-      "top8": 3,
-      "total": 4,
-      "title_breakdown": {
-        "champion": [],
-        "runnerup": [
-          44
-        ],
-        "top4": [],
-        "top8": [
-          36,
-          38,
-          42
-        ]
-      }
-    },
-    {
-      "rank": 83,
+      "rank": 84,
       "player_id": 1004033010,
       "champion": 0,
       "runnerup": 1,
@@ -2303,7 +2338,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 84,
       "player_id": 1005578181,
       "champion": 0,
       "runnerup": 1,
@@ -2322,7 +2357,7 @@
       }
     },
     {
-      "rank": 83,
+      "rank": 84,
       "player_id": 1005701569,
       "champion": 0,
       "runnerup": 1,
@@ -2341,7 +2376,7 @@
       }
     },
     {
-      "rank": 86,
+      "rank": 87,
       "player_id": 1000159635,
       "champion": 0,
       "runnerup": 1,
@@ -2358,7 +2393,7 @@
       }
     },
     {
-      "rank": 87,
+      "rank": 88,
       "player_id": 1002131686,
       "champion": 0,
       "runnerup": 0,
@@ -2388,7 +2423,7 @@
       }
     },
     {
-      "rank": 88,
+      "rank": 89,
       "player_id": 1012691184,
       "champion": 0,
       "runnerup": 0,
@@ -2416,7 +2451,7 @@
       }
     },
     {
-      "rank": 89,
+      "rank": 90,
       "player_id": 1000708405,
       "champion": 0,
       "runnerup": 0,
@@ -2439,7 +2474,7 @@
       }
     },
     {
-      "rank": 90,
+      "rank": 91,
       "player_id": 1005558306,
       "champion": 0,
       "runnerup": 0,
@@ -2465,7 +2500,7 @@
       }
     },
     {
-      "rank": 91,
+      "rank": 92,
       "player_id": 1004418671,
       "champion": 0,
       "runnerup": 0,
@@ -2489,7 +2524,7 @@
       }
     },
     {
-      "rank": 92,
+      "rank": 93,
       "player_id": 1000176731,
       "champion": 0,
       "runnerup": 0,
@@ -2517,7 +2552,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 94,
       "player_id": 1010470705,
       "champion": 0,
       "runnerup": 0,
@@ -2541,7 +2576,7 @@
       }
     },
     {
-      "rank": 94,
+      "rank": 95,
       "player_id": 1011133252,
       "champion": 0,
       "runnerup": 0,
@@ -2563,7 +2598,7 @@
       }
     },
     {
-      "rank": 94,
+      "rank": 95,
       "player_id": 1013914485,
       "champion": 0,
       "runnerup": 0,
@@ -2585,7 +2620,7 @@
       }
     },
     {
-      "rank": 96,
+      "rank": 97,
       "player_id": 1010610745,
       "champion": 0,
       "runnerup": 0,
@@ -2606,7 +2641,7 @@
       }
     },
     {
-      "rank": 96,
+      "rank": 97,
       "player_id": 1016780744,
       "champion": 0,
       "runnerup": 0,
@@ -2627,7 +2662,7 @@
       }
     },
     {
-      "rank": 98,
+      "rank": 99,
       "player_id": 1000671672,
       "champion": 0,
       "runnerup": 0,
@@ -2647,7 +2682,7 @@
       }
     },
     {
-      "rank": 98,
+      "rank": 99,
       "player_id": 1001986106,
       "champion": 0,
       "runnerup": 0,
@@ -2667,7 +2702,7 @@
       }
     },
     {
-      "rank": 98,
+      "rank": 99,
       "player_id": 1011954531,
       "champion": 0,
       "runnerup": 0,
@@ -2687,7 +2722,7 @@
       }
     },
     {
-      "rank": 101,
+      "rank": 102,
       "player_id": 1000757345,
       "champion": 0,
       "runnerup": 0,
@@ -2705,7 +2740,7 @@
       }
     },
     {
-      "rank": 102,
+      "rank": 103,
       "player_id": 1004297917,
       "champion": 0,
       "runnerup": 0,
@@ -2729,7 +2764,7 @@
       }
     },
     {
-      "rank": 103,
+      "rank": 104,
       "player_id": 1009721814,
       "champion": 0,
       "runnerup": 0,
@@ -2752,7 +2787,7 @@
       }
     },
     {
-      "rank": 103,
+      "rank": 104,
       "player_id": 1012694234,
       "champion": 0,
       "runnerup": 0,
@@ -2775,7 +2810,7 @@
       }
     },
     {
-      "rank": 105,
+      "rank": 106,
       "player_id": 1008799512,
       "champion": 0,
       "runnerup": 0,
@@ -2796,7 +2831,7 @@
       }
     },
     {
-      "rank": 105,
+      "rank": 106,
       "player_id": 1009001109,
       "champion": 0,
       "runnerup": 0,
@@ -2817,7 +2852,7 @@
       }
     },
     {
-      "rank": 105,
+      "rank": 106,
       "player_id": 1009669842,
       "champion": 0,
       "runnerup": 0,
@@ -2838,7 +2873,7 @@
       }
     },
     {
-      "rank": 105,
+      "rank": 106,
       "player_id": 1014113634,
       "champion": 0,
       "runnerup": 0,
@@ -2859,28 +2894,7 @@
       }
     },
     {
-      "rank": 105,
-      "player_id": 1016084994,
-      "champion": 0,
-      "runnerup": 0,
-      "top4": 1,
-      "top8": 3,
-      "total": 4,
-      "title_breakdown": {
-        "champion": [],
-        "runnerup": [],
-        "top4": [
-          22
-        ],
-        "top8": [
-          28,
-          34,
-          44
-        ]
-      }
-    },
-    {
-      "rank": 105,
+      "rank": 106,
       "player_id": 1016805088,
       "champion": 0,
       "runnerup": 0,
@@ -2901,7 +2915,7 @@
       }
     },
     {
-      "rank": 105,
+      "rank": 106,
       "player_id": 1017512160,
       "champion": 0,
       "runnerup": 0,
@@ -4240,6 +4254,24 @@
     },
     {
       "rank": 160,
+      "player_id": 1011327613,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 2,
+      "total": 2,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          42,
+          45
+        ]
+      }
+    },
+    {
+      "rank": 160,
       "player_id": 1011609741,
       "champion": 0,
       "runnerup": 0,
@@ -4347,7 +4379,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000016044,
       "champion": 0,
       "runnerup": 0,
@@ -4364,7 +4396,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000080565,
       "champion": 0,
       "runnerup": 0,
@@ -4381,7 +4413,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000152580,
       "champion": 0,
       "runnerup": 0,
@@ -4398,7 +4430,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000154345,
       "champion": 0,
       "runnerup": 0,
@@ -4415,7 +4447,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000179615,
       "champion": 0,
       "runnerup": 0,
@@ -4432,7 +4464,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000198641,
       "champion": 0,
       "runnerup": 0,
@@ -4449,7 +4481,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000342386,
       "champion": 0,
       "runnerup": 0,
@@ -4466,7 +4498,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000371825,
       "champion": 0,
       "runnerup": 0,
@@ -4483,7 +4515,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000617413,
       "champion": 0,
       "runnerup": 0,
@@ -4500,7 +4532,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000641695,
       "champion": 0,
       "runnerup": 0,
@@ -4517,7 +4549,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000719163,
       "champion": 0,
       "runnerup": 0,
@@ -4534,7 +4566,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000733261,
       "champion": 0,
       "runnerup": 0,
@@ -4551,7 +4583,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000885690,
       "champion": 0,
       "runnerup": 0,
@@ -4568,7 +4600,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000905952,
       "champion": 0,
       "runnerup": 0,
@@ -4585,7 +4617,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1000936677,
       "champion": 0,
       "runnerup": 0,
@@ -4602,7 +4634,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1001502836,
       "champion": 0,
       "runnerup": 0,
@@ -4619,7 +4651,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1001620432,
       "champion": 0,
       "runnerup": 0,
@@ -4636,7 +4668,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1001627033,
       "champion": 0,
       "runnerup": 0,
@@ -4653,7 +4685,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1001668136,
       "champion": 0,
       "runnerup": 0,
@@ -4670,7 +4702,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1001700739,
       "champion": 0,
       "runnerup": 0,
@@ -4687,7 +4719,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1002120122,
       "champion": 0,
       "runnerup": 0,
@@ -4704,7 +4736,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1002394893,
       "champion": 0,
       "runnerup": 0,
@@ -4721,7 +4753,24 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
+      "player_id": 1002827372,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          45
+        ]
+      }
+    },
+    {
+      "rank": 190,
       "player_id": 1002839709,
       "champion": 0,
       "runnerup": 0,
@@ -4738,7 +4787,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1004257718,
       "champion": 0,
       "runnerup": 0,
@@ -4755,7 +4804,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1004411711,
       "champion": 0,
       "runnerup": 0,
@@ -4772,7 +4821,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1004668839,
       "champion": 0,
       "runnerup": 0,
@@ -4789,7 +4838,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1005048569,
       "champion": 0,
       "runnerup": 0,
@@ -4806,7 +4855,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1005183342,
       "champion": 0,
       "runnerup": 0,
@@ -4823,7 +4872,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1005219081,
       "champion": 0,
       "runnerup": 0,
@@ -4840,7 +4889,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1005265465,
       "champion": 0,
       "runnerup": 0,
@@ -4857,7 +4906,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1005497840,
       "champion": 0,
       "runnerup": 0,
@@ -4874,7 +4923,24 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
+      "player_id": 1005621014,
+      "champion": 0,
+      "runnerup": 0,
+      "top4": 0,
+      "top8": 1,
+      "total": 1,
+      "title_breakdown": {
+        "champion": [],
+        "runnerup": [],
+        "top4": [],
+        "top8": [
+          45
+        ]
+      }
+    },
+    {
+      "rank": 190,
       "player_id": 1005784908,
       "champion": 0,
       "runnerup": 0,
@@ -4891,7 +4957,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1006023215,
       "champion": 0,
       "runnerup": 0,
@@ -4908,7 +4974,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1006462090,
       "champion": 0,
       "runnerup": 0,
@@ -4925,7 +4991,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1006562409,
       "champion": 0,
       "runnerup": 0,
@@ -4942,7 +5008,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1006622074,
       "champion": 0,
       "runnerup": 0,
@@ -4959,7 +5025,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1007196538,
       "champion": 0,
       "runnerup": 0,
@@ -4976,7 +5042,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1007439153,
       "champion": 0,
       "runnerup": 0,
@@ -4993,7 +5059,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1007820890,
       "champion": 0,
       "runnerup": 0,
@@ -5010,7 +5076,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1008112329,
       "champion": 0,
       "runnerup": 0,
@@ -5027,7 +5093,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1008480319,
       "champion": 0,
       "runnerup": 0,
@@ -5044,7 +5110,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1008904301,
       "champion": 0,
       "runnerup": 0,
@@ -5061,7 +5127,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1009040439,
       "champion": 0,
       "runnerup": 0,
@@ -5078,7 +5144,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1009091755,
       "champion": 0,
       "runnerup": 0,
@@ -5095,7 +5161,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1009108787,
       "champion": 0,
       "runnerup": 0,
@@ -5112,7 +5178,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1009401294,
       "champion": 0,
       "runnerup": 0,
@@ -5129,7 +5195,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1009427722,
       "champion": 0,
       "runnerup": 0,
@@ -5146,7 +5212,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1009492171,
       "champion": 0,
       "runnerup": 0,
@@ -5163,7 +5229,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1009668073,
       "champion": 0,
       "runnerup": 0,
@@ -5180,7 +5246,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1009782256,
       "champion": 0,
       "runnerup": 0,
@@ -5197,7 +5263,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1009819070,
       "champion": 0,
       "runnerup": 0,
@@ -5214,7 +5280,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1010042475,
       "champion": 0,
       "runnerup": 0,
@@ -5231,7 +5297,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1010267251,
       "champion": 0,
       "runnerup": 0,
@@ -5248,7 +5314,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1010822175,
       "champion": 0,
       "runnerup": 0,
@@ -5265,7 +5331,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1010857525,
       "champion": 0,
       "runnerup": 0,
@@ -5282,7 +5348,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1011139077,
       "champion": 0,
       "runnerup": 0,
@@ -5299,7 +5365,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1011178420,
       "champion": 0,
       "runnerup": 0,
@@ -5316,24 +5382,7 @@
       }
     },
     {
-      "rank": 189,
-      "player_id": 1011327613,
-      "champion": 0,
-      "runnerup": 0,
-      "top4": 0,
-      "top8": 1,
-      "total": 1,
-      "title_breakdown": {
-        "champion": [],
-        "runnerup": [],
-        "top4": [],
-        "top8": [
-          42
-        ]
-      }
-    },
-    {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1011531291,
       "champion": 0,
       "runnerup": 0,
@@ -5350,7 +5399,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1011617345,
       "champion": 0,
       "runnerup": 0,
@@ -5367,7 +5416,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1011774289,
       "champion": 0,
       "runnerup": 0,
@@ -5384,7 +5433,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1011832810,
       "champion": 0,
       "runnerup": 0,
@@ -5401,7 +5450,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1012137772,
       "champion": 0,
       "runnerup": 0,
@@ -5418,7 +5467,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1012180455,
       "champion": 0,
       "runnerup": 0,
@@ -5435,7 +5484,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1012899207,
       "champion": 0,
       "runnerup": 0,
@@ -5452,7 +5501,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1013165416,
       "champion": 0,
       "runnerup": 0,
@@ -5469,7 +5518,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1013191443,
       "champion": 0,
       "runnerup": 0,
@@ -5486,7 +5535,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1013559376,
       "champion": 0,
       "runnerup": 0,
@@ -5503,7 +5552,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1013616607,
       "champion": 0,
       "runnerup": 0,
@@ -5520,7 +5569,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1013888676,
       "champion": 0,
       "runnerup": 0,
@@ -5537,7 +5586,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1015219682,
       "champion": 0,
       "runnerup": 0,
@@ -5554,7 +5603,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1015296763,
       "champion": 0,
       "runnerup": 0,
@@ -5571,7 +5620,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1015635923,
       "champion": 0,
       "runnerup": 0,
@@ -5588,7 +5637,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1015768624,
       "champion": 0,
       "runnerup": 0,
@@ -5605,7 +5654,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1016629173,
       "champion": 0,
       "runnerup": 0,
@@ -5622,7 +5671,7 @@
       }
     },
     {
-      "rank": 189,
+      "rank": 190,
       "player_id": 1016760318,
       "champion": 0,
       "runnerup": 0,
