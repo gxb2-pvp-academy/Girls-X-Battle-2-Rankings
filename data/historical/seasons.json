@@ -1,5 +1,5 @@
 {
-  "current_season": 45,
+  "current_season": 46,
   "historical_seasons": [
     1,
     2,
@@ -44,6 +44,7 @@
     41,
     42,
     43,
-    44
+    44,
+    45
   ]
 }
