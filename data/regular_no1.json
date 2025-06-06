@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-08",
+  "last_updated": "2025-06-05",
   "rankings": [
     {
       "rank": 1,
@@ -171,6 +171,15 @@
       "last_season": 46,
       "seasons": [
         46
+      ]
+    },
+    {
+      "rank": 8,
+      "player_id": 1007154468,
+      "count": 1,
+      "last_season": 47,
+      "seasons": [
+        47
       ]
     }
   ]
